@@ -1,0 +1,1 @@
+Var,_str1,,,_str2,:,String,=,'" ,;,<EOF>

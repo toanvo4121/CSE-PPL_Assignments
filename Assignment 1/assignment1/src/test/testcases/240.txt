@@ -1,0 +1,15 @@
+
+        Class Posi_Negative{
+            main(arg : Int) {
+                Var number : Float = 658.32e10;
+                If(number < 0.0){
+                    System.out.println(negative);
+                }
+                ElseIf(number > 0.0){
+                    System.out.println(positive);
+                }
+                Else{
+                    System.out.println(0);
+                }
+            }
+        }

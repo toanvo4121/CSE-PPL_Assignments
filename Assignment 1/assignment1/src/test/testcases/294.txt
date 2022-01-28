@@ -1,0 +1,12 @@
+
+            Class Abba{
+               $Retrld(){
+                   Self.Nothing();
+               }
+            }
+            Class Baad{
+               Print(){
+                  Var a: Int = A::$Retrld();
+               }
+            }
+      

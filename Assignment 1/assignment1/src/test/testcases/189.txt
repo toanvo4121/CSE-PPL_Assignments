@@ -1,0 +1,24 @@
+Class A {
+                    ## Xin chao cac ban @ ~~~~ @ Minh la PPL ##
+                    Val str1: String = "PPL-K19:";
+                    Var arr1: Array[Float, 12];
+                    $vantho1(){
+                        if(str1 ==. "PPL-K19:"){
+                            self.arr1[1]= 0.0002;
+                        }
+                    }
+                }
+                Class B{
+                    Var $ID: String= "Hieu";
+                    Var $static_ID: String= "1913341";
+                    Val slogan: String= "PPL for ever";
+                    isMyID(self: String){
+                        if(Self::$ID == self){
+                            return True;
+                        }
+                        else{
+                            return False;
+                        }
+                    }
+                }
+            

@@ -1,0 +1,1 @@
+Class,A,{,Var,a,:,Int,=,1,;,Var,$b,:,Float,=,0.0000,;,Var,k,:,String,=,,;,},<EOF>

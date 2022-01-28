@@ -1,0 +1,18 @@
+
+        Class SwapNumbers {
+    		$main(a : Array[String, 5]) {
+				Var first, second : Int = 1.20, 2.45;
+        	## Value of first is assigned to temporary ##
+				Var temporary : Int = first;
+        		System_out.println(Before_swap);
+        		System_out.println(First_number + first);
+        		System_out.println(Second_number +  second);
+        	## Value of second is assigned to first ##
+        		first = second;
+        	## Value of temporary (which contains the initial value of first) is assigned to second ##
+        		second = temporary;
+        		System_out.println(After_swap);
+        		System_out.println(Firs_number + first);
+        		System_out.println(Second_number + second);
+    		}
+		}

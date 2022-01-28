@@ -1,0 +1,4 @@
+Class PPL {
+                    ## Xin chao cac ban :3 cac ban dung de y toi minh ##
+                    Val sv: Int = 100;
+            }

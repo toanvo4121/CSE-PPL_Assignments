@@ -1,0 +1,16 @@
+
+        Class Test66 {
+            Bakazoro(Luffy : Int){
+                Var str1 : String ;
+                Var len : Int = str1.length() - 1;  
+                If(len >= 3){
+                    System.out.println( str1.substring(0, 3));
+                }
+                Elseif(len == 1){
+                    System.out.println( (str1.charAt(0)));
+                }
+                Else {
+                    System.out.println();
+                }
+            }
+        }

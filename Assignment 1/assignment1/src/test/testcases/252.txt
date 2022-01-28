@@ -1,0 +1,9 @@
+
+            Class Crray {
+                Sannan(baka : Int) {
+                    Var array : Array[Int,5] = Array(1, 2, 3, 4, 5);
+                    Foreach(element In 1 .. 4 By 7-7 == 3) {
+                        System.out.println(array[element]);
+                    }
+                }
+            }

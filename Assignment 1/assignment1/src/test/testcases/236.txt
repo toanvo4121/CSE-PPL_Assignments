@@ -1,0 +1,7 @@
+
+        Class Main {
+            main(Hol: String) {
+                Var num2 : Int  = input.nextInt();
+                System.out.println();
+            }
+        }

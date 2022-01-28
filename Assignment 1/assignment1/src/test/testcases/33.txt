@@ -1,0 +1,9 @@
+
+         Class Program{
+            main(){
+               Var a: Float = 3.2869745;
+               Var b: Int= 5;
+               Var c: Boolean= (a>b)==13>7;
+            }
+         }
+         

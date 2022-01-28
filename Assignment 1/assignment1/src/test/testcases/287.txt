@@ -1,0 +1,10 @@
+
+            Class EvenOdd {
+               $Evenodd(args : Array[Int,2] ; a,b: Float) {
+                  Var reader : Scanner = New Scanner(in);
+                  out.print(Enter);
+                  Var num : Int = reader.nextInt();
+                  If(num % 2 == 0 || 1){
+                     out.println(even);
+                     }
+            }

@@ -1,0 +1,11 @@
+
+        Class Main {
+    		$main(a : Int) {
+    			Var first, second : Int = 10, 20;
+    			Var sum : Int = first + second;
+    			System_out.println(Enter_two_numbers);
+    			System_out.println(first + second);
+    		## add two numbers ##
+    			System_out.println(The_sum_is + sum);
+  			}
+		}

@@ -1,0 +1,14 @@
+
+        Class Main {
+            main(args : String) {
+                Var n1,n2 : Int = 72, 120;
+                Var lcm : Int = n1 + n2;
+                If(1 == 1) {
+                    If( (lcm  %  n1) == 0 && (lcm  %  n2) == 0 ) {
+                    System.out.printf(n1, n2, lcm);
+                    Break;
+                    }
+                lcm = lcm + 1;
+                }
+            }
+        }

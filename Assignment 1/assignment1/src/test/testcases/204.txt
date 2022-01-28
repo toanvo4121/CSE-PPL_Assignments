@@ -1,0 +1,8 @@
+
+            Class Program {
+                Var $a: Int = 5;
+                main() {
+                    Val a_b : Float = 7.35e-45;
+                }
+            }
+            

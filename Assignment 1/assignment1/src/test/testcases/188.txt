@@ -1,0 +1,10 @@
+Class A {
+                    ## Xin chao cac ban @ ~~~~ @ Minh la PPL ##
+                    Val str1: String = "PPL-K19:";
+                    Var arr1: Array[Float, 12];
+                    $vantho1(){
+                        if(str1 ==. "PPL-K19:"){
+                            self.arr1[1]= 0.0002;
+                        }
+                    }
+            }

@@ -1,0 +1,4 @@
+
+            Var error_str: String= "hello world ahihi";
+            Val $ID: Float= 19_5.111~15; 
+            

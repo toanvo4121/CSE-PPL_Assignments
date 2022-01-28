@@ -1,0 +1,4 @@
+Class CSE : DT{
+                    Val K18, K19= "Hello", "Good
+" ;
+            }

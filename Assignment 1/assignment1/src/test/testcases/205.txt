@@ -1,0 +1,6 @@
+
+        	Class Main {
+  				$main($a:Int) {
+    				System_out.println(Hello_World);
+  				}
+			}

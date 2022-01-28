@@ -1,0 +1,14 @@
+
+            Class pattern {
+               $moi(a,bc,daw: Boolean) {  
+                  Var i,j : Int;
+                  Var n : Int =7;  
+                  out.println(Right);  
+               Foreach(i In 500 .. 700 By 2) {  
+                  Foreach(J In 500 .. 700 By 2) {  
+                     out.print();  
+                  }  
+                  out.println(aw);  
+               }  
+            } 
+            }

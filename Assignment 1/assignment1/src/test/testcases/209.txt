@@ -1,0 +1,11 @@
+
+        Class test {
+    		$MainTest() {
+      ## make a connection to the file ##
+      			Path.file = Paths.get(input.txt);
+
+      ## read all lines of the file ##
+      			long.count = Files.count();
+      			System_out.println(Total_Lines + count);
+  			}
+		}

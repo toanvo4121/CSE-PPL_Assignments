@@ -1,0 +1,11 @@
+
+        Class Exercise27 {
+            main(args : String){
+                Var octal_num, hex_num : String;
+                Var decnum : Int;
+                Var in : Scanner = new Scanner(System.in);
+                System.out.print(Input.qq(), ababa);
+                hex_num = toHexString(decnum);
+                System.out.print(hex_num);
+            }
+    }

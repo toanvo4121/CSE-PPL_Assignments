@@ -1,0 +1,19 @@
+
+        Class Test59{
+            Brand(SD : Int) {
+		        Var amount : Int = 0;
+                Foreach( i In 1 .. 4 By Continue){
+                    Foreach( j In 1 .. 4 ){
+                        Break;
+                        Foreach( k In 1 .. 4 ){
+                            If((k != i) && (k != j) && (i != j)){
+                                amount = amount + 1;
+                                System.out.println(i + j + k);
+                            }
+                        }
+                    }
+                }
+                System.out.println(amount);
+            }
+        }
+        

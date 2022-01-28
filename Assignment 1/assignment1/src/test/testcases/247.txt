@@ -1,0 +1,11 @@
+
+        Class Alphabet {
+            main(args : Float, :Int) {
+                If( ((c >= "a") && (c <= "z")) || ((c >= "A") && (c <= "Z"))){
+                    System.out.println(alphabet);
+                }
+                Else{
+                    System.out.println(alphabet);
+                }
+            }
+        }

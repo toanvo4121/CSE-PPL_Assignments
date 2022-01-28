@@ -1,1 +1,1 @@
-aAsVN,3,<EOF>
+_init_,_INIT_,__init__,<EOF>

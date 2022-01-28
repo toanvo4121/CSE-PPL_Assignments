@@ -1,0 +1,13 @@
+
+            Class Program {
+               main(args : Array[Int,2]) {
+                  out.println(numbers);
+                  Var first, second :Int = 10, 20;
+                  out.println(first + second);
+
+               ## add two numbers ##
+                  Var sum : Int = first + second;
+                  out.println(sum);
+                  Self.;
+               }
+            }

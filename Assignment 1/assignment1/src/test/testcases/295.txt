@@ -1,0 +1,7 @@
+
+            Class Testhehe{
+               Var _: Array[Int, 1];
+               Var $1: Array[Array[Int, 10], 10];
+               Var $_1: Array[Array[Array[Int, 10], 10], 10];
+            }
+      

@@ -1,0 +1,10 @@
+
+            Class Yasuo{
+               
+            }
+            Class Hasagi: Yasuo{
+               Hasagi(Q : Int){
+                   Self.Hattung();
+               }
+            }
+      

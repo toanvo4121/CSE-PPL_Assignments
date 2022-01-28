@@ -1,0 +1,8 @@
+
+            ## Day la test so 93 !!!!! ##
+            Class Test{
+               Test(){
+                  Var int1: Int= 12_2_3_4;
+               }
+            }
+      

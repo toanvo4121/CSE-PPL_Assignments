@@ -1,1 +1,11 @@
-int main( {}
+
+            Class Program {
+                Var $a: Int = 5;
+                $getName() {
+                    Var b: Float = 0.300000e7;
+                }
+                main() {
+                    Val a_b : Float = 7.35e-45;
+                }
+            }
+            

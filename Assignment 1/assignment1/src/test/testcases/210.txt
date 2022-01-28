@@ -1,0 +1,21 @@
+
+            Class Program {
+                getName() {
+                    Var Name: String = Your_name;
+                }
+                main() {
+                    If (x >= y) {
+                        Var a: Int = 0xBF;
+                        a = a + y;
+                    }
+                    Elseif (x >= z) {
+                        Var b: Int = 0xFA;
+                        b = b + x;
+                    }
+                    Else {
+                        Self.Huy();
+                    }
+                }
+            }
+            
+             

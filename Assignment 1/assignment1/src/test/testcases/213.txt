@@ -1,0 +1,10 @@
+
+            Class Program {
+                Main(a, b: Int) {
+                    Return (a || b) < c.square(1,2) && 5;
+                } 
+                main(){
+                    Return Self.Main(7,9);
+                }
+            }
+            

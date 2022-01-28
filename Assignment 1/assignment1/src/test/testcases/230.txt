@@ -1,0 +1,7 @@
+
+        Class Holi2 {
+            Tree(input : String) {  
+                nodeQueue.add(root);
+                Return root = 3;
+            }
+        }

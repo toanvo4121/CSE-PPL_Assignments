@@ -1,0 +1,10 @@
+
+        Class Test68 {
+            Bakazoro(Luffy : Int){
+                Var str1 : String ;
+                Var len : Int = str1.length() - 1;  
+                Else {
+                    System.out.println();
+                }
+            }
+        }

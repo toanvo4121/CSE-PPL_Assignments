@@ -1,0 +1,6 @@
+
+            Class Main2 {
+               main(args : Array[Int,2]) {
+                  out.println();
+               }
+            }

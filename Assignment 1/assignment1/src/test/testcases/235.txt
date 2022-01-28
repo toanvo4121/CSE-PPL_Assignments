@@ -1,0 +1,11 @@
+
+        Class Main {
+            main(Hol: String) {
+                Var input : Scanner  = New Scanner (System.in);
+                System.print(input);
+                Var num1, num2, num3 : Int  = input.nextInt(), input.nextInt();
+                System.out.print(Input);
+                Var sum : Int  = num1 + num2;
+                System.out.println(sum);
+            }
+        }

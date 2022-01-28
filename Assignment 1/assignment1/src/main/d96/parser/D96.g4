@@ -51,12 +51,73 @@ mid1: COLON all_type ASSOP;
 param_list: param (SEMI param)*;
 param: method_id_list COLON all_type;
 ////////////////////////////////////////////////////////////////////////
+// //////////////////////// expression //////////////////////////////////
+// //////////////////////////////////////////////////////////////////////
+
+/////////////////////////// EXPRESSION //////////////////////////
+expr: expr1 (CONCAT | STRCMP) expr1 | expr1; // String expr
+expr1: expr2 relation_expr_op expr2 | expr2; // relationall expr
+expr2: expr2 (ANDOP | OROP) expr3 | expr3; // Logical expr
+expr3: expr3 (ADDOP | SUBOP) expr4 | expr4; // Adding expr
+expr4: expr4 mul_expr_op expr5 | expr5; // Multiplying expr
+expr5: NOTOP expr5 | expr6; // Logical not expr
+expr6: SUBOP expr6 | expr7; // Sign expr
+expr7: expr7 idx_expr_op | expr8; // Index expr
+
+expr8:
+	expr8 DOTOP IDENTIFIERS
+	| expr8 DOTOP IDENTIFIERS multi_idx_op
+	| expr8 DOTOP IDENTIFIERS LB expr_lst RB
+	| expr8 DOTOP IDENTIFIERS LB RB
+	| expr9;
+
+expr9:
+	IDENTIFIERS SCOOP STATIC_MEM
+	| IDENTIFIERS SCOOP STATIC_MEM multi_idx_op
+	| IDENTIFIERS SCOOP STATIC_MEM LB expr_lst RB
+	| IDENTIFIERS SCOOP STATIC_MEM LB RB
+	| expr10;
+
+multi_idx_op: idx_expr_op multi_idx_op | idx_expr_op;
+
+expr10:
+	NEW IDENTIFIERS LB expr_lst RB
+	| NEW IDENTIFIERS LB RB
+	| operand;
+
+operand:
+	IDENTIFIERS
+	| literals
+	| SELF
+	| NULL
+	| LB expr RB
+	| IDENTIFIERS multi_idx_op;
+
+expr_lst: expr COMMA expr_lst | expr;
+
+relation_expr_op: GRTOP | GTEOP | LSTOP | LTEOP | EQLOP | IEQOP;
+mul_expr_op: MULOP | DIVOP | MODOP;
+idx_expr_op: LSB expr RSB;
+////////////////////////END EXPRESSION //////////////////////////
+
+////////////////////////////////////////////////////////////////////////
 // //////////////////////// statement ///////////////////////////////////
 // //////////////////////////////////////////////////////////////////////
-var_declare_stmt: (VAL | VAR) attr_decl2 SEMI;
-attr_decl2: id_list2 COLON all_type | mid3;
-mid3: IDENTIFIERS COMMA mid3 COMMA expr | IDENTIFIERS mid1 expr;
-id_list2: IDENTIFIERS COMMA id_list2 | IDENTIFIERS;
+var_declare_stmt: var_attr_stmt | val_attr_stmt;
+var_attr_stmt: VAR attr_stmt SEMI;
+val_attr_stmt: VAL attr_stmt SEMI;
+
+attr_stmt: attr_stmt_no_init | attr_stmt_full;
+
+attr_stmt_no_init: id_list_without_static COLON all_type;
+
+id_list_without_static:
+	IDENTIFIERS COMMA id_list_without_static
+	| IDENTIFIERS;
+
+attr_stmt_full:
+	IDENTIFIERS COMMA attr_stmt_full COMMA expr
+	| IDENTIFIERS mid1 expr;
 
 block_stmt: LP stmt3* RP;
 
@@ -73,13 +134,15 @@ stmt3:
 
 assign_stmt: lhs ASSOP expr SEMI;
 
+lhs: IDENTIFIERS (LSB expr8 RSB)* | expr8;
+
 if_stmt:
-	IF LB expr RB block_stmt (ELSEIF expr block_stmt)* (
+	IF LB expr RB block_stmt (ELSEIF LB expr RB block_stmt)* (
 		ELSE block_stmt
 	)?;
 
 for_stmt:
-	FOREACH LB IDENTIFIERS IN (INTLIT | expr) '..' (
+	FOREACH LB IDENTIFIERS IN (INTLIT | expr) DOTDOT (
 		INTLIT
 		| expr
 	) (BY (INTLIT | expr))? RB block_stmt;
@@ -88,62 +151,18 @@ break_stmt: BREAK SEMI;
 continue_stmt: CONTINUE SEMI;
 return_stmt: RETURN expr SEMI | RETURN SEMI;
 
-invoca_stmt:
-	class_type SCOOP STATIC_MEM LB list_expr RB SEMI
-	| class_type SCOOP STATIC_MEM LB RB SEMI
-	| expr8 DOTOP IDENTIFIERS LB list_expr RB SEMI
+invoca_stmt: instance_invoca_stmt | static_invoca_stmt;
+
+static_invoca_stmt:
+	class_type SCOOP STATIC_MEM LB expr_lst RB SEMI
+	| class_type SCOOP STATIC_MEM LB RB SEMI;
+// | class_type STATACCES STATIC_ID SEMI | SELF STATACCES STATIC_ID LB expr_lst RB SEMI | SELF
+// STATACCES STATIC_ID LB RB SEMI; | SELF STATACCES STATIC_ID SEMI;
+
+instance_invoca_stmt:
+	expr8 DOTOP IDENTIFIERS LB expr_lst RB SEMI
 	| expr8 DOTOP IDENTIFIERS LB RB SEMI;
-
-lhs: IDENTIFIERS (LSB expr8 RSB)* | expr8;
-
-////////////////////////////////////////////////////////////////////////
-// //////////////////////// expression //////////////////////////////////
-// //////////////////////////////////////////////////////////////////////
-
-expr_op: CONCAT | STRCMP;
-expr1_op: GRTOP | GTEOP | LSTOP | LTEOP | EQLOP | IEQOP;
-expr2_op: ANDOP | OROP;
-expr3_op: ADDOP | SUBOP;
-expr4_op: MULOP | DIVOP | MODOP;
-expr5_op: NOTOP;
-expr6_op: SUBOP;
-expr7_op: LSB expr RSB;
-
-expr: expr1 expr_op expr1 | expr1;
-expr1: expr2 expr1_op expr2 | expr2;
-expr2: expr2 expr2_op expr3 | expr3;
-expr3: expr3 expr3_op expr4 | expr4; //binary
-expr4: expr4 expr4_op expr5 | expr5;
-expr5: expr5_op expr5 | expr6;
-expr6: expr6_op expr6 | expr7; //unary
-expr7: expr7 expr7_op | expr8;
-
-expr8:
-	expr8 DOTOP IDENTIFIERS LB list_expr RB
-	| expr8 DOTOP IDENTIFIERS LB RB
-	| expr8 DOTOP IDENTIFIERS
-	| expr8 DOTOP IDENTIFIERS (LSB expr RSB)*
-	| expr9;
-expr9:
-	| IDENTIFIERS SCOOP STATIC_MEM LB list_expr RB
-	| IDENTIFIERS SCOOP STATIC_MEM LB RB
-	| IDENTIFIERS SCOOP STATIC_MEM
-	| IDENTIFIERS SCOOP STATIC_MEM (LSB expr RSB)*
-	| expr10;
-
-expr10:
-	NEW IDENTIFIERS LB list_expr RB
-	| NEW IDENTIFIERS LB RB
-	| operand;
-
-operand:
-	literals
-	| SELF
-	| NULL
-	| LB expr RB
-	| IDENTIFIERS (LSB expr RSB)*;
-
-list_expr: expr COMMA list_expr | expr;
+// | expr8 DOT ID SEMI;
 
 // type
 all_type: prim_type | arr_type | class_type;
@@ -200,7 +219,7 @@ fragment ESCAPE_SEQUENCES:
 	| '\\\\'
 	| '\\' ['];
 fragment ILLEGAL_ESC_SEQ: '\\' ~[bfnrt'"\\] | '\\';
-fragment CHARACTER: ~(["\r\n\f] | '\\') | ESCAPE_SEQUENCES;
+fragment CHARACTER: ~(["\r\n\f\t\b] | '\\') | ESCAPE_SEQUENCES;
 STRINGLIT: (["] (CHARACTER | [']["])* ["]) {
 	self.text = self.text[1:-1]
 };
@@ -281,6 +300,7 @@ GTEOP: '>=';
 LTEOP: '<=';
 STRCMP: '==.';
 CONCAT: '+.';
+DOTDOT: '..';
 DOTOP: '.';
 SCOOP: '::';
 
@@ -291,14 +311,20 @@ COMMENT: '##' .*? '##' -> skip; // non-greedy
 WS: [ \t\r\n]+ -> skip; // skip spaces, tabs, newlines
 
 UNCLOSE_STRING:
-	["] (CHARACTER | ILLEGAL_ESC_SEQ | [']["])* ([\r\n\f] | EOF) {
-                    y = self.text
-                    if y[-1] in ['\r','\n','\f']:
-                        raise UncloseString(y[1:-1])
-                    else:
-                        raise UncloseString(y[1:])
-                };
-ILLEGAL_ESCAPE: (["] (CHARACTER | ['] ["])* ILLEGAL_ESC_SEQ) {
-					raise IllegalEscape(self.text[1:]);
-				};
+	["] (CHARACTER | ILLEGAL_ESC_SEQ)* (EOF | '\r' | '\f' | '\n') {
+		y = self.text
+		if y[-1] in ['\r','\n','\f']:
+				raise UncloseString(y[1:-1])
+		else:
+				raise UncloseString(y[1:])
+	};
+ILLEGAL_ESCAPE: (
+		["] (CHARACTER | ['] ["])* (
+			ILLEGAL_ESC_SEQ
+			| '\t'
+			| '\b'
+		)
+	) {
+			raise IllegalEscape(self.text[1:]);
+		};
 ERROR_CHAR: .{raise ErrorToken(self.text)};

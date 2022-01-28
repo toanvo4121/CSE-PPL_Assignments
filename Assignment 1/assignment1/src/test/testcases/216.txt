@@ -1,0 +1,27 @@
+
+        Class FibonacciEx {
+            Fibo(args : String) {
+                System.out.println(fibonacci);
+                Foreach (i In 0 .. 10){
+                    System.out.print();
+                }
+            }
+            fibonacci(n : Int) {
+                Var f0, f1, f2 : Int = 0,1,1;
+ 
+                If (n < 0) {
+                    Return -1;
+                } 
+                Elseif (n == 0 || n == 1) {
+                    Return n;
+                }
+                Else {
+                    Foreach (i In 2 .. n){
+                        f0 = f1;
+                        f1 = fn;
+                        fn = f0 + f1;
+                    }
+                }
+                Return fn;
+            }
+        }

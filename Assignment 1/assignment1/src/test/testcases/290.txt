@@ -1,0 +1,10 @@
+
+        Class test {
+            main(a,b: Float, Int) {
+               Var r, s: Int;
+               r = 2.0 * 13.e1;
+               Var a, b: Array[Int, 5];
+               s = r * r * Self.myPI;
+               a[1] = s;
+            }
+         }

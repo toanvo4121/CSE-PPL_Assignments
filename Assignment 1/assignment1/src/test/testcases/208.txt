@@ -1,0 +1,15 @@
+
+        Class EvenOdd {
+        	Test(a : Array[String, 0x57]) {
+             	Var num: Int =  reader.nextInt();
+                Var reader: Scanner = New Scanner(System.in);
+       			(System.out).print(Enter_a_number);
+
+        		If(num % 2 == 0) {
+            		System_out.println(num_is_even);
+              	}
+        		Else {
+            		System_out.println(num_is_odd);
+				}
+   			 }
+		}

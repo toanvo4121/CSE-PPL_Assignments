@@ -1,0 +1,13 @@
+
+        Class Main {
+            Main(args : Int){
+                Var animals : LinkedList = New LinkedList();
+                Var middle : String;
+                middle = animals.get(animals.size()/2);
+                animals.add(Dog);
+                animals.addFirst(Cat);
+                animals.addLast(Horse);
+                System.out.println(animals);
+                System.out.println(middle);
+            }
+        }

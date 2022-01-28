@@ -1,0 +1,29 @@
+
+        Class Main {
+            main(args : Int) {
+                Var year : Int = 1996;
+                Var leap : Boolean = False;
+                If ((year % 4) == 0){
+                    If ((year % 100) == 0) {
+                        If ((year % 400) == 0) {
+                            leap = True;
+                        }
+                        Else { 
+                            leap = False;
+                        }
+                    }
+                    Else{
+                        leap = True;
+                    }
+                } 
+                Else{
+                    leap == False;
+                }
+                If(leap){ 
+                    System.out.println(leap_year);
+                } 
+                Else{
+                    System.out.println(not_leap_year);
+                }       
+            }
+        }

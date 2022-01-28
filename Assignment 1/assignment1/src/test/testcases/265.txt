@@ -1,0 +1,6 @@
+
+        Class Test65 {
+            main(Bran : Float){
+                System.out.println(main_string.substring(0, 7) + word + main_string.substring(6));
+	        }       
+        }
