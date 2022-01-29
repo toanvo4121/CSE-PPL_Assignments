@@ -1,6 +1,9 @@
 
-        class Test69 {
-            Bro69(Bro : Int){
-                Var array1,array2,array_new : Array[Int,3] = Array(50, -20, 0), Array(5, -50, 10), Array(array1[2], array2[2], array1[2]);	 
+            Class A{
+               Val $static1: Int;
+               Val $static2: Int;
             }
-        }
+            Class Test{
+               Var test1, test2: Int= A::$static2, A::$static1;
+            }
+      

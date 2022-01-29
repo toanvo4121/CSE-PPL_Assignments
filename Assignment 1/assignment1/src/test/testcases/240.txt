@@ -1,15 +1,40 @@
 
-        Class Posi_Negative{
-            main(arg : Int) {
-                Var number : Float = 658.32e10;
-                If(number < 0.0){
-                    System.out.println(negative);
-                }
-                ElseIf(number > 0.0){
-                    System.out.println(positive);
-                }
-                Else{
-                    System.out.println(0);
-                }
+         Class Maid{
+            Var $gender: String= "Female";
+            Var ID: Int;
+            Var name: String;
+            Constructor(ID: Int; name: String){
+               Self.ID= ID;
+               Self.name= name;
             }
-        }
+            getMaidName(){
+               Return Self.name;
+            }
+         }
+         Class Master{
+            Var total_maids: Int= 0;
+            Var maids: Array[Int, 1000];
+            Constructor(total_maids: Int){
+               If(total_maids > 1000){
+                  Out.Print("Build more houses!");
+               }
+               Else{
+                  Self.total_maids= total_maids;
+               }
+            }
+            AddMaid2House(maid: Maid){
+               Self.total_maids= total_maids + 1;
+               Self.maids[Self.total_maids]= maid.ID;
+            }
+            PrintMaidsID(){
+               Foreach(i In 1 .. Self.total_maids){
+                  Out.Print(Self.maids[i]);
+               }
+            }
+         }
+         Class Program{
+            main(){
+               
+            }
+         }
+         

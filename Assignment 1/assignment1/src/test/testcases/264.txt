@@ -1,10 +1,9 @@
 
-        Class Test64{
-            Soka(Bku : Int){	
-                Var in : Scanner  = New Scanner(System.in);
-                Var line : String = in.nextLine();
-                System.out.print(Input);
-                line = line.toLowerCase();
-                System.out.println(line); 
-            }			
-        }
+            Class Test{
+               Var attr1: Int;
+               Var attr2: Int;
+               Test_attr(){
+                  Return attr1 + attr2;
+               }
+            }
+      

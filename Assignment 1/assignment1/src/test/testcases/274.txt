@@ -1,12 +1,5 @@
- 
-        Class Test74 {
-            main(Bro : Int){	
-                Var result : String;
-                Var left_array, right_array: Array[Int,4] = Array(), Array(1, 4, 5, 2);
-                System.out.println(Arrays.toString(left_array));  
-                System.out.println(Arrays.toString(right_array)); 
-                Foreach(i In 0 .. left_array.length ){
-                    Var num1, num2 : Int = left_array[i], right_array[i];
-                    result = result + Integer.toString(num1 * num2); 
-                }   			
+
+            Class Test{
+               Var arr : Array[String, 0];
             }
+      

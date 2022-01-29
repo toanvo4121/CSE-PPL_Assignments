@@ -1,7 +1,11 @@
 
-            Class Test {
-               Var xyz : Int = 3+7-15*7/96;
-               $Test(a,b,c: Float) {
-                  out.println(test);
+            ## Day la test so 96 !!!!! ##
+            Class Test{
+               Test(){
+                  Return ;
+                  Return 1+2;
+                  Return New Test();
+                  Return New FloatLit(op1, op, op2);
                }
             }
+      

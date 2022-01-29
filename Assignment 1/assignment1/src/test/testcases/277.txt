@@ -1,6 +1,5 @@
 
-            Class Main2 {
-               main(args : Array[Int,2]) {
-                  out.println(Hello + bae);
-               }
+            Class Test{
+               Var arr : Array[String, 0b0];
             }
+      

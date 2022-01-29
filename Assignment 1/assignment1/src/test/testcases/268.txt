@@ -1,10 +1,10 @@
 
-        Class Test68 {
-            Bakazoro(Luffy : Int){
-                Var str1 : String ;
-                Var len : Int = str1.length() - 1;  
-                Else {
-                    System.out.println();
-                }
+            Class A{
+               Val $static1: Float;
+               Val $static2: Int;
             }
-        }
+            Class Test{
+               Var test1: Int= A::$static2;
+               Var test2: Float= A::$static1;
+            }
+      

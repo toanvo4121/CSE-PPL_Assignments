@@ -1,23 +1,10 @@
 
-        Class HaloHoli{
-            treeNodeToString( root : String ) {
-                Var output : Int  = a;
-                Var nodeQueue : LinkedList = New LinkedList();
-                If (root == Null) {
-                    Return;
+         Class testAlgorithms {
+            gcd(a: Int; b: Int) {
+                If (b == 0) {
+                    Return a;
                 }
-                nodeQueue.add(root);
-                If(!nodeQueue.isEmpty()){
-                    Var node : TreeNode = nodeQueue.remove();
-                    If(node == Null){
-                        output =Null;
-                        Continue();
-                    }
-    
-                    output = Str.valueOf(node.val) ;
-                    nodeQueue.add(node.left);
-                    nodeQueue.add(node.right);
-                }
-                Return output;
+                Return Self.gcd(b, a % b);
             }
-        }
+         }
+         

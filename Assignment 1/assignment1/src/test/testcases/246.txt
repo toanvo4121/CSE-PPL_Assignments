@@ -1,11 +1,14 @@
 
-        Class Alphabet {
-            main(args : Float) {
-                If( ((c >= "a") && (c <= "z")) || ((c >= "A") && (c <= "Z"))){
-                    System.out.println(alphabet);
-                }
-                Else{
-                    System.out.println(alphabet);
-                }
+            Class A{
+               Var greeting: String= "Hello World!";
             }
-        }
+            Class B{
+               Var a: A= New A();
+            }
+            Class Program{
+               main(){
+                  Var b: B= New B();
+                  b.a.greeting= "Deadline is like a wind. Always by my side!";
+               }
+            }
+      

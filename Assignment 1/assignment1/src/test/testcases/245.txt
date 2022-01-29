@@ -1,11 +1,16 @@
 
-        Class Alphabet {
-            main(args : Float) {
-                If( (c >= "a" && c <= "z") || (c >= "A" && c <= "Z")){
-                    System.out.println(alphabet);
-                }
-                Else{
-                    System.out.println(alphabet);
-                }
+            Class Program{
+               main(){
+                  Var num1: Float= 1.111e10;
+                  Var num2: Float= 1.222e10;
+                  Val first: Int= 1;
+                  Val last: Int= 100000;
+                  Var arr: Array[Float, 1000];
+                  Foreach(idx In first .. last By idx <= 1000){
+                     num1= -num1;
+                     num2= -num2;
+                     arr[idx] = num1 + num2; 
+                  }
+               }
             }
-        }
+      

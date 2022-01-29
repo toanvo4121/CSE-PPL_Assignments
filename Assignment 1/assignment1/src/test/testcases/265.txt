@@ -1,6 +1,12 @@
 
-        Class Test65 {
-            main(Bran : Float){
-                System.out.println(main_string.substring(0, 7) + word + main_string.substring(6));
-	        }       
-        }
+            Class Test{
+               Var attr1: Int;
+               Var attr2: Int;
+               Print(){
+                  Out.Print("Xin chao!");
+               }
+               Test_method(){
+                  Self.Print();
+               }
+            }
+      

@@ -1,10 +1,10 @@
 
-        Class test {
-            main(a,b: Float) {
-               Var r, s: Int;
-               r = 2.0;
-               Var a, b: Array[Int, 5];
-               s = r * r * Self.myPI;
-               a[1] = s;
+            Class Test{
+               Method1(){
+                  
+               }
+               Test(){
+                  Self::Method1();
+               }
             }
-         }
+      

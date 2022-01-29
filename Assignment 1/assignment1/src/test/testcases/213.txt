@@ -1,10 +1,10 @@
 
-            Class Program {
-                Main(a, b: Int) {
-                    Return (a || b) < c.square(1,2) && 5;
-                } 
-                main(){
-                    Return Self.Main(7,9);
-                }
+         Class testMathExpressions {
+            main() {
+               Var testFloat_1: Float = 0.00000E00000 * 10.;
+               Var testInt_1: Int = 0B10_0_110_0100_1 + 0XA_BCD_EF;
+               Var testFloat_2: Float = Math.PI / 15.5;
+               Var testInt_2: Int = 20 % 3;
             }
-            
+         }
+         

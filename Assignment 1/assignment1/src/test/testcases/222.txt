@@ -1,23 +1,33 @@
 
-        Class HaloHoli{
-            treeNodeToString( root : String ) {
-                Var output : Int  = a;
-                Var nodeQueue : LinkedList = New LinkedList();
-                If (root == Null) {
-                    Return ;
-                }
-                nodeQueue.add(root);
-                If(!nodeQueue.isEmpty()){
-                    Var node : TreeNode = nodeQueue.remove();
-                    If(node == Null){
-                        output = Null;
-                        Continue;
-                    }
-    
-                    output = String.valueOf(node.val) ;
-                    nodeQueue.add(node.left);
-                    nodeQueue.add(node.right);
-                }
-                Return output;
+         Class testAlgorithms{
+            selectionSort(arr: Array[Int, 100])
+            {
+               Var n: Int = arr.length();
+         
+               ## One by one move boundary of unsorted subarray ##
+               Foreach (i In 1 .. (n-1) By 1)
+               {
+                  ## Find the minimum element in unsorted array ##
+                  Var min_idx: Int = i;
+                  Foreach (j In (i+1) .. n By 1) {
+                     If (arr[j] < arr[min_idx]) {
+                        min_idx = j;
+                     }
+                  }
+                  ## Swap the found minimum element with the first element ##
+                  Var temp: Int = arr[min_idx];
+                  arr[min_idx] = arr[i];
+                  arr[i] = temp;
+               }
             }
-        }
+            ## Prints the array ##
+            printArray(arr: Array[Int, 100])
+            {
+               Val n: Int = arr.length();
+               Foreach (i In 0 .. n By 1) {
+                  System.out.print(arr[i] + " ");
+               }
+               System.out.println();
+            }
+         }
+         

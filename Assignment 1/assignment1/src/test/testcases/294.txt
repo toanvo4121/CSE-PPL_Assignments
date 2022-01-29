@@ -1,12 +1,12 @@
 
-            Class Abba{
-               $Retrld(){
-                   Self.Nothing();
-               }
-            }
-            Class Baad{
-               Print(){
-                  Var a: Int = A::$Retrld();
+            ## Day la test so 94 !!!!! ##
+            Class Test{
+               Test(){
+                  Var float1: Float= 12_2_3_4.;
+                  Var float2: Float= 12_2_3_4.00000;
+                  Var float3: Float= 12_2_3_4.e0;
+                  Var float4: Float= 12_2_3_4.e1100011;
+                  Var float5: Float= .09e10;
                }
             }
       

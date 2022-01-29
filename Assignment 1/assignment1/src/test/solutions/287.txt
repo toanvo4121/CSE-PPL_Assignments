@@ -1,1 +1,1 @@
-Error on line 10 col 13: <EOF>
+Error on line 7 col 23: $Method1

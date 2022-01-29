@@ -1,32 +1,11 @@
 
-        Class Holi2 {
-            Tree(input : String) {  
-                Var item : String = parts[1];
-                Var root : TreeNode = New TreeNode(Integer.parseInt(item));
-                Var nodeQueue : QueueTreeNode= New LinkedList();
-                Var index : Int = 1;
-                input = input.trim();
-                If(input.length() == 0) {
-                    Return Null;
+         Class testAlgorithms {
+            Fibonacci(n: Int)
+            {
+                If ((n == 1) || (n == 2)) {
+                   Return 1;
                 }
-                nodeQueue.add(root);
-                If(!nodeQueue.isEmpty()){
-                    node = nodeQueue.remove();
-                    If (index == parts.length){
-                        Break;
-                    }
-                    item = parts[index+1];
-                    index = index +1;
-                    If (3!=2) {
-                        leftNumber = Integer.parseInt(item);
-                        Var node_left : TreeNode = New TreeNode(leftNumber);
-                        nodeQueue.add(node.left);
-                    }
-    
-                    If(index == parts.length) {
-                        Break;
-                    }
-                }
-                Return root;
+                Return Self.Fibonacci(n - 1) + Self.Fibonacci(n - 2);
             }
-        }
+         }
+         

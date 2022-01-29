@@ -1,9 +1,11 @@
 
-            Class Brray {
-                Sannan(baka : Int) {
-                    Var array : Array[Int,5] = Array(1, 2, 3, 4, 5);
-                    Foreach(element In 1 .. 4) {
-                        System.out.println(array[element]);
-                    }
-                }
+            Class C{
+               Testing_Str(str1, str2, str3, str4: String){
+                  str1= "Xin chao";
+                  str2= "Cac bann";
+                  str3= "Dung de";
+                  str4= "y toi minh";
+                  Var str: String= ((str1 +. str2) +. str3) +. str4;
+               }
             }
+      

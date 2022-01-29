@@ -1,29 +1,21 @@
 
-        Class Main {
-            main(args : Int) {
-                Var year : Int = 19.96;
-                Var leap : Boolean = False;
-                If (((year % 4) == 0)){
-                    If ((year % 100) == 0) {
-                        If ((year % 400) == 0) {
-                            leap = True;
-                        }
-                        Else { 
-                            leap = False;
-                        }
-                    }
-                    Else{
-                        leap = True;
-                    }
-                } 
-                Else{
-                    leap = false;
-                }
-                If(leap){ 
-                    System.out.println(leap_year);
-                } 
-                Else{
-                    System.out.println(not_leap_year);
-                }    
+         Class minion{
+            Var $gender: String= "Female";
+            Var attk: Int= 1;
+         }
+         Class Soldier{
+            Var $gender: String= "Female";
+            Var slave: minion= New minion();
+         }
+         Class King{
+            Var slaves: Soldier= New Soldier();
+         }
+         Class Program{
+            main(){
+               Var K1: King= New King();
+               Var K1_soldier_gender, K1_soldier_slave_gender: String;
+               K1_soldier_gender= Soldier::$gender;
+               K1_soldier_slave_gender= minion::$gender;
             }
-        }
+         }
+         

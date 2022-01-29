@@ -1,12 +1,14 @@
 
-        Class Main {
-            Main(args : Int){
-                Var animals : LinkedList = New LinkedList();
-                Var middle : String = animals.get(animals.size()/2);;
-                animals.add(Dog);
-                animals.addFirst(Cat);
-                animals.addLast(Horse);
-                System.out.println(animals);
-                System.out.println(middle);
+            Class C{
+               Testing_Relational(str1, str2, str3, str4: String){
+                  Var arr: Array[Int, 10]= Array(1,2,3,4,5,6,7,8,9,0);
+                  Foreach(idx In 1 .. 10){
+                     If(idx <=7){
+                        If((arr[i] == arr[i+1])>arr[i+2]){
+                           Return "Hello Worlds!";
+                        }
+                     }
+                  }
+               }
             }
-        }
+      

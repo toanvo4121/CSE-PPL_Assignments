@@ -1,12 +1,9 @@
 
-            Class Program {
-               main(args : Array[Int,2]) {
-                  out.println(numbers);
-                  Var first, second :Int = 10, 20;
-                  out.println(first ++ second);
-
-               ## add two numbers ##
-                  Var sum : Int = first + second;
-                  out.println( sum);
-               }
+            Class Test{
+               Var arr : Array[String, 1];
+               Var arr : Array[Int, 1];
+               Var arr : Array[Float, 1];
+               Var arr : Array[Boolean, 1];
+               Var arr : Array[Array[Int,1], 1];
             }
+      

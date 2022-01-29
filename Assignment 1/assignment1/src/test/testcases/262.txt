@@ -1,15 +1,8 @@
 
-        Class Test62 {
-            Mane (OPO : Int){
-                Var in : Scanner  = New Scanner(System.in);
-                Var x,y,z : Int = in.nextInt(),in.nextInt(),in.nextInt();
-                System.out.print(first);
-                System.out.print(second);
-                System.out.print(third);
-                System.out.print(sumoftwo,v);
+            Class Test{
+               ## Xin chao cac ban ! ##
+               ## Day la comment ! ##
+               ## Chinh vi the nen dung co bat minh ##
+               ## Minh cam on :3 ! ##
             }
-            
-            sumoftwo(q,w,e : Int){	
-                Return ((p + q) == r || (q + r) == p || (r + p) == q);	
-            }
-        }
+      

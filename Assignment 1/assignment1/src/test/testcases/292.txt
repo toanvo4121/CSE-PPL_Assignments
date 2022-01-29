@@ -1,8 +1,12 @@
 
-            Class TestArr{
-               Var arr1 : Array[String, 1];
-               Var arr2 : Array[Int, 1];
-               Var arr4 : Array[Boolean, 1];
-               Var arr5 : Array[Array[Float,1], 4];
+            ## Day la test so 92 !!!!! ##
+            Class Test{
+               Class test1{
+                  
+               }
+               
+               Test(){
+                  
+               }
             }
       

@@ -1,15 +1,10 @@
 
-        Class HoliHalo{
-           stringToListNode(input : String) {
-            ## Now convert that list into linked list ##
-                Var Root : ListNode  = New ListNode(0);
-                Var ptr : ListNode  = Root
-            ## Generate array from the input ##
-                Var nodeValues : Array[Int,2] = stringTo.IntegerArray(input);
-                Foreach (i In item .. cal){
-                    ptr.next = New ListNode(item);
-                    ptr = ptr.next;
-                }
-                Return Root.next;
+         Class testArray{
+            main(){
+               Var testArr: Array[Int, 5]= Array(4 , 12 , 2001 , 1915570 , 3005);
+               Foreach (i In 1 .. 5){
+                  SOut.Println(testArr[i]);
+               }
             }
-        }
+         }
+         

@@ -1,17 +1,12 @@
 
-        Class Test57{
-            Brand(SD : Int) {
-		        Var amount : Int = 0;
-		Foreach( i In 1 .. 4 ){
-			Foreach( j In 1 .. 4 ){
-				Foreach( k In 1 .. 4 ){
-					If(k != i && k != j && i != j){
-						amount = amount + 1;
-						System.out.println(i + j + k);
-					}
-				}
-			}
-		}
-		System.out.println(amount);
-	}
-}
+            Class Test{
+               Val _aaa: String;
+               Val _bbb: Int;
+               Val _ccc: Float;
+               Val _ddd: Boolean;
+               Val _eee: Array[String, 10];
+               Val _fff: Array[Int, 10];
+               Val _ggg: Array[Float, 10];
+               Val _hhh: Array[Boolean, 10];
+            }
+      

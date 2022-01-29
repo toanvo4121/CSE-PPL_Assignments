@@ -1,15 +1,8 @@
 
-            Class Program {
-                main(){
-                    A.Bc();
-                    Return x;
-                }
-            }
-            Class loli {
-                testloop(a: Int; b: Float) {
-                    Foreach (i In 0 .. 15) {
-                        s = s + a[i];
-                    }
-                }
-            }
-            
+      Class Base {
+         Var testFloat: Float = 0.00000E000000;
+      }
+      Class Derived {
+         Var testObj: Base;
+      }
+      

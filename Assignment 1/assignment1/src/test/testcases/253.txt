@@ -1,9 +1,12 @@
 
-            Class Crray {
-                Sannan(baka : Int) {
-                    Var array : Array[Int,5] = Array(1, 2, 3, 4, 5);
-                    Foreach(element In 1 .. 4 By 7-7 == 3 - 5) {
-                        System.out.println(array[element]);
-                    }
-                }
+            Class C{
+               Testing_Boolean(str1, str2, str3, str4: String){
+                  Var bool1: Boolean= True;
+                  Var bool2: Boolean= False;
+                  Var bool3: Boolean= True;
+                  Var bool4: Boolean= False;
+                  Var bool5: Boolean= False;
+                  Var res: Boolean= !(bool1 == bool2);
+               }
             }
+      

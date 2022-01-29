@@ -1,21 +1,10 @@
 
-        Class StandardDeviation {
-            main(args : Float) {
-                Var numArray : Array[Int,10] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-                Var SD : Int = calculateSD;
-                System.out.format(SD);
+            Class A{
+               $RetHelloWorld(){}
             }
-
-            calculateSD(A : Int){
-                Var sum, standardDeviation : Int = 0.0, 0.0;
-                Var length, mean : Int = numArray.length, sum/length;
-                Foreach(i In item .. cal){
-                    sum = num + 1;
-                }
-
-                Foreach(i In item .. cal){
-                    standardDeviation = standardDeviation + Math.pow(num - mean, 2);
-                }
-                return Math.sqrt(standardDeviation/length);
-             }
-        }
+            Class B{
+               Print(){
+                  Var a: String= A::$PrintHelloWorld();
+               }
+            }
+      

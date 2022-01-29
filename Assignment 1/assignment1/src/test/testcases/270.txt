@@ -1,6 +1,7 @@
 
-        Class Test70 {
-            Bro70(Bro : Int){
-                Var array1,array2,array_new : Array[Int,3] = Array(50, -20, 0), Array(5, -50, 10), Array(array1[1], array2[2], array1[2]);	 
+            Class Test{
+               Val qq: Int= 10;
+               Val bt: Float=15.;
+               Var res: Float= (((bt%qq)*bt)-qq)+dd;
             }
-        }
+      

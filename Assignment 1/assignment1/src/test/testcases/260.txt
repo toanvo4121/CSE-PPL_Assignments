@@ -1,15 +1,8 @@
 
-        Class Test60 {
-            Mane (OPO : Int){
-                Scanner in = new Scanner(System.in);
-                Var x,y,z : Int = in.nextInt(),in.nextInt(),in.nextInt();
-                System.out.print(first);
-                System.out.print(second);
-                System.out.print(third);
-                System.out.print(sumoftwo(x, y, z));
+            Class Test{
+               Var $1: Float;
+               Var $2: Float= 10.;
+               Var $3, $4: Float= 10., 2.;
+               Var $5, $6: Float= .10e10, .e0;
             }
-            
-            sumoftwo(q,w,e : Int){	
-                Return ((p + q) == r || (q + r) == p || (r + p) == q);	
-            }
-        }
+      

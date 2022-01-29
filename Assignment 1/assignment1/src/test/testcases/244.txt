@@ -1,11 +1,14 @@
 
-        Class Exercise27 {
-            main(args : String){
-                Var octal_num, hex_num : String;
-                Var decnum : Int;
-                Var in : Scanner = new Scanner(System.in);
-                System.out.print(Input.qq(), ababa);
-                hex_num = toHexString(decnum);
-                System.out.print(hex_num);
+            Class River{
+               Var rivers: Array[String, 100];
             }
-    }
+            Class Sea{
+               Var river: River= New River();
+            }
+            Class Program{
+               main(){
+                  Var _sea1: Sea= New Sea();
+                  Var _river1_name: String= _sea1.river.rivers[1];
+               }
+            }
+      

@@ -1,23 +1,13 @@
 
-        Class HaloHoli{
-            treeNodeToString( root : String ) {
-                Var output : Int  = a;
-                Var nodeQueue : LinkedList = New LinkedList();
-                If (root == Null) {
-                    Return ;
-                }
-                nodeQueue.add(root);
-                If(!nodeQueue.isEmpty()){
-                    Var node : TreeNode = nodeQueue.remove();
-                    If(node == Null){
-                        output = Null;
-                        Continue;
-                    }
-    
-                    output = Str.valueOf(node.val);
-                    nodeQueue.add(node.left);
-                    nodeQueue.add(node.right);
-                }
-                Return output;
+         Class testNestedFor{
+            main(){
+               Val testArr: Array[Float, 5]= Array(4. , 12. , 2001. , 1915570. , 3005.);
+               Var multi_arr: Array[Array[Int, 7],4];
+               Foreach (i In 1 .. 4){
+                  Foreach(j In 1 .. 7){
+                     multi_arr[i][j] = arr[j];
+                  }
+               }
             }
-        }
+         }
+         

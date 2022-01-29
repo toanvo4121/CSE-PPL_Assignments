@@ -1,6 +1,6 @@
 
-        Class Test72 {
-            Bro71(Bro : Int){
-                Var array1,array2,array_new : Array[Int,3] = Array(50, 20, 0), Array(5, 50, 10), Array(0,2,2);	   
-            }   
-        }
+            Class Test{
+               Var a: Int;
+               Var c: Int= a;
+            }
+      

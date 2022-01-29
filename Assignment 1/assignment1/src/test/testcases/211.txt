@@ -1,10 +1,5 @@
 
-            Class Program {
-                main(){
-                    Return;
-                }
-            }
-            Class Rin: Dog {
-                Var ny: Array[Int,3] = Array(1,3,2) ;
-            }
-            
+      Class TestEmptyClass {
+         
+      }
+      

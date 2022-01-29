@@ -1,1 +1,1 @@
-Error on line 6 col 62: ;
+Error on line 4 col 27: $a
