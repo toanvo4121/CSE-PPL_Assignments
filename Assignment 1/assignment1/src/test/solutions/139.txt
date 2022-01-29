@@ -1,1 +1,1 @@
-.,4,.,3,<EOF>
+Unclosed String: CO3005 HCMUT-K19 

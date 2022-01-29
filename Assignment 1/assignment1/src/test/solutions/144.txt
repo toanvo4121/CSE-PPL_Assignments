@@ -1,1 +1,1 @@
-Xin chao cac ban '"cac ban khoe khong?'" ,<EOF>
+Unclosed String: Great power comes great responsibility 

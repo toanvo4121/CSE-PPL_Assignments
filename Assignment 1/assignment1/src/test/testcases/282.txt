@@ -1,5 +1,20 @@
 
-            Class Test{
-               Var arr : Array[1, 1];
+         Class Spider_verse {
+            ## instance fields ##
+            Val num: Int = 15;
+            Var name: Array[String, 15];
+            Var suits: String = "Blue";
+            
+            ## class fields ##
+            Var $universe: Int;
+            
+            ## class methods ##
+            $getUniverse() {
+               Foreach(i In 1 .. 100 By i%2 == 0) {
+                  Self.suits = "red";
+               }
+               Return Self::universe;
             }
+            
+         }
       

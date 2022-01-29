@@ -1,1 +1,1 @@
-PPL\t-HCMUTK19,<EOF>
+Unclosed String: Great power\\ 

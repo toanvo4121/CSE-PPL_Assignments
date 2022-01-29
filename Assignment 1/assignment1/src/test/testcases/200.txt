@@ -1,3 +1,11 @@
 
-            Var _str1, _str2: String= "'" ";
+            SumRecursion(n: Int) {
+                ##
+                    sum = 1 + ... + n
+                ##
+                if (n == 0) {
+                    return 0;
+                }
+                return n + SumRecursion(n - 1);
+            }
             

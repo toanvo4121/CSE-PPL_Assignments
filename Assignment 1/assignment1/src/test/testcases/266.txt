@@ -1,7 +1,22 @@
 
-            Class Test{
-               Val qq: Int= 10;
-               Val bt: Float=15.;
-               Var res: Float= bt%qq*bt-qq+dd;
+         Class testErrorOperators {
+            Val $RUN: Int = 32;
+
+            insertionSort(arr: Array[Int, 100]; left: Int; right: Int)
+            {
+               Foreach (i In (left + 1) .. right By 1)
+               {
+                  Var temp: Int = arr[i];
+                  Var j: Int = i - 1;
+                  Foreach (j In (i - 1) .. left By -1) {
+                     If (arr[j] > temp) {
+                        Break;
+                     }
+                     arr[j+1] = arr[j];
+                     j++;
+                  }
+                  arr[j+1] = temp;
+               }
             }
+         }
       

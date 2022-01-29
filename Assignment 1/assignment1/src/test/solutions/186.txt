@@ -1,1 +1,1 @@
-Class,VanTho,{,Val,cau1,:,String,=,Unclosed String: Nhung dua tre roi cung di xa nha \;
+Class,Spider_verse,{,Val,num,:,Int,=,15,;,Var,name,:,Array,[,String,,,15,],;,Var,suits,:,String,=,Blue,;,Var,$universe,:,Int,;,$getUniverse,(,),{,return,Self,::,universe,;,},Foreach,(,i,In,1,..,100,By,i,%,2,==,0,),{,Self,.,suits,=,Unclosed String: red;

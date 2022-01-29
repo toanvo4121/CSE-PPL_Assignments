@@ -1,11 +1,15 @@
- Class A {
-                    ## Xin chao cac ban @ ~~~~ @ cac ban dung de y toi minh ##
-                    ## Var a: Int= 1; ##
-                    ## Var $b: Float= 0.0000; ##
-                    ## Var k: String= ""; ##
-                class Program{
-                    main(){
-                        Var a: A= New A();
-                    }
+Class Spider_verse {
+                ## instance fields ##
+                Val num: Int = 15;
+                Var name: Array[String, 15];
+                Var suits: String = "Blue";
+                
+                ## class fields ##
+                Val $ratings: Float = 8.9;
+            }
+            class Main{
+                main() {
+                    Var a: Spider_verse = New Spider_verse();
                 }
             }
+            

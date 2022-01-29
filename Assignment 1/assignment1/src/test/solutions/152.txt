@@ -1,1 +1,1 @@
-Illegal Escape In String: aa\h
+Var,_str1,,,_str2,:,String,=,,,,Unclosed String: ;

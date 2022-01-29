@@ -1,1 +1,1 @@
-Class,PPL,{,Val,sv,:,String,=,Illegal Escape In String: Kzatsa \
+Class,Spider_verse,{,Val,num,:,Int,=,15,;,Var,name,:,Array,[,String,,,15,],;,Var,suits,:,String,=,Illegal Escape In String: Blue \

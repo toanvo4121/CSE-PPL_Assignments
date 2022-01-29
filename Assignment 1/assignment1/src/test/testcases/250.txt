@@ -1,11 +1,13 @@
 
-            Class C{
-               Testing_Str(str1, str2, str3, str4: String){
-                  str1= "Xin chao";
-                  str2= "Cac bann";
-                  str3= "Dung de";
-                  str4= "y toi minh";
-                  Var str: String= (str1 +. str2) +. (str3 +. str4);
+         Class testKeywordError {
+            main(testparam: String) {
+               System.out.println("Error");
+               Foreach (i In 1 .. 10 By 1) {
+                  If (i % 2 == 0) {
+                     Break();
+                  }
                }
+               Return;
             }
+         }
       

@@ -1,1 +1,1 @@
-Val,her_bf,:,String,=,Jeff,<EOF>
+0,_0,0412,04,__12,<EOF>

@@ -1,9 +1,18 @@
 
-            Class Test{
-               Var arr : Array[String, 1];
-               Var arr : Array[Int, 1];
-               Var arr : Array[Float, 1];
-               Var arr : Array[Boolean, 1];
-               Var arr : Array[Array[Int,1], 1];
+         Class Spider_verse {
+            ## instance fields ##
+            Val num: Int = 15;
+            Var name: String;
+            Var suits: String;
+            
+            ## class fields ##
+            Val $ratings: Float = 8.9;
+            Constructor(name: String; suits: String) {
+               Self.name = "Peter Parker";
+               Self.suits = "Red";
             }
+            Destructor(){
+               
+            }
+         }
       

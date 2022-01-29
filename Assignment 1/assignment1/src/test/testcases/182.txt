@@ -1,7 +1,13 @@
-Class PPL {
-                    ## Xin chao cac ban :3 cac ban dung de y toi minh ##
-                    Val sv: Int = 100;
-                    Foreach(i In 1 .. 100 By i%2 == 0){
-                        self.sv;
-                    }
+Class Spider_verse {
+                ## instance fields ##
+                Val num: Int = 15;
+                Var name: Array[String, 15];
+                
+                ## class fields ##
+                Var $universe: Int;
+                
+                ## class methods ##
+                $getUniverse() {
+                    return Self::universe;
+                }
             }

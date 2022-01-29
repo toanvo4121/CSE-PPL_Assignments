@@ -1,1 +1,1 @@
-Class,PPL,{,Val,sv,:,Int,=,100,;,},<EOF>
+Class,Spider_verse,{,Val,num,:,Int,=,15,;,Var,name,:,Array,[,String,,,15,],;,Var,$universe,:,Int,;,$getUniverse,(,),{,return,Self,::,universe,;,},},<EOF>

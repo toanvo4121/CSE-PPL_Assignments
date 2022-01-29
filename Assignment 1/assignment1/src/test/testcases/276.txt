@@ -1,5 +1,11 @@
 
-            Class Test{
-               Var arr : Array[String, 0X0];
+         Class testNestedClass {
+            Class ErrorClass {
+               
+            } 
+            
+            main() {
+               
             }
+         }
       

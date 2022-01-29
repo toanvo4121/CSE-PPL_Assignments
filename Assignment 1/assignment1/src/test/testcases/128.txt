@@ -1,1 +1,1 @@
-0 000 12000000 9990000
+Var name: String = "Vo Minh Toan" 

@@ -1,6 +1,7 @@
 
-            Class Test{
-               Var $a: Int= 10;
-               Var c: Int= $a;
+         Class testErrorArgument {
+            main(args : Array[Int,2]) {
+               System.out.println(args[1] && args[2]);
             }
+         }
       

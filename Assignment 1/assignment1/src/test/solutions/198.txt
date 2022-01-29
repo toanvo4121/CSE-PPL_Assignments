@@ -1,1 +1,1 @@
-Var,_str1,,,_str2,:,String,=,,,,,;,<EOF>
+factorial,(,n,:,Int,),{,If,(,n,==,0,),{,return,1,;,},return,n,*,factorial,(,n,-,1,),;,},<EOF>

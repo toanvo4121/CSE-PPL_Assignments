@@ -1,1 +1,4 @@
- "PPL-HCMUTK19" 
+
+            Var greetings: String = "hi there	 test";
+            Val $test: Float = 4_12.2001#15; 
+            

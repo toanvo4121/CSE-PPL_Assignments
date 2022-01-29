@@ -1,10 +1,6 @@
 
-            Class Test{
-               Method1(){
-                  
-               }
-               Test(){
-                  Self::Method1();
-               }
-            }
+         Class Test{
+            Var arr : Array[Int, 1];
+            Var idx1: Int = arr[0+1];
+         }
       

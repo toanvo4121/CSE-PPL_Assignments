@@ -1,1 +1,1 @@
-Class,A,{,class,Program,{,main,(,),{,Var,a,:,A,=,New,A,(,),;,},},},<EOF>
+Class,Spider_verse,{,Val,num,:,Int,=,15,;,Var,name,:,Array,[,String,,,15,],;,Var,suits,:,String,=,Blue,;,Val,$ratings,:,Float,=,8.9,;,},class,Main,{,main,(,),{,Var,a,:,Spider_verse,=,New,Spider_verse,(,),;,},},<EOF>

@@ -1,14 +1,7 @@
 
-            Class River{
-               Var rivers: Array[String, 100];
+         Class testStaticParamError {
+            $main($error_param: Int) {
+               System.out.println("Error");
             }
-            Class Sea{
-               Var river: River= New River();
-            }
-            Class Program{
-               main(){
-                  Var _sea1: Sea= New Sea();
-                  Var _river1_name: String= _sea1.river.rivers[1];
-               }
-            }
-      
+         }
+         

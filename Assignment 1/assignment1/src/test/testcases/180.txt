@@ -1,3 +1,4 @@
-Class CSE : DT{
-                    Val K18, K19= "Hello", "Good" ;
+Class Peter_Parker : Spiderman {
+                Val Tobey, Andrew, Tom = "I", "I
+I", "III";
             }

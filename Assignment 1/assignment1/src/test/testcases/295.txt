@@ -1,10 +1,12 @@
 
-            ## Day la test so 95 !!!!! ##
-            Class Test{
-               Test(){
-                  Var a, b, c, d: Int= 1,2,3,4;
-                  Var float1: Array[Array[Array[Array[Float, 1], 1], 1], 10];
-                  idx1 = float1[a][b][c][d]; 
+         Class Test{
+            printArray(arr: Array[Int, 100])
+            {
+               Var n: Int = arr.length();
+               Foreach (i In 0 .. (n-1) By 1) {
+                  System.out.print(arr[i] + " ");
                }
+               System.out.println();
             }
+         }
       

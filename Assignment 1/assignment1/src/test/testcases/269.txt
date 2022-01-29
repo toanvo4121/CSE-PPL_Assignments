@@ -1,9 +1,6 @@
 
-            Class A{
-               Val $static1: Int;
-               Val $static2: Int;
+         Class testErrorParam {
+            main(args : Array[Int,2]) {
+               System.out.println(Hello Peter);
             }
-            Class Test{
-               Var test1, test2: Int= A::$static2, A::$static1;
-            }
-      
+         }

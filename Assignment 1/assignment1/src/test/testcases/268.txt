@@ -1,10 +1,27 @@
 
-            Class A{
-               Val $static1: Float;
-               Val $static2: Int;
+         Class testErrorParenthesis {
+            Val $RUN: Int = 32;
+
+            insertionSort(arr: Array[Int, 100]; left: Int; right: Int)
+            {
+               Foreach (i In (left + 1) .. right By 1)
+               {
+                  Var temp: Int = arr[i];
+                  Var j: Int = i - 1;
+                  Foreach (j In (i - 1) .. left By -1) {
+                     If (arr[j] > temp) {
+                        Break;
+                     }
+                     arr[j+1] = arr[j];
+                     j = j + 1;
+                  }
+                  arr[j+1] = temp;
+               }
             }
-            Class Test{
-               Var test1: Int= A::$static2;
-               Var test2: Float= A::$static1;
+            
+            main() {
+               Self.insertionSort(arr, left, right;
+               Return "Error";
             }
+         }
       

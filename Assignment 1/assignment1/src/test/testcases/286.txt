@@ -1,10 +1,10 @@
 
-            Class Test{
-               $Method1(){
-                  
-               }
-               Test(){
-                  $Method1();
-               }
+         Class Test{
+            $Method1(){
+               
             }
+            Test(){
+               $Method1();
+            }
+         }
       

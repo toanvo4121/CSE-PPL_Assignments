@@ -1,1 +1,2 @@
-$count $COUNT $CounT $cOUNt
+abc ##This is the comment so 
+ it shouldn't be compiled## xyz

@@ -1,1 +1,1 @@
-a,a,a,e10,,,.,e10,Error Token #
+Error Token $

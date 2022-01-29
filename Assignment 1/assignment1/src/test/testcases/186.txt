@@ -1,7 +1,17 @@
-Class VanTho {
-                    ## Xin chao cac ban @ ~~~~ @ cac ban dung de y toi minh ##
-                    Val cau1: String = "Nhung dua tre roi cung di xa nha \;
-                    Foreach(i In 1 .. 100 By i%2 == 0){
-                        self.cau1;
-                    }
+Class Spider_verse {
+                ## instance fields ##
+                Val num: Int = 15;
+                Var name: Array[String, 15];
+                Var suits: String = "Blue";
+                
+                ## class fields ##
+                Var $universe: Int;
+                
+                ## class methods ##
+                $getUniverse() {
+                    return Self::universe;
+                }
+                Foreach(i In 1 .. 100 By i%2 == 0) {
+                    Self.suits = "red;
+                }
             }

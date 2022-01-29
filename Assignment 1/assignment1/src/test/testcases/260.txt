@@ -1,8 +1,9 @@
 
-            Class Test{
-               Var $1: Float;
-               Var $2: Float= 10.;
-               Var $3, $4: Float= 10., 2.;
-               Var $5, $6: Float= .10e10, .e0;
+         Class testNewError {
+            main(testparam: String) {
+               System.out.println("Error");
+               Var Peter_4: Spider_verse = new Spider_verse();
+               Return;
             }
+         }
       

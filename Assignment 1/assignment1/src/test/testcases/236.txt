@@ -1,6 +1,23 @@
 
-         Class Ex{
-            Var a: YS= New YS("Hasagi!");
-            Var total_missQ, total_time_dead: Int= a.total_missQ, a.total_missQ+10;
+         Class Node {
+            Var data: Int;
+            Var next: Node;
+            Constructor(d: Int)
+            {
+               Self.data = d;
+               Self.next = Null;
+            }
+         }
+         Class LinkedList: Node {
+            Var head: Node;
+            
+            main(args: Array[String, 2])
+            {
+               Var llist: LinkedList = New LinkedList();
+               llist.head = New Node(1);
+               Var second: Node = New Node(2);
+               Var third: Node = New Node(3);
+               llist.head.next = second;
+            }
          }
          

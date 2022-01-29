@@ -1,1 +1,1 @@
-Class,A,{,Var,a,:,Int,=,1,;,Var,$b,:,Float,=,0.0000,;,Var,k,:,String,=,,;,},<EOF>
+Class,Spider_verse,{,Val,num,:,Int,=,15,;,Var,name,:,Array,[,String,,,15,],;,Var,suits,:,String,=,Blue,;,Val,$ratings,:,Float,=,8.9,;,},<EOF>

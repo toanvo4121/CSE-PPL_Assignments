@@ -1,1 +1,1 @@
-True,False,<EOF>
+Var,nationality,:,String,=,Vietnam,<EOF>

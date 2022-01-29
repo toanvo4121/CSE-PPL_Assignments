@@ -1,21 +1,39 @@
 
-         Class minion{
-            Var $gender: String= "Female";
-            Var attk: Int= 1;
-         }
-         Class Soldier{
-            Var $gender: String= "Female";
-            Var slave: minion= New minion();
-         }
-         Class King{
-            Var slaves: Soldier= New Soldier();
-         }
-         Class Program{
-            main(){
-               Var K1: King= New King();
-               Var K1_soldier_gender, K1_soldier_slave_gender: String;
-               K1_soldier_gender= Soldier::$gender;
-               K1_soldier_slave_gender= minion::$gender;
+         Class Node
+         {
+            Var key: Int;
+            Var left, right: Node;
+
+            Node(item: Int)
+            {
+               key = item;
+               left = Null;
+               right = Null;
             }
          }
+
+         Class BinaryTree
+         {
+            Var root: Node;
+
+            Constructor(key: Int)
+            {
+               Self.root = New Node(key);
+            }
+
+            Constructor()
+            {
+               Self.root = null;
+            }
+
+            main(args: Array[String, 2])
+            {
+               Var tree: BinaryTree = New BinaryTree();
+               tree.root = New Node(1);
+               tree.root.left = New Node(2);
+               tree.root.right = New Node(3);
+               tree.root.left.left = New Node(4);
+            }
+         }
+
          

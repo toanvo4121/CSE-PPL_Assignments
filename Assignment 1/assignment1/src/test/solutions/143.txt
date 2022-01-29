@@ -1,1 +1,1 @@
-Xin chao cac ban '",<EOF>
+Illegal Escape In String: Great power\j

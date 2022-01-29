@@ -1,5 +1,16 @@
 
-            Class Test{
-               Var arr : Array[Class_A, 1];
+         Class Spider_verse {
+            ## instance fields ##
+            Val num: Int = 15;
+            Var name: Array[String, 15];
+            Var suits: String = "Blue";
+            
+            ## class fields ##
+            Val $ratings: Float = 8.9;
+         }
+         class Main{
+            main() {
+               Var a: Spider_verse = New Spider_verse();
             }
+         }
       

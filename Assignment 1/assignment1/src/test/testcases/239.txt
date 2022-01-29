@@ -1,32 +1,49 @@
 
-         Class Maid{
-            Var $gender: String= "Female";
-            Var ID: Int;
-            Var name: String;
-            Constructor(ID: Int; name: String){
-               Self.ID= ID;
-               Self.name= name;
+         Class Node
+         {
+            Var key: Int;
+            Var left, right: Node;
+
+            Node(item: Int)
+            {
+               key = item;
+               left = Null;
+               right = Null;
             }
          }
-         Class Master{
-            Var total_maids: Int= 0;
-            Var maids: Array[Int, 1000];
-            Constructor(total_maids: Int){
-               If(total_maids > 1000){
-                  Out.Print("Build more houses!");
+
+         Class BinaryTree {
+            Var root: Node;
+            printLevelOrder()
+            {
+               Var queue: LinkedList = New LinkedList();
+               queue.add(Self.root);
+               If (!queue.isEmpty()) {
+                  Var tempNode: Node = queue.poll();
+                  System.out.print(tempNode.data + " ");
+      
+                  If (tempNode.left != Null) {
+                     queue.add(tempNode.left);
+                  }
+      
+                  If (tempNode.right != null) {
+                     queue.add(tempNode.right);
+                  }
                }
-               Else{
-                  Self.total_maids= total_maids;
-               }
             }
-            AddMaid2House(maid: Maid){
-               Self.total_maids= total_maids + 1;
-               Self.maids[Self.total_maids]= maid.ID;
+         
+            main(args: Array[String, 2])
+            {
+               Var tree_level: BinaryTree = New BinaryTree();
+               tree_level.root = New Node(1);
+               tree_level.root.left = New Node(2);
+               tree_level.root.right = New Node(3);
+               tree_level.root.left.left = New Node(4);
+               tree_level.root.left.right = New Node(5);
+         
+               System.out.println("Level order traversal of binary tree is - ");
+               tree_level.printLevelOrder();
             }
          }
-         Class Program{
-            main(){
-               
-            }
-         }
+
          

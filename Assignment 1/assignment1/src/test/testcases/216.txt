@@ -1,11 +1,11 @@
 
-            Class testClass {
-                Var $testStatic: Int = 17;
-                $testStaticMethod() {
-                    Var testVar: Float = 23.412e15;
-                }
-                main() {
-                    Val testConst: String = "test String";
-                }
-            }
-            
+         Class testClass {
+               Var $testStatic: Int = 17;
+               $testStaticMethod() {
+                  Var testVar: Float = 23.412e15;
+               }
+               main() {
+                  Val testConst: String = "test String";
+               }
+         }
+         

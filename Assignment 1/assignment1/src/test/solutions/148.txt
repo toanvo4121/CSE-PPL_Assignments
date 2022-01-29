@@ -1,1 +1,1 @@
-PPL'-HCMUTK19,<EOF>
+Var,greetings,:,String,=,Unclosed String: hi there\ 

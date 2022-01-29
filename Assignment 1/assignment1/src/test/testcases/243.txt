@@ -1,8 +1,5 @@
 
-            Class River{
-               
-            }
-            Class Sea: River{
-               
-            }
+         Class TestError {
+            Var error_arr: Array[Float, 0x0];
+         }
       

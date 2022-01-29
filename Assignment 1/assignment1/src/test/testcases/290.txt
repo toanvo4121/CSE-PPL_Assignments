@@ -1,10 +1,23 @@
 
-            Class Test{
-               Var ins: Int;
-               Var $static: Int;
-               Test(){
-                  Var a: Int= ins;
-                  Var b: Int= Self.$static;
+         Class Main
+         {
+            countOccurrences(arr: Array[Int, 100]; n: Int; x: Int)
+            {
+               Var res: Int = 0;
+               Foreach (i In 0 .. n By 1) {
+                  If (x == arr[i]) {
+                     res = res + 1;
+                  }
                }
+               Return res;
             }
+            
+            main(args: Array[String, 2])
+            {
+               Val arr: Array[Int, 10] = Array(1, 2, 2, 2, 2, 3, 4, 7 ,8 ,8 );
+               Var n: Int = arr.length();
+               Var x: Int = 2;
+               System.out.println(Self.countOccurrences(arr, n, x));
+            }
+         }
       

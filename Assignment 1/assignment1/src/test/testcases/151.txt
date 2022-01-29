@@ -1,1 +1,3 @@
- "PPL-HCMUTK19" 
+
+            Var _str1, _str2: String= "","";
+            

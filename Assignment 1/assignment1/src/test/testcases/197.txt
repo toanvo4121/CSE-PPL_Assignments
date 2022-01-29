@@ -1,4 +1,16 @@
 
-            Var error_str: String= "hello world ahihi";
-            Val $ID: Float= 19_5.111~15; 
+            binarySearch(arr: Array[Int, 10], l: Int, r: Int, x: Int) 
+            { 
+                If (r >= l) { 
+                    mid: Int = l + (r - l) / 2;  
+                    If (arr[mid] == x) {
+                        return mid;
+                    }
+                    If (arr[mid] > x) {
+                        return binarySearch(arr, l, mid - 1, x);
+                    }
+                    return binarySearch(arr, mid + 1, r, x); 
+                } 
+                return -1; 
+            } 
             

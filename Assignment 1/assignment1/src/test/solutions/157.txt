@@ -1,1 +1,1 @@
-Unclosed String: abc\\ 
+12.0,4e7,2.,.,0.412E-21,128e+42,<EOF>

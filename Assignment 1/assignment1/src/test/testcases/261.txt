@@ -1,5 +1,8 @@
 
-            Class Test{
-               Var $5, $6: Float= 3.10e10, 3.0e0;
+         Class testParamError {
+            main(testparam_1: String, testparam_2: Int) {
+               System.out.println("Error");
+               Return;
             }
+         }
       

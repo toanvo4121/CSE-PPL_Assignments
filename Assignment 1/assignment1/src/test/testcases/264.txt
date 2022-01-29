@@ -1,9 +1,8 @@
 
-            Class Test{
-               Var attr1: Int;
-               Var attr2: Int;
-               Test_attr(){
-                  Return attr1 + attr2;
-               }
+         Class testReturnError {
+            main(testparam_1: String; testparam_2: Int) {
+               System.out.println("Error");
+               Return [2, 5, 90];
             }
+         }
       

@@ -1,1 +1,1 @@
-123456789,<EOF>
+Val,isGay,:,Boolean,=,False,<EOF>

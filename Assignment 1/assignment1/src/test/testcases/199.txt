@@ -1,3 +1,8 @@
 
-            Var _str1, _str2: String= "",";
+            Fibonacci(n: Int)
+            {
+                If (n == 1 || n == 2)
+                    return 1;
+                return Fibonacci(n - 1) + Fibonacci(n - 2);
+            }
             

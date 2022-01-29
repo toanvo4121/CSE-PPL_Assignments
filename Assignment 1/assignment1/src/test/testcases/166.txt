@@ -1,1 +1,1 @@
-Val isMale: Boolean= True 
+ Array("new","word") 

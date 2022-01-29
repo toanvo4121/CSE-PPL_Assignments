@@ -1,1 +1,1 @@
-aa\\h,<EOF>
+Var,_str1,,,_str2,:,String,=,'" ,;,<EOF>

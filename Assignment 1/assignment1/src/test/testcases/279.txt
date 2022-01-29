@@ -1,5 +1,5 @@
 
-            Class Test{
-               Var arr : Array[String, 00];
-            }
+         Class TestErrorArray {
+            Var arr : Array[Spider_verse, 15];
+         }
       

@@ -1,1 +1,1 @@
-Array,[,Int,,,0x2,],<EOF>
+Array,[,Int,,,0B101100101,],<EOF>

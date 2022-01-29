@@ -1,10 +1,16 @@
-Class A {
-                    ## Xin chao cac ban @ ~~~~ @ Minh la PPL ##
-                    Val str1: String = "PPL-K19:";
-                    Var arr1: Array[Float, 12];
-                    $vantho1(){
-                        if(str1 ==. "PPL-K19:"){
-                            self.arr1[1]= 0.0002;
-                        }
+Class Spider_verse {
+                ## instance fields ##
+                Val num: Int = 15;
+                Var name: Array[String, 15];
+                Var suits: String = "Blue";
+                
+                ## class fields ##
+                Val $ratings: Float = 8.9;
+                
+                ## class methods ##
+                setSuits() {
+                    if (Self.suits ==. "Blue") {
+                        Self.suits = "Red";
                     }
+                }
             }

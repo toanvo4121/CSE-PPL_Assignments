@@ -1,1 +1,1 @@
-abc ABC aBc AbC
+Val Var Int Float Boolean String Array If Elseif Else True False Foreach In By Break Continue Return Null Class Constructor Destructor New Self

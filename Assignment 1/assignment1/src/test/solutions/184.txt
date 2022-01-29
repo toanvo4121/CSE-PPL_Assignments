@@ -1,1 +1,1 @@
-Class,PPL,{,Val,sv,:,Int,=,100,;,Foreach,(,i,In,1,..,100,By,i,%,2,==,0,),{,self,.,sv,;,},},<EOF>
+Class,Spider_verse,{,Val,num,:,Int,=,15,;,Var,name,:,Array,[,String,,,15,],;,Var,suits,:,String,;,Var,$universe,:,Int,;,$getUniverse,(,),{,return,Self,::,universe,;,},Foreach,(,i,In,1,..,100,By,i,%,2,==,0,),{,Self,.,suits,=,red,;,},},<EOF>

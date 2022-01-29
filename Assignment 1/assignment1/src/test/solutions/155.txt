@@ -1,1 +1,1 @@
-Illegal Escape In String: aa	
+[,a,,,b,,,c,,,[,ab,,,ac,],,,[,bc,],,,[,[,abc,],],],;,<EOF>

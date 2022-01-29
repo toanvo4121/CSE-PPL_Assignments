@@ -1,10 +1,8 @@
 
-            Class A{
-               $RetHelloWorld(){}
+         Class testKeywordError {
+            main(testparam: String) {
+               System.out.println("Error");
+               Return String.error(testParam);
             }
-            Class B{
-               Print(){
-                  Var a: String= A::$PrintHelloWorld();
-               }
-            }
+         }
       

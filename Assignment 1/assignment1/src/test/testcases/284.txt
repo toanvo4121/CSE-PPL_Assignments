@@ -1,6 +1,9 @@
 
-            Class Test{
-               Var arr : Array[Int, 1];
-               Var idx1: Int = arr[0+1];
+         Class testCommaError {
+            main(testparam: String) {
+               Var var_1, var_2, var_3: Int = 0, 0XA_BCD_EF, 4121
+               Var var_4: String = "foo";
+               Return;
             }
+         }
       

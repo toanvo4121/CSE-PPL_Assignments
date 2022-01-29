@@ -1,12 +1,36 @@
 
-            ## Day la test so 94 !!!!! ##
-            Class Test{
-               Test(){
-                  Var float1: Float= 12_2_3_4.;
-                  Var float2: Float= 12_2_3_4.00000;
-                  Var float3: Float= 12_2_3_4.e0;
-                  Var float4: Float= 12_2_3_4.e1100011;
-                  Var float5: Float= .09e10;
+         ## Day la test so 94 !!!!! ##
+         Class HeapSort {
+            sort(arr: Array[Int, 100])
+            {
+               Var n: Int = arr.length();
+               Foreach (i In (n / 2 - 1) .. 0 By -1) {
+                  Self.heapify(arr, n, i);
+               }
+               Foreach (i In (n - 1) .. 0 By -1) {
+                  Var temp: Int = arr[0];
+                  arr[0] = arr[i];
+                  arr[i] = temp;
+                  Self.heapify(arr, i, 0);
                }
             }
+            heapify(arr: Array[Int, 100]; n: Int; i: Int)
+            {
+               Var largest: Int = i;
+               Var l: Int = 2 * i + 1;
+               Var r: Int = 2 * i + 2;
+               If ((l < n) && (arr[l] > arr[largest])) {
+                  largest = l;
+               }
+               If ((r < n) && (arr[r] > arr[largest])) {
+                  largest = r;
+               }
+               If (largest != i) {
+                  Var swap: Int = arr[i];
+                  arr[i] = arr[largest];
+                  arr[largest] = swap;
+                  Self.heapify(arr, n, largest);
+               }
+            }
+         }
       

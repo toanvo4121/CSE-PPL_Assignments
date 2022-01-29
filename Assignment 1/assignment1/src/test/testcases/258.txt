@@ -1,7 +1,12 @@
 
-            Class Test{
-               Var _: Array[Int, 10];
-               Var __: Array[Array[Int, 10], 10];
-               Var ___: Array[Array[Array[Int, 10], 10], 10];
+         Class testIfError {
+            main(testparam: String) {
+               System.out.println("Error");
+               Foreach (i In 1 .. 10 By 1) {
+                  If (i % 2 == 0)
+                     Break;
+               }
+               Return;
             }
+         }
       

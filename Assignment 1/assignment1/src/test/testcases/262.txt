@@ -1,8 +1,12 @@
 
-            Class Test{
-               ## Xin chao cac ban ! ##
-               ## Day la comment ! ##
-               ## Chinh vi the nen dung co bat minh ##
-               ## Minh cam on :3 ! ##
+         Class testArray {
+            main(testparam: String) {
+               Var arr: Array[Int, 3];
+               arr[1] = 1;
+               arr[2] = 2;
+               arr[3] = 3;
+               arr[0] = 0;
+               Return;
             }
+         }
       

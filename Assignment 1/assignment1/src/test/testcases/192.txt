@@ -1,15 +1,17 @@
- Class Shape{
-                    Var $shapes: Int=0;
+Class Spider_verse {
+                ## instance fields ##
+                Val num: Int = 15;
+                Var name: String;
+                Var suits: String;
+                
+                ## class fields ##
+                Val $ratings: Float = 8.9;
+                Constructor(name: String; suits: String) {
+                    Self.name: String = "Peter Parker";
+                    Self.suits: String = "Red";
                 }
-                Class Square: Shape{
-                    Var type: String= "square";
-                    Var cd, cr: Int;
-                    Constructor(cd: Int; cr: Int){
-                        Self.cd: Int=10;
-                        Self.cr: Int=15;
-                    }
-                    Destructor(){
-                        
-                    }
+                Destructor(){
+                    
                 }
+            }
             

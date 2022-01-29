@@ -1,1 +1,1 @@
-Array[Int, 0x2]
+Array[Int, 0B101100101]

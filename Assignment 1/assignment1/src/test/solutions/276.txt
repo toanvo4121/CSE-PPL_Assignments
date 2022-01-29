@@ -1,1 +1,1 @@
-Error on line 3 col 39: 0X0
+Error on line 3 col 12: Class

@@ -1,5 +1,7 @@
 
-            Class Test{
-               Var arr : Array[String, 0B0];
+         Class TestErrorExprOutsideMethod {
+            If (i % 2 == 0) {
+               System.out.println(i + " is an even number);
             }
+         }
       

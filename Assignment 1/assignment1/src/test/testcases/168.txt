@@ -1,1 +1,1 @@
-Array("PPL","HCMUT","K19")
+Array("Great","Power","Responsibility")

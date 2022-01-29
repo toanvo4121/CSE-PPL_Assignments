@@ -1,40 +1,79 @@
 
-         Class Maid{
-            Var $gender: String= "Female";
-            Var ID: Int;
-            Var name: String;
-            Constructor(ID: Int; name: String){
-               Self.ID= ID;
-               Self.name= name;
-            }
-            getMaidName(){
-               Return Self.name;
-            }
-         }
-         Class Master{
-            Var total_maids: Int= 0;
-            Var maids: Array[Int, 1000];
-            Constructor(total_maids: Int){
-               If(total_maids > 1000){
-                  Out.Print("Build more houses!");
-               }
-               Else{
-                  Self.total_maids= total_maids;
-               }
-            }
-            AddMaid2House(maid: Maid){
-               Self.total_maids= total_maids + 1;
-               Self.maids[Self.total_maids]= maid.ID;
-            }
-            PrintMaidsID(){
-               Foreach(i In 1 .. Self.total_maids){
-                  Out.Print(Self.maids[i]);
-               }
+         Class Node
+         {
+            Var key: Int;
+            Var left, right: Node;
+
+            Node(item: Int)
+            {
+               key = item;
+               left = Null;
+               right = Null;
             }
          }
-         Class Program{
-            main(){
-               
+
+         Class BinaryTree
+         {
+            Var root: Node;
+
+            Constructor(key: Int)
+            {
+               Self.root = New Node(key);
+            }
+
+            Constructor()
+            {
+               Self.root = Null;
+            }
+
+            printPostorder(node: Node)
+            {
+               If (node == Null) {
+                  Return;
+               }
+               Self.printPostorder(node.left);
+               Self.printPostorder(node.right);
+               System.out.print(node.key + " ");
+            }
+            printInorder(node: Node)
+            {
+               If (node == Null) {
+                  Return;
+               }
+               Self.printInorder(node.left);
+               System.out.print(node.key + " ");
+               Self.printInorder(node.right);
+            }
+            printPreorder(node: Node)
+            {
+               If (node == Null) {
+                  Return;
+               }
+               System.out.print(node.key + " ");
+               Self.printPreorder(node.left);
+               Self.printPreorder(node.right);
+            }
+
+            printPostorder() { Self.printPostorder(root); }
+            printInorder() { Self.printInorder(root); }
+            printPreorder() { Self.printPreorder(root); }
+            
+            main(args: Array[String, 2])
+            {
+               Var tree: BinaryTree = New BinaryTree();
+               tree.root = New Node(1);
+               tree.root.left = New Node(2);
+               tree.root.right = New Node(3);
+               tree.root.left.left = New Node(4);
+               tree.root.left.right = New Node(5);
+
+               System.out.println("Preorder traversal of binary tree is ");
+               tree.printPreorder();
+               System.out.println("Inorder traversal of binary tree is ");
+               tree.printInorder();
+               System.out.println("Postorder traversal of binary tree is ");
+               tree.printPostorder();
             }
          }
+
          

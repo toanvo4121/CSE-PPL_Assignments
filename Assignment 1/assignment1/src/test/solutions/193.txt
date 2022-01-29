@@ -1,1 +1,1 @@
-Var,multi_arr,:,Array,[,Array,[,Array,[,String,.,2,],,,3,],,,4,],;,<EOF>
+Var,multi_dimension_array,:,Array,[,Array,[,Array,[,String,,,1,],,,2,],,,3,],;,<EOF>

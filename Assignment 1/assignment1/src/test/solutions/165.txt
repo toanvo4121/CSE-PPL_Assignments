@@ -1,1 +1,1 @@
-Val,her_dad,:,String,=,Unclosed String:  
+412.1234e12,123.1234e12,123.1234e12,<EOF>

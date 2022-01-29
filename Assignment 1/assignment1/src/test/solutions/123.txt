@@ -1,1 +1,1 @@
-0b0,b1,<EOF>
+Var,phoneNumber,:,Int,=,03,99575679,<EOF>

@@ -1,14 +1,8 @@
 
-            Class A{
-               Var greeting: String= "Hello World!";
+         Class testReturnError {
+            main(testparam: String) {
+               System.out.println("Error");
+               Return testParam = "error";
             }
-            Class B{
-               Var a: A= New A();
-            }
-            Class Program{
-               main(){
-                  Var b: B= New B();
-                  b.a.greeting= "Deadline is like a wind. Always by my side!";
-               }
-            }
+         }
       

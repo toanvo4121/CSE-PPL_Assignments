@@ -1,3 +1,8 @@
 
-            Var error_str: String= "hello world	 \k ahihi" 
+            gcd(a: Int, b: Int) {
+                If (b == 0) {
+                    return a;
+                }
+                return gcd(b, a % b);
+            }
             

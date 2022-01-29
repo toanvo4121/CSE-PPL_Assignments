@@ -1,5 +1,5 @@
 
-            Class Test{
-               Var arr : Array[String, 0b0];
-            }
+         Class TestErrorArray {
+            Var arr : Array[4, 12];
+         }
       

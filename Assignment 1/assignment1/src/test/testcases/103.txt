@@ -1,1 +1,1 @@
-_init_ _INIT_ __init__
+abc ## Comments is non-greedy so this case it will cause ## error ## xyz

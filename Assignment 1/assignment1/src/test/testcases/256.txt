@@ -1,12 +1,9 @@
 
-            Class Test{
-               Var _aaa: String;
-               Var _bbb: Int;
-               Var _ccc: Float;
-               Var _ddd: Boolean;
-               Var _eee: Array[String, 10];
-               Var _fff: Array[Int, 10];
-               Var _ggg: Array[Float, 10];
-               Var _hhh: Array[Boolean, 10];
+         Class testCommaError {
+            main(testparam: String) {
+               Var var_1, var_2, var_3: Int = 0, 0XA_BCD_EF, 4121;;
+               Var var_4: String = "foo";
+               Return;
             }
+         }
       

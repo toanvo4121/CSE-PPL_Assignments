@@ -1,12 +1,8 @@
 
-            Class C{
-               Testing_Boolean(str1, str2, str3, str4: String){
-                  Var bool1: Boolean= True;
-                  Var bool2: Boolean= False;
-                  Var bool3: Boolean= True;
-                  Var bool4: Boolean= False;
-                  Var bool5: Boolean= False;
-                  Var res: Boolean= !(!bool1 == !bool2);
-               }
+         Class testVarError {
+            main(testparam: String) {
+               Var var_1, var_2, var_3: Int = 0, 0XA_BCD_EF, 4121, 2001;
+               Return;
             }
+         }
       

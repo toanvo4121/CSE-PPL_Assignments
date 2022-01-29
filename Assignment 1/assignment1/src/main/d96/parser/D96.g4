@@ -218,7 +218,7 @@ fragment ESCAPE_SEQUENCES:
 	| '\\t'
 	| '\\\\'
 	| '\\' ['];
-fragment ILLEGAL_ESC_SEQ: '\\' ~[bfnrt'"\\] | '\\';
+fragment ILLEGAL_ESC_SEQ: '\\' ~[bfnrt'"\\] | '\\' | [']["];
 fragment CHARACTER: ~(["\r\n\f\t\b] | '\\') | ESCAPE_SEQUENCES;
 STRINGLIT: (["] (CHARACTER | [']["])* ["]) {
 	self.text = self.text[1:-1]

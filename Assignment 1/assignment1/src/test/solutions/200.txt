@@ -1,1 +1,1 @@
-Var,_str1,,,_str2,:,String,=,'" ,;,<EOF>
+SumRecursion,(,n,:,Int,),{,if,(,n,==,0,),{,return,0,;,},return,n,+,SumRecursion,(,n,-,1,),;,},<EOF>

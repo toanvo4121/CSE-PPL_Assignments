@@ -1,7 +1,15 @@
 
-            Class A{
-               Foreach(i In 1 .. 100 By i<=7){
-                  Out.Print(i);
+         Class Program {
+            main(){
+               Var x: Int = Spidey.swing();
+               Return x;
+            }
+         }
+         Class Test {
+            testloop(a: Int; b: Float) {
+               Foreach (i In 0 .. 15) {
+                  s = s + a[i];
                }
             }
+         }
       

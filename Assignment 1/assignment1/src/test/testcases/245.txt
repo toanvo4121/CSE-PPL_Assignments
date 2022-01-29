@@ -1,16 +1,8 @@
 
-            Class Program{
-               main(){
-                  Var num1: Float= 1.111e10;
-                  Var num2: Float= 1.222e10;
-                  Val first: Int= 1;
-                  Val last: Int= 100000;
-                  Var arr: Array[Float, 1000];
-                  Foreach(idx In first .. last By idx <= 1000){
-                     num1= -num1;
-                     num2= -num2;
-                     arr[idx] = num1 + num2; 
-                  }
-               }
+         Class testCalFunc {
+            main(testParam: Int) {
+               print(testParam);
+               System.out.println("Error");
             }
+         }
       
