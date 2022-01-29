@@ -1,1 +1,1 @@
-Error on line 3 col 18: $error_param
+Error on line 6 col 39: Scanner

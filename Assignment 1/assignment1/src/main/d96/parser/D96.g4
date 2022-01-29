@@ -9,20 +9,16 @@ options {
 }
 
 program: code_declares+ EOF;
-
-////////////////////////////////////////////////////////////////////////
-// ////////////////////// declaration ///////////////////////////////////
-// //////////////////////////////////////////////////////////////////////
-
+//////////////////////////////// declaration //////////////////////////////////
 code_declares:
 	CLASS IDENTIFIERS (COLON class_type)? LP class_body* RP;
 
 class_body:
 	method_declare
-	| class_attr_declare
+	| class_attribute_declare
 	| special_init_method_declare;
 
-class_attr_declare: (VAL | VAR) attr_decl SEMI;
+class_attribute_declare: (VAL | VAR) attr_decl SEMI;
 
 // Constructor & Destructor
 special_init_method_declare:
@@ -38,66 +34,59 @@ id_list: (IDENTIFIERS | STATIC_MEM) (
 		COMMA (IDENTIFIERS | STATIC_MEM)
 	)*;
 
-method_id_list: IDENTIFIERS (COMMA IDENTIFIERS)*;
-
 mid2:
-	STATIC_MEM COMMA mid2 COMMA expr
-	| IDENTIFIERS COMMA mid2 COMMA expr
-	| STATIC_MEM mid1 expr
-	| IDENTIFIERS mid1 expr;
+	STATIC_MEM COMMA mid2 COMMA expression
+	| IDENTIFIERS COMMA mid2 COMMA expression
+	| STATIC_MEM mid1 expression
+	| IDENTIFIERS mid1 expression;
 
 mid1: COLON all_type ASSOP;
 
 param_list: param (SEMI param)*;
-param: method_id_list COLON all_type;
-////////////////////////////////////////////////////////////////////////
-// //////////////////////// expression //////////////////////////////////
-// //////////////////////////////////////////////////////////////////////
-
+param: IDENTIFIERS (COMMA IDENTIFIERS)* COLON all_type;
 /////////////////////////// EXPRESSION //////////////////////////
-expr: expr1 (CONCAT | STRCMP) expr1 | expr1; // String expr
-expr1: expr2 relation_expr_op expr2 | expr2; // relationall expr
-expr2: expr2 (ANDOP | OROP) expr3 | expr3; // Logical expr
-expr3: expr3 (ADDOP | SUBOP) expr4 | expr4; // Adding expr
-expr4: expr4 mul_expr_op expr5 | expr5; // Multiplying expr
-expr5: NOTOP expr5 | expr6; // Logical not expr
-expr6: SUBOP expr6 | expr7; // Sign expr
-expr7: expr7 idx_expr_op | expr8; // Index expr
+expression:
+	expression1 (CONCAT | STRCMP) expression1
+	| expression1; // String expression
+expression1:
+	expression2 (GRTOP | GTEOP | LSTOP | LTEOP | EQLOP | IEQOP) expression2
+	| expression2; // > >= < <= == != expression
+expression2:
+	expression2 (ANDOP | OROP) expression3
+	| expression3; // && || expression
+expression3:
+	expression3 (ADDOP | SUBOP) expression4
+	| expression4; // +- expression
+expression4:
+	expression4 (MULOP | DIVOP | MODOP) expression5
+	| expression5; // */% expression
+expression5: NOTOP expression5 | expression6; // ! expression
+expression6: SUBOP expression6 | expression7; // - expression
+expression7:
+	expression7 LSB expression RSB
+	| expression8; // [] expression
 
-expr8:
-	expr8 DOTOP IDENTIFIERS
-	| expr8 DOTOP IDENTIFIERS multi_idx_op
-	| expr8 DOTOP IDENTIFIERS LB expr_lst RB
-	| expr8 DOTOP IDENTIFIERS LB RB
-	| expr9;
+expression8:
+	expression8 DOTOP IDENTIFIERS (LSB expression RSB)*
+	| expression8 DOTOP IDENTIFIERS LB (expression_list)? RB
+	| expression9;
 
-expr9:
-	IDENTIFIERS SCOOP STATIC_MEM
-	| IDENTIFIERS SCOOP STATIC_MEM multi_idx_op
-	| IDENTIFIERS SCOOP STATIC_MEM LB expr_lst RB
-	| IDENTIFIERS SCOOP STATIC_MEM LB RB
-	| expr10;
+expression9:
+	IDENTIFIERS SCOOP STATIC_MEM (LSB expression RSB)*
+	| IDENTIFIERS SCOOP STATIC_MEM LB (expression_list)? RB
+	| expression10;
 
-multi_idx_op: idx_expr_op multi_idx_op | idx_expr_op;
-
-expr10:
-	NEW IDENTIFIERS LB expr_lst RB
-	| NEW IDENTIFIERS LB RB
-	| operand;
+expression10: NEW IDENTIFIERS LB expression_list? RB | operand;
 
 operand:
 	IDENTIFIERS
 	| literals
 	| SELF
 	| NULL
-	| LB expr RB
-	| IDENTIFIERS multi_idx_op;
+	| LB expression RB
+	| IDENTIFIERS (LSB expression RSB)*;
 
-expr_lst: expr COMMA expr_lst | expr;
-
-relation_expr_op: GRTOP | GTEOP | LSTOP | LTEOP | EQLOP | IEQOP;
-mul_expr_op: MULOP | DIVOP | MODOP;
-idx_expr_op: LSB expr RSB;
+expression_list: expression (COMMA expression)*;
 ////////////////////////END EXPRESSION //////////////////////////
 
 ////////////////////////////////////////////////////////////////////////
@@ -116,8 +105,8 @@ id_list_without_static:
 	| IDENTIFIERS;
 
 attr_stmt_full:
-	IDENTIFIERS COMMA attr_stmt_full COMMA expr
-	| IDENTIFIERS mid1 expr;
+	IDENTIFIERS COMMA attr_stmt_full COMMA expression
+	| IDENTIFIERS mid1 expression;
 
 block_stmt: LP stmt3* RP;
 
@@ -132,37 +121,28 @@ stmt3:
 	| return_stmt
 	| invoca_stmt;
 
-assign_stmt: lhs ASSOP expr SEMI;
+assign_stmt: lhs ASSOP expression SEMI;
 
-lhs: IDENTIFIERS (LSB expr8 RSB)* | expr8;
+lhs: IDENTIFIERS (LSB expression8 RSB)* | expression8;
 
 if_stmt:
-	IF LB expr RB block_stmt (ELSEIF LB expr RB block_stmt)* (
-		ELSE block_stmt
-	)?;
+	IF LB expression RB block_stmt (
+		ELSEIF LB expression RB block_stmt
+	)* (ELSE block_stmt)?;
 
 for_stmt:
-	FOREACH LB IDENTIFIERS IN (INTLIT | expr) DOTDOT (
+	FOREACH LB IDENTIFIERS IN (INTLIT | expression) DOTDOT (
 		INTLIT
-		| expr
-	) (BY (INTLIT | expr))? RB block_stmt;
+		| expression
+	) (BY (INTLIT | expression))? RB block_stmt;
 
 break_stmt: BREAK SEMI;
 continue_stmt: CONTINUE SEMI;
-return_stmt: RETURN expr SEMI | RETURN SEMI;
+return_stmt: RETURN expression SEMI | RETURN SEMI;
 
-invoca_stmt: instance_invoca_stmt | static_invoca_stmt;
-
-static_invoca_stmt:
-	class_type SCOOP STATIC_MEM LB expr_lst RB SEMI
-	| class_type SCOOP STATIC_MEM LB RB SEMI;
-// | class_type STATACCES STATIC_ID SEMI | SELF STATACCES STATIC_ID LB expr_lst RB SEMI | SELF
-// STATACCES STATIC_ID LB RB SEMI; | SELF STATACCES STATIC_ID SEMI;
-
-instance_invoca_stmt:
-	expr8 DOTOP IDENTIFIERS LB expr_lst RB SEMI
-	| expr8 DOTOP IDENTIFIERS LB RB SEMI;
-// | expr8 DOT ID SEMI;
+invoca_stmt:
+	class_type SCOOP STATIC_MEM LB expression_list? RB SEMI
+	| expression8 DOTOP IDENTIFIERS LB expression_list? RB SEMI;
 
 // type
 all_type: prim_type | arr_type | class_type;
@@ -232,7 +212,7 @@ primitive_type:
 	| BOOLIT;
 
 indexed_array: ARRAY LB (array_member |) RB;
-array_member: (primitive_type | expr) (COMMA array_member)*;
+array_member: (primitive_type | expression) (COMMA array_member)*;
 
 multi_array: multi_in_multi | index_in_multi | empty_multi;
 

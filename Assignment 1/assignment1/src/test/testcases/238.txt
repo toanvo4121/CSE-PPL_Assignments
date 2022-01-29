@@ -1,39 +1,29 @@
 
-         Class Node
-         {
-            Var key: Int;
-            Var left, right: Node;
-
-            Node(item: Int)
-            {
-               key = item;
-               left = Null;
-               right = Null;
+        Class Main {
+            main(args : Int) {
+                Var year : Int = 19.96;
+                Var leap : Boolean = False;
+                If (((year % 4) == 0)){
+                    If ((year % 100) == 0) {
+                        If ((year % 400) == 0) {
+                            leap = True;
+                        }
+                        Else { 
+                            leap = False;
+                        }
+                    }
+                    Else{
+                        leap = True;
+                    }
+                } 
+                Else{
+                    leap = false;
+                }
+                If(leap){ 
+                    System.out.println(leap_year);
+                } 
+                Else{
+                    System.out.println(not_leap_year);
+                }    
             }
-         }
-
-         Class BinaryTree
-         {
-            Var root: Node;
-
-            Constructor(key: Int)
-            {
-               Self.root = New Node(key);
-            }
-
-            Constructor()
-            {
-               Self.root = null;
-            }
-
-            main(args: Array[String, 2])
-            {
-               Var tree: BinaryTree = New BinaryTree();
-               tree.root = New Node(1);
-               tree.root.left = New Node(2);
-               tree.root.right = New Node(3);
-               tree.root.left.left = New Node(4);
-            }
-         }
-
-         
+        }

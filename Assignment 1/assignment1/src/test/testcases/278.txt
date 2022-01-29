@@ -1,7 +1,6 @@
 
-         Class TestErrorExprOutsideMethod {
-            If (i % 2 == 0) {
-               System.out.println(i + " is an even number);
+            Class Main2 {
+               main(args : Array[Int,2]) {
+                  out.println();
+               }
             }
-         }
-      

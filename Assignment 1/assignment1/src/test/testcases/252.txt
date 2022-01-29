@@ -1,13 +1,9 @@
 
-         Class testForError {
-            main(testparam: String) {
-               System.out.println("Error");
-               Foreach (i in 1 .. 10 By 1) {
-                  If (i % 2 == 0) {
-                     Break;
-                  }
-               }
-               Return;
+            Class Crray {
+                Sannan(baka : Int) {
+                    Var array : Array[Int,5] = Array(1, 2, 3, 4, 5);
+                    Foreach(element In 1 .. 4 By 7-7 == 3) {
+                        System.out.println(array[element]);
+                    }
+                }
             }
-         }
-      

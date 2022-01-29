@@ -1,79 +1,29 @@
 
-         Class Node {
-            Var data: Int;
-            Var next: Node;
-            Constructor(d: Int)
-            {
-               Self.data = d;
-               Self.next = Null;
+        Class Main {
+            main(args : Int) {
+                Var year : Int = 1996;
+                Var leap : Boolean = False;
+                If ((year % 4) == 0){
+                    If ((year % 100) == 0) {
+                        If ((year % 400) == 0) {
+                            leap = True;
+                        }
+                        Else { 
+                            leap = False;
+                        }
+                    }
+                    Else{
+                        leap = True;
+                    }
+                } 
+                Else{
+                    leap == False;
+                }
+                If(leap){ 
+                    System.out.println(leap_year);
+                } 
+                Else{
+                    System.out.println(not_leap_year);
+                }       
             }
-         }
-         Class LinkedList: Node {
-            Var head: Node;
-            
-            push(new_data: Int)
-            {
-               Var new_node: Node = New Node(new_data);
-               new_node.next = head;
-               head = new_node;
-            }
-         
-            ## Inserts a new node after the given prev_node. ##
-            insertAfter(prev_node: Node; new_data: Int)
-            {
-               If (prev_node == Null)
-               {
-                  System.out.println("The given previous node cannot be null");
-                  Return;
-               }
-               Var new_node: Node = New Node(new_data);
-               new_node.next = prev_node.next;
-               prev_node.next = new_node;
-            }
-            
-            ## Appends a new node at the end.  This method is
-               defined inside LinkedList class shown above ##
-            append(new_data: Int)
-            {
-               Var new_node: Node = New Node(new_data);
-               If (Self.head == null)
-               {
-                  Self.head = New Node(new_data);
-                  Return;
-               }
-               new_node.next = Null;
-               Var last: Node = head;
-               Foreach (last In (Self.head) .. (last.next != null)) {
-                  last = last.next;
-               } 
-               last.next = new_node;
-               Return;
-            }
-         
-            ## This function prints contents of linked list starting from
-               the given node ##
-            printList()
-            {
-               Foreach (tnode In (Self.head) .. (tnode.next != null))
-               {
-                  System.out.print(tnode.data + " ");
-                  tnode = tnode.next;
-               }
-            }
-         
-            ## Driver program to test above functions. Ideally this function
-               should be in a separate user class.  It is kept here to keep
-               code compact ##
-            main(args: Array[String, 2])
-            {
-               Var llist: LinkedList = New LinkedList();
-               llist.append(6);
-               llist.push(7);
-               llist.push(1);
-               llist.append(4);
-               llist.insertAfter(llist.head.next, 8);
-               System.out.println("Created Linked list is: ");
-               llist.printList();
-            }
-         }
-         
+        }

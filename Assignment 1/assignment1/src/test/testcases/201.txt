@@ -1,5 +1,10 @@
 
-      Class  Spider_man {
-         Var Peter_1: Tobey = (a::$b).c;
-      }
-      
+            Class Program {
+                main() {
+                    Var a: Array[Int,0xAC1];
+                    Var b: Int = 0b0;
+                    Var a: A= a.b.c;
+                    x[1] = 7 - 3;
+                }
+            }
+            

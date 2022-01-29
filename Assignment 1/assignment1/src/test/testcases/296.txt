@@ -1,16 +1,7 @@
- 
-         Class TestAlgorithms {
-            isPrime(n: Int)
-            {
-               If (n <= 1) {
-                  Return False;
+
+            Class Test {
+               Var xyz : Int = 3+7-15*7/96;
+               $Test(a,b,c: Float) {
+                  out.println(test);
                }
-               Foreach (i In 2 .. n By 1) {
-                  If (n % i == 0) {
-                     Return False;
-                  }
-               }
-               Return True;
             }
-         }
-      

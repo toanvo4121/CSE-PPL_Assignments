@@ -1,9 +1,15 @@
 
-         Class testNewError {
-            main(testparam: String) {
-               System.out.println("Error");
-               Var Peter_4: Spider_verse = new Spider_verse();
-               Return;
+        Class Test60 {
+            Mane (OPO : Int){
+                Scanner in = new Scanner(System.in);
+                Var x,y,z : Int = in.nextInt(),in.nextInt(),in.nextInt();
+                System.out.print(first);
+                System.out.print(second);
+                System.out.print(third);
+                System.out.print(sumoftwo(x, y, z));
             }
-         }
-      
+            
+            sumoftwo(q,w,e : Int){	
+                Return ((p + q) == r || (q + r) == p || (r + p) == q);	
+            }
+        }

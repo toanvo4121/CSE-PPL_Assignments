@@ -1,9 +1,12 @@
 
-         Class testCommaError {
-            main(testparam: String) {
-               Var var_1, var_2, var_3: Int = 0, 0XA_BCD_EF, 4121;;
-               Var var_4: String = "foo";
-               Return;
+        Class Main {
+            Main(args : Int){
+                Var animals : LinkedList = New LinkedList();
+                Var middle : String = animals.get(animals.size()/2);
+                animals.add(Dog);
+                animals.addFirst(Cat);
+                animals.addLast(Horse);
+                System.out.println(animals);
+                System.out.println(middle);
             }
-         }
-      
+        }

@@ -1,13 +1,14 @@
 
-         Class testAlgorithms {
-            reverseStr(str: Array[String, 100])
-            {
-               Val n: Int = str.length();
-            
-               ## Swap character starting from two corners ##
-               Foreach (i In 0 .. (n / 2) By 1) {
-                  str.swap(str[i], str[n - i - 1]);
-               }
+        Class Holi2 {
+            Tree(input : String) {  
+                Var item : String = parts[1];
+                Var root : TreeNode = New TreeNode(Integer.parseInt(item));
+                Var nodeQueue : QueueTreeNode= New LinkedList();
+                input = input.trim();
+                If(input.length() == 0) {
+                    Return 3+7 (== 0);
+                }
+                nodeQueue.add(root);
+                Return root;
             }
-         }
-         
+        }

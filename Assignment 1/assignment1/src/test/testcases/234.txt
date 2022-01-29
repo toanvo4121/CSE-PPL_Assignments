@@ -1,48 +1,13 @@
 
-         Class testAlgorithms {
-            swap(arr: Array[Int, 100]; i: Int; j: Int)
-            {
-               Var temp: Int = arr[i];
-               arr[i] = arr[j];
-               arr[j] = temp;
+        Class Main {
+            main(Hol: String) {
+                Var input : Scanner  = New Scanner (System.in);
+                System.out.print(Input);
+                Var num1 : Int  = input.nextInt();
+                System.out.print(Input);
+                Var num2 : Int  = input.nextInt();
+                Var sum : Int  = num1 + num2;
+                System.out.println();
+                System.out.println(sum);
             }
-            
-            ## This function takes last element as pivot, places
-               the pivot element at its correct position in sorted
-               array, and places all smaller (smaller than pivot)
-               to left of pivot and all greater elements to right
-               of pivot ##
-            partition(arr: Array[Int, 100]; low: Int; high: Int)
-            {
-               Var pivot: Int = arr[high];
-               
-               ## Index of smaller element and indicates the right position of pivot found so far ##
-               Var i: Int = (low - 1);
-               Foreach (j In low .. (high - 1) By 1)
-               {
-                  If (arr[j] < pivot)
-                  {
-                     i = i + 1;
-                     Self.swap(arr, i, j);
-                  }
-               }
-               Self.swap(arr, i + 1, high);
-               Return (i + 1);
-            }
-            
-            ## The main function that implements QuickSort
-                     arr[] --> Array to be sorted,
-                     low --> Starting index,
-                     high --> Ending index
-            ##
-            quickSort(arr: Array[Int, 100]; low: Int; high: Int)
-            {
-               If (low < high)
-               {
-                  Var pi: Int = Self.partition(arr, low, high);
-                  Self.quickSort(arr, low, pi - 1);
-                  Self.quickSort(arr, pi + 1, high);
-               }
-            }
-         }
-         
+        }

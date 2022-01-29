@@ -1,49 +1,15 @@
 
-         Class Node
-         {
-            Var key: Int;
-            Var left, right: Node;
-
-            Node(item: Int)
-            {
-               key = item;
-               left = Null;
-               right = Null;
+        Class Posi_Negative{
+            main(arg : Int) {
+                Var number : Float = 658.32e10
+                If(number < 0.0){
+                    System.out.println(negative);
+                }
+                ElseIf ( number > 0.0){
+                    System.out.println(positive);
+                }
+                Else{
+                    System.out.println(0);
+                }
             }
-         }
-
-         Class BinaryTree {
-            Var root: Node;
-            printLevelOrder()
-            {
-               Var queue: LinkedList = New LinkedList();
-               queue.add(Self.root);
-               If (!queue.isEmpty()) {
-                  Var tempNode: Node = queue.poll();
-                  System.out.print(tempNode.data + " ");
-      
-                  If (tempNode.left != Null) {
-                     queue.add(tempNode.left);
-                  }
-      
-                  If (tempNode.right != null) {
-                     queue.add(tempNode.right);
-                  }
-               }
-            }
-         
-            main(args: Array[String, 2])
-            {
-               Var tree_level: BinaryTree = New BinaryTree();
-               tree_level.root = New Node(1);
-               tree_level.root.left = New Node(2);
-               tree_level.root.right = New Node(3);
-               tree_level.root.left.left = New Node(4);
-               tree_level.root.left.right = New Node(5);
-         
-               System.out.println("Level order traversal of binary tree is - ");
-               tree_level.printLevelOrder();
-            }
-         }
-
-         
+        }

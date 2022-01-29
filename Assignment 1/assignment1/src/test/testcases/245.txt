@@ -1,8 +1,11 @@
 
-         Class testCalFunc {
-            main(testParam: Int) {
-               print(testParam);
-               System.out.println("Error");
+        Class Alphabet {
+            main(args : Float) {
+                If( (c >= "a" && c <= "z") || (c >= "A" && c <= "Z")){
+                    System.out.println(alphabet);
+                }
+                Else{
+                    System.out.println(alphabet);
+                }
             }
-         }
-      
+        }

@@ -1,1 +1,1 @@
-Error on line 3 col 12: Class
+Error on line 4 col 36: bae

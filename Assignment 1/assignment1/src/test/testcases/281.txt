@@ -1,16 +1,13 @@
 
-         Class Spider_verse {
-            ## instance fields ##
-            Val num: Int = 15;
-            Var name: Array[String, 15];
-            Var suits: String = "Blue";
-            
-            ## class fields ##
-            Val $ratings: Float = 8.9;
-         }
-         class Main{
-            main() {
-               Var a: Spider_verse = New Spider_verse();
+            Class Program {
+               main(args : Array[Int,2]) {
+                  out.println(numbers);
+                  Var first, second :Int = 10, 20;
+                  out.println(first + second);
+
+               ## add two numbers ##
+                  Var sum : Int = first + second;
+                  out.println(sum);
+                  Self.;
+               }
             }
-         }
-      

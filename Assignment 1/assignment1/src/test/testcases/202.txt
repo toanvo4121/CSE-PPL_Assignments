@@ -1,7 +1,11 @@
 
-      Class Spider_verse {
-         Val Suits: String;
-         Var name: String;
-         Val num: Int;
-      }
-      
+            Class Program {
+                getName() {
+                    Var b: Float = 0.300000e7;
+                }
+                main() {
+                    Var a: Int = 5;
+                    Val a_b : Float = 7.35e-45;
+                }
+            }
+            

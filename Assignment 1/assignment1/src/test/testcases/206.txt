@@ -1,36 +1,11 @@
 
-      Class Spider_verse {
-         Val Suits: String;
-         Var name: String;
-         Val Num: Int;
-         
-         getSuits() {
-            Return Self.Suits;
-         }
-         
-         getName() {
-            Return Self.name;
-         }
-         
-         getNum() {
-            Return Self.Num;
-         }
-         
-         Constructor(Suits: String; name: String; Num: Int) {
-            Self.Suits = Suits;
-            Self.name = name;
-            Self.Num = Num;
-         }
-         Destructor() {
-         
-         }
-      }
-         
-      Class Program {
-         main() {
-            Var Peter_1: Spider_verse = New Spider_verse("Red", "Peter Parker", 1);
-            Val Peter_1_Suits: String = Peter_1.getSuits();
-            Var Peter_1_name: String = Peter_1.getName();
-         }
-      }
-      
+        Class Main {
+    		$main(a : Int) {
+    			Var first, second : Int = 10, 20;
+    			Var sum : Int = first + second;
+    			System_out.println(Enter_two_numbers);
+    			System_out.println(first + second);
+    		## add two numbers ##
+    			System_out.println(The_sum_is + sum);
+  			}
+		}

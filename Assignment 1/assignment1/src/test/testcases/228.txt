@@ -1,26 +1,14 @@
 
-         Class testAlgorithms {
-            isPalRec(str: Array[String, 100]; s: Int; e: Int)
-            {
-               If (s == e) {
-                  Return True;
-               }
-               If (str[s] != str[e]) {
-                  Return False;
-               }
-               If (s < e + 1) {
-                  Return Self.isPalRec(str, s + 1, e - 1);
-               }
-               Return True;
+        Class Holi2 {
+            Tree(input : String) {  
+                Var item : String = parts[1];
+                Var root : TreeNode = New TreeNode(Integer.parseInt(item));
+                Var nodeQueue : QueueTreeNode= New LinkedList();
+                input = input.trim();
+                If(input.length() == 0) {
+                    Return 3+7 == 0;
+                }
+                nodeQueue.add(root);
+                Return root;
             }
-            
-            isPalindrome(str: Array[String, 100])
-            {
-               Val n: Int = Str.strlen(str);
-               If (n == 0) {
-                  Return True;
-               }
-               Return Self.isPalRec(str, 0, n - 1);
-            }
-         }
-         
+        }

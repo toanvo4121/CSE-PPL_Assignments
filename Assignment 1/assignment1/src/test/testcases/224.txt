@@ -1,18 +1,11 @@
 
-         Class testAlgorithms {
-            binarySearch(arr: Array[Int, 10]; l: Int; r: Int; x: Int) 
-            { 
-               If (r >= l) { 
-                  Var mid: Int = l + (r - l) / 2;  
-                  If (arr[mid] == x) {
-                     Return mid;
-                  }
-                  If (arr[mid] > x) {
-                     Return Self.binarySearch(arr, l, mid - 1, x);
-                  }
-                  Return Self.binarySearch(arr, mid + 1, r, x); 
-               } 
-               Return -1; 
-            } 
-         }
-         
+        Class HaloHoli{
+            treeNodeToString( root : String ) {
+                Var output : Int  = a;
+                Var nodeQueue : LinkedList = New LinkedList();
+                If (root == Null) {
+                    Return [];
+                }
+                Return output;
+            }
+        }

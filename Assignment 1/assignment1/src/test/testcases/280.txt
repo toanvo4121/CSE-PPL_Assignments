@@ -1,18 +1,12 @@
 
-         Class Spider_verse {
-            ## instance fields ##
-            Val num: Int = 15;
-            Var name: String;
-            Var suits: String;
-            
-            ## class fields ##
-            Val $ratings: Float = 8.9;
-            Constructor(name: String; suits: String) {
-               Self.name = "Peter Parker";
-               Self.suits = "Red";
+            Class Program {
+               main(args : Array[Int,2]) {
+                  out.println(numbers);
+                  Var first, second :Int = 10, 20;
+                  out.println(first ++ second);
+
+               ## add two numbers ##
+                  Var sum : Int = first + second;
+                  out.println( sum);
+               }
             }
-            Destructor(){
-               
-            }
-         }
-      

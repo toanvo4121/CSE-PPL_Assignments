@@ -1,20 +1,14 @@
 
-         Class testAlgorithms {
-            bubbleSort(arr: Array[Int, 100]; n: Int)
-            {
-               ## Base case ##
-               If (n == 1) {
-                  Return;
-               }
-            
-               ## One pass of bubble sort. After this pass, the largest element is moved (or bubbled) to end. ##
-               Foreach (i In 0 .. (n-1) By 1) {
-                  If (arr[i] > arr[i+1]) {
-                     Algorithms.swap(arr[i], arr[i+1]);
-                  }
-               }
-               ## Largest element is fixed, recur for remaining array ##
-               Self.bubbleSort(arr, n-1);
+        Class Main {
+            main(args : String) {
+                Var n1,n2 : Int = 72, 120;
+                Var lcm : Int = n1 + n2;
+                If(1 == 1) {
+                    If( (lcm  %  n1) == 0 && (lcm  %  n2) == 0 ) {
+                    System.out.printf(n1, n2, lcm);
+                    Break;
+                    }
+                lcm = lcm + 1;
+                }
             }
-         }
-         
+        }

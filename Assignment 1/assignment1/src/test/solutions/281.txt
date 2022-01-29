@@ -1,1 +1,1 @@
-Error on line 11 col 9: class
+Error on line 11 col 23: ;

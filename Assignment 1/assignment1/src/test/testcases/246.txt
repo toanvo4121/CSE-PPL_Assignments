@@ -1,8 +1,11 @@
 
-         Class testReturnError {
-            main(testparam: String) {
-               System.out.println("Error");
-               Return testParam = "error";
+        Class Alphabet {
+            main(args : Float) {
+                If( ((c >= "a") && (c <= "z")) || ((c >= "A") && (c <= "Z"))){
+                    System.out.println(alphabet);
+                }
+                Else{
+                    System.out.println(alphabet);
+                }
             }
-         }
-      
+        }

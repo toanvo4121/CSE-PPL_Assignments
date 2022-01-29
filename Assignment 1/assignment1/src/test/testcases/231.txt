@@ -1,57 +1,14 @@
 
-         Class testAlgorithms {
-            getMax(arr: Array[Int, 10]; n: Int)
-            {
-               Var mx: Int = arr[0];
-               Foreach (i In 1 .. n By 1) {
-                  If (arr[i] > mx) {
-                     mx = arr[i];
-                  }
-               }
-               Return mx;
+        Class Main {
+            main(args : String) {
+                Var n1,n2 : Int = 72, 120;
+                Var lcm : Int = n1 + n2;
+                If(1 == 1) {
+                    If( lcm  %  n1 == 0 && lcm  %  n2 == 0 ) {
+                    System.out.printf(n1, n2, lcm);
+                    Break;
+                    }
+                lcm = lcm + 1;
+                }
             }
-            countSort(arr: Array[Int, 100]; n: Int; exp: Int)
-            {
-               Var output: Array[Int, 100];
-               Var count: Array[Int, 10] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-            
-               ## Store count of occurrences in count[] ##
-               Foreach (i In 0 .. n By 1) {
-                  Val temp: Int = (arr[i] / exp) % 10;
-                  count[temp] = count[temp] + 1;
-               }
-                  
-            
-               ## Change count[i] so that count[i] now contains actual
-               #  position of this digit in output[] ##
-               Foreach (i In 1 .. 10 By 1) {
-                  count[i] = count[i] + count[i - 1];
-               }
-               ## Build the output array ##
-               Foreach (i In (n - 1) .. 0 By -1) {
-                  Val temp: Int = (arr[i] / exp) % 10;
-                  output[count[temp] - 1] = arr[i];
-                  count[temp] = count[temp] - 1;
-               }
-            
-               ## Copy the output array to arr[], so that arr[] now
-               #  contains sorted numbers according to current digit ##
-               Foreach (i In 0 .. n By 1) {
-                  arr[i] = output[i];
-               }
-            }
-            
-            radixsort(arr: Array[Int, 100]; n: Int)
-            {
-               ## Find the maximum number to know number of digits ##
-               Var m: Int = Self.getMax(arr, n);
-            
-               ## Do counting sort for every digit. Note that instead
-               #  of passing digit number, exp is passed. exp is 10^i
-               #  where i is current digit number ##
-               Foreach (exp In 1 .. (m / exp > 0) By Math.times(10)) {
-                  Self.countSort(arr, n, exp);
-               }
-            }
-         }
-         
+        }

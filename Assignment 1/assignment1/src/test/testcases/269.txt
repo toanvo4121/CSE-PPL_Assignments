@@ -1,6 +1,6 @@
 
-         Class testErrorParam {
-            main(args : Array[Int,2]) {
-               System.out.println(Hello Peter);
+        class Test69 {
+            Bro69(Bro : Int){
+                Var array1,array2,array_new : Array[Int,3] = Array(50, -20, 0), Array(5, -50, 10), Array(array1[2], array2[2], array1[2]);	 
             }
-         }
+        }

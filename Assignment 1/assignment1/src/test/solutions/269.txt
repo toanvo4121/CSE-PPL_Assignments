@@ -1,1 +1,1 @@
-Error on line 4 col 40: Peter
+Error on line 2 col 8: class

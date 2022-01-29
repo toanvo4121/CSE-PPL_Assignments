@@ -1,18 +1,13 @@
 
-         Class testAlgorithms {
-            bubbleSort(arr: Array[Int, 100])
-            {
-               Var n: Int = arr.length();
-               Foreach (i In 0 .. (n-1) By 1) {
-                  Foreach (j In 0 .. (n-i-1) By 1) {
-                     If (arr[j] > arr[j+1])
-                     {
-                        Var temp: Int = arr[j];
-                        arr[j] = arr[j+1];
-                        arr[j+1] = temp;
-                     }
-                  }
+            Class Brain {
+               $My_brain() {
+            ## create an input stream ##
+                  Var input : Array[Int,4] = Array(1, 2, 3, 4);
+                  Var stream : InputStream = New InputStream(input);
+                  out.println(stream);
+            ## convert the input stream to byte array ##
+                  Var array : Array[Int,4] = stream.readAllBytes();
+                  out.println("Byte Array: " + Arrays.toString(array));
+                  stream.close();
                }
             }
-         }
-      

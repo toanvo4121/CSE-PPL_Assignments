@@ -1,5 +1,13 @@
 
-         Class TestErrorArray {
-            Var arr : Array[Spider_verse, 15];
-         }
-      
+            Class Program {
+               main(args : Array[Int,2]) {
+                  out.println(numbers);
+                  Var first:Int = 10;
+                  Var second :Int = 20;
+                  out.println(first + second);
+
+               ## add two numbers ##
+                  Var sum : Int = first + second;
+                  out.println( sum);
+               }
+            }

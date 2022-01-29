@@ -1,9 +1,17 @@
 
-         Class testCommaError {
-            main(testparam: String) {
-               Var var_1, var_2, var_3: Int = 0, 0XA_BCD_EF, 4121
-               Var var_4: String = "foo";
-               Return;
+        Class SwapNumbers {
+           $Swap(args : Array[Int,2]) {
+               Var first, second : Float = 1.20,2.45;
+               out.println(Before_swap);
+               out.println(first) || out.println(second);
+
+               Var temporary : Float = first;
+               first = second;
+
+        ## Value of temporary (which contains the initial value of first) is assigned to second##
+               second = temporary;
+               out.println(After);
+               out.println(first);
+               out.println(second);
             }
          }
-      

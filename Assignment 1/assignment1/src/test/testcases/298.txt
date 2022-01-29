@@ -1,3 +1,24 @@
 
-         Var a: Int= 10000000;
-      
+            Class Main {
+               $main() {
+            ## create an input stream##
+               Var input : Array[Int,4] = Array(1, 2, 3, 4);
+               Var stream : InputStream = New InputStream(input);
+               out.println(stream);
+
+            ## create an output stream ##
+               Var output : ByteArrayOutputStream = New ByteArrayOutputStream();
+            ## create a byte array to store input stream ##
+               Var i: Int;
+               
+             ## read all data from input stream to array ##
+               If ((i == stream.read(array, 0, array.length)) != -1) {
+               ## write all data from array to output ##
+                  output.write(array, 0, i);
+               }
+            ## convert the input stream to byte array ##
+                  Var array : Array[Int,4] = stream.readAllBytes();
+                  out.println( Arrays.toString(array));
+                  stream.close();
+                }
+            }

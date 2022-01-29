@@ -1,11 +1,6 @@
 
-         Class testNestedClass {
-            Class ErrorClass {
-               
-            } 
-            
-            main() {
-               
+            Class Main {
+               $main(args : Array[Int,2]) {
+                  out.println(Hello bae);
+               }
             }
-         }
-      
