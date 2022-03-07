@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Army),[AttributeDecl(Static,ConstDecl(Id($max_damage),IntType,IntLit(1000)))]),ClassDecl(Id(main),[MethodDecl(Id(main),Instance,[],Block([VarDecl(Id(VN),ClassType(Id(Army)),NewExpr(Id(Army),[])),AssignStmt(FieldAccess(Id(VN),Id($max_damage)),IntLit(99999999999999)),Return(IntLit(1))]))])])

@@ -1,0 +1,21 @@
+
+            Class SV{
+                Val name: String;
+                Val ID: Int;
+                Constructor(name:String;ID:Int){
+                    Self.name = name;
+                    Self.ID = ID;
+                }
+                getName(name:String){
+                    Return Self.name;
+                }
+                getID(ID:Int){
+                    Return Self.ID;
+                }
+                main(){
+                    Val SV1: SV = New SV("Nguyen Hai Linh",1913944);
+                    Document.show.println(SV1.setName("Linh Nguyen Hai"));
+                    Document.show.println(SV1.setID(1913944));
+                }
+            }
+            

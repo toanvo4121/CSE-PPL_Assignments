@@ -1,0 +1,7 @@
+
+            Class CompareString{
+                main(){
+                    Document.show.print(A.Str1 +. B.str1);
+                }
+            }
+            

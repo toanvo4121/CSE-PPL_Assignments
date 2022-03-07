@@ -1,0 +1,11 @@
+
+        Class testConcatString{
+            main() {
+				Val subStr_1: String = "Spider-man";
+				Val subStr_2: String = "into";
+				Val subStr_3: String = "the";
+				Val subStr_4: String = "Spider-verse";
+				Val spider_verse: String = ((((((subStr_1 +. " ") +. subStr_2) +. " ") +. subStr_3) +. " ") +. subStr_4); 
+			}
+		}
+        

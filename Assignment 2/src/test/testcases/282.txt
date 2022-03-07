@@ -1,0 +1,9 @@
+
+            Class Inhoa{
+                chuyenInHoa(str:String){ 
+                Val s,strOutput:String;
+                s= str.substring(0, 1);
+                strOutput= str.replaceFirst(s,s.toUpperCase()); 
+             }
+            }
+            

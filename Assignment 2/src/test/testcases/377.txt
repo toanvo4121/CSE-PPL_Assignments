@@ -1,0 +1,10 @@
+
+        Class Test {
+			swap(arr: Array[Int, 100]; i: Int; j: Int)
+            {
+				Var temp: Int = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+        

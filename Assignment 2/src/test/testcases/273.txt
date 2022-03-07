@@ -1,0 +1,22 @@
+
+            Class nhap{
+                nhap(){ 
+                    ##khai bao doi tuong ip thuoc lop Scanner##
+                    Val ip:Scanner = New Scanner(System.in);
+                    
+                    ## Su dung nextLine nhap du lieu kieu String##
+                    System.out.println("Nhap ten cua ban: ");
+                    name = ip.nextLine();
+                    
+                    ##Su dung nextInt de nhap so nguyen: ##
+                    System.out.println("Nhap tuoi cua ban: ");
+                    age = ip.nextInt();
+                    
+                    ##Su dung nextFloat de nhap kieu so thuc##
+                    System.out.println("Nhap chieu cao cua ban: ");
+                    height = ip.nextFloat();
+                
+                    ip.close();  ## Dong doi tuong ip##
+                }
+            }
+            

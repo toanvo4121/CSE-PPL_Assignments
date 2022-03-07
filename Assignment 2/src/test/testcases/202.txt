@@ -1,0 +1,9 @@
+
+        Class program {
+                        foo() {
+                            Break;
+                            Continue;
+                            Var a : Int = Sa::$Out() +  x.a * out_1::$xa % h.x + 90;
+                        }
+                    }
+            

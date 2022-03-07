@@ -1,0 +1,25 @@
+
+		Class Spider_verse {
+			Val Suits: String;
+			Var name: String;
+			Val Num: Int;
+			
+			getSuits() {
+				Return Self.Suits;
+			}
+			
+			getName() {
+				Return Self.name;
+			}
+			
+			getNum() {
+				Return Self.Num;
+			}
+			
+			Constructor(Suits: String; name: String; Num: Int) {
+				Self.Suits = Suits;
+				Self.name = name;
+				Self.Num = Num;
+			}
+		}
+		

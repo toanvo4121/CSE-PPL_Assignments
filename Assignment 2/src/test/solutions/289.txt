@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Socket),[MethodDecl(Id(main),Instance,[],Block([ConstDecl(Id(port),IntType,CallExpr(Id(Integer),Id(parseInt),[ArrayCell(Id(args),[IntLit(0)])])),If(Id(i),Block([ConstDecl(Id(t),ClassType(Id(Thread)),NewExpr(Id(ServerExample),[Id(port)])),Call(Id(t),Id(start),[])]),Block([Call(Id(e),Id(printStackTrace),[])]))]))])])

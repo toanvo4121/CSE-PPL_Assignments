@@ -1,0 +1,7 @@
+
+        Class testErrorArgument {
+            main(args : Array[Int,2]) {
+				System.out.println(args[1] || args[2]);
+            }
+        }
+        

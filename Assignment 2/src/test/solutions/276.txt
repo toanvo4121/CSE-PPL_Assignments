@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(DKTDB),[MethodDecl(Id(demKTDB),Instance,[],Block([ConstDecl(Id(ktDB),IntType,IntLit(0)),For(Id(i),IntLit(0),CallExpr(Id(st),Id(length),[]),IntLit(1),Block([If(UnaryOp(!,CallExpr(Id(Character),Id(isLetterOrDigit),[CallExpr(Id(st),Id(charAt),[Id(i)])])),Block([AssignStmt(Id(ktDB),BinaryOp(+,Id(ktDB),IntLit(1)))])),Return(Id(ktDB))])])]))])])

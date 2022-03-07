@@ -1,0 +1,19 @@
+
+		Class ListFlattening {
+			flatten (lst: Array[Int, 04]) {
+				If (lst == Array()) {
+					Return lst;
+				}
+				If (list.isinstance(lst[0], list)) {
+					Return Self.flatten(lst[0]) + Self.flatten(list.from(1).to().of(lst));
+				}
+				Return list.from().to(1).of(lst) + Self.flatten(list.from(1).to().of(lst));
+			}
+		}
+		Class Program {
+			main() {
+				Var s: Array[Int, 15] = Array(Array(2,5), Array(3,7), Array(4,9));
+				os.print("Flattened list is: ", Flatten.flatten(s));
+			}
+		}
+		

@@ -1,0 +1,13 @@
+
+		Class Program {
+			main() {
+				Val testArray: Array[Int, 5]= Array(1, 2, 3, 4, 5);
+				Var multi_dimension_array: Array[Array[String, 5], 5];
+				Foreach (i In 1 .. 5) {
+					Foreach (j In 1 .. 5) {
+						multi_dimension_array[i][j] = testArray[i];
+					}
+				}
+			}
+		}
+		

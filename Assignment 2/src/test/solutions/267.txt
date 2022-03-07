@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ToFloat),[MethodDecl(Id(main),Instance,[],Block([ConstDecl(Id(i),FloatType,CallExpr(Id(ToFloat),Id(parseFloat),[StringLit(200)]))]))])])

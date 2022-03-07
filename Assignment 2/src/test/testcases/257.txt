@@ -1,0 +1,8 @@
+
+            Class SuperSodier:Avenger{
+                getSuperSodier(){
+                    Return Array("Black Wildow","captial America");
+                }
+                
+            }
+            

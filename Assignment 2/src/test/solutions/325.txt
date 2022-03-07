@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testAlgorithms),[MethodDecl(Id(gcd),Instance,[param(Id(a),IntType),param(Id(b),IntType)],Block([If(BinaryOp(==,Id(b),IntLit(0)),Block([Return(Id(a))])),Return(CallExpr(Self(),Id(gcd),[Id(b),BinaryOp(%,Id(a),Id(b))]))]))])])

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(TestSleepMethod1),Id(Thread),[MethodDecl(Id(run),Instance,[],Block([For(Id(i),IntLit(1),IntLit(5),IntLit(1),Block([If(Id(i),Block([Call(Id(Thread),Id(sleep),[IntLit(500)])]),If(Id(e),Block([Call(FieldAccess(Id(System),Id(out)),Id(println),[Id(e)])]))),Call(FieldAccess(Id(System),Id(out)),Id(println),[Id(i)])])])]))])])

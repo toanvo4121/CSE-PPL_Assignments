@@ -1,0 +1,13 @@
+
+            Class comany{
+                Var DSNhanVien: Array[String,20];
+
+            }
+            Class main{
+                main(){
+                    Var HM: comany = New comany();
+                    HM.DSNhanVien = Array("N V A","N V B","N V C","N V D","N V E","N V F","N V G","N V H","N V I","N V J");
+                     HM.save();
+                }
+            }
+            

@@ -1,0 +1,11 @@
+
+        Class testAlgorithms {
+            factorial(n: Int)
+            {
+				If (n == 0) {
+					Return 1;
+				}
+                Return n * Self.factorial(n - 1);
+            }
+		}
+        

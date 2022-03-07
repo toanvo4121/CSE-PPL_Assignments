@@ -1,0 +1,47 @@
+
+		Class Student {
+            Val firstName: String;
+            Val lastName: String;
+            Var ID: Int;
+            getFirstName() {
+				Return Self.firstName;
+            }
+            getLastName() {
+				Return Self.lastName;
+            }
+            getID() {
+				Return Self.ID;
+            }
+            Constructor(firstName: String; lastName: String; ID: Int) {
+				Self.firstName = firstName;
+				Self.lastName = lastName;
+				Self.ID = ID;
+            }
+            Destructor() {
+                    
+            }
+        }
+            
+        Class Program {
+            main() {
+				Var first_student: Student = New Student("Nguyen", "Ton", "1915570");
+				Var second_student: Student = New Student("Vox", "Ton", "1915570");
+				If (first_student.getFirstName() ==. second_student.getFirstName()) {
+					If (first_student.getLastName() ==. second_student.getLastName()) {
+						If (first_student.getID() == second_student.getID()) {
+							System.out.println("Same student");
+						}
+						Else {
+							System.out.println("Same name");
+						}
+					}
+					Else {
+						System.out.println("Same firstname");
+					}
+				}
+				Else {
+					System.out.println("Different student");
+				}
+            }
+		}
+		

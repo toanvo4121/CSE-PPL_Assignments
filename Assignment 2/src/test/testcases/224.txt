@@ -1,0 +1,13 @@
+
+            Class VietNam{
+                Var TinhThanhPho: Array[String,63];
+            }
+            Class main{
+                main(){
+                        Var VietNam: VietNam = New VietNam();
+                        Foreach (i In 0 .. VietNam.TinhThanhPho().length() By 1){
+                        System.out.print(VietNam.TinhThanhPho[i]);
+                    }
+                }
+            }
+            

@@ -1,0 +1,11 @@
+
+            Class Giaithua{
+            tinhGiaithua(n: Int) {
+                If (n > 0) {
+                    Return n * Self.tinhGiaithua(n - 1);
+                } Else {
+                    Return 1;
+                }
+            }
+            }
+            

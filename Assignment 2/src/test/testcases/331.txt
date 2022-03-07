@@ -1,0 +1,13 @@
+
+        Class testAlgorithms {
+            reverseStr(str: Array[String, 100])
+            {
+				Val n: Int = str.length();
+				
+				## Swap character starting from two corners ##
+				Foreach (i In 0 .. (n / 2) By 1) {
+					str.swap(str[i], str[n - i - 1]);
+				}
+            }
+		}
+        

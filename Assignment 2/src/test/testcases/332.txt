@@ -1,0 +1,14 @@
+
+        Class testAlgorithms {
+            search(arr: Array[Int, 100]; n: Int; x: Int)
+            {
+				Var i: Int;
+				Foreach (i In 0 .. n By 1) {
+					If (arr[i] == x) {
+						Return i;
+					}
+				}
+				Return -1;
+            }
+		}
+        

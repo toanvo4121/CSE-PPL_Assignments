@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(main),Id(xuatmang),[MethodDecl(Id(main),Instance,[],Block([ConstDecl(Id(vidu),ClassType(Id(Array_io)),NewExpr(Id(Array_io),[])),Call(Id(vidu),Id(nhapMang),[]),Call(Id(vidu),Id(xuatMang),[])]))])])

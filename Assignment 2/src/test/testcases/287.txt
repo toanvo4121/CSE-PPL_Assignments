@@ -1,0 +1,12 @@
+
+            Class Multi:Thread {
+                run() {
+                    System.out.println("thread is running...");
+                }
+            
+                $main( args:String) {
+                    Val t1: Multi = New Multi();
+                    t1.start();
+                }
+            }
+            

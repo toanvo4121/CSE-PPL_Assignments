@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testArray),[MethodDecl(Id(main),Instance,[],Block([VarDecl(Id(testArr),ArrayType(5,IntType),[IntLit(4),IntLit(12),IntLit(2001),IntLit(1915570),IntLit(3005)]),For(Id(i),IntLit(1),IntLit(5),IntLit(1),Block([Call(Id(SOut),Id(Println),[ArrayCell(Id(testArr),[Id(i)])])])])]))])])

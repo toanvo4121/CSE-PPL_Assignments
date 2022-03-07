@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(totaldigit),[MethodDecl(Id(totalDigitsOfNumber),Instance,[param(Id(n),IntType)],Block([ConstDecl(Id(total),IntType,IntLit(0)),For(Id(n),IntLit(0),IntLit(1000),IntLit(1),Block([AssignStmt(Id(total),BinaryOp(+,Id(total),BinaryOp(%,Id(n),Id(DEC_10)))),AssignStmt(Id(n),BinaryOp(/,Id(n),Id(DEC_10)))])]),Return(Id(total))]))])])

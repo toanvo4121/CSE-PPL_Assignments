@@ -1,0 +1,37 @@
+
+            Class Hinh 
+            { 
+                setChieuRong(rong: Int) 
+                { 
+                    chieurong = rong; 
+                    
+                } 
+                setChieuCao(cao:Int) 
+                { 
+                    chieucao = cao; 
+                    
+                } 
+                Var chieurong:Int; 
+                Var chieucao:Int; 
+            } 
+            ## day la lop ke thua: HinhChuNhat ##
+            Class HinhChuNhat:Hinh 
+            { 
+                tinhDienTich() 
+                { 
+                    Return Self.chieurong * Self.chieucao; 
+                } 
+            }
+            Class main{
+            main() 
+            { 
+                Var Hcn: HinhChuNhat = New HinhChuNhat() ; 
+                Hcn.setChieuRong(14); 
+                Hcn.setChieuCao(30); 
+                ## in dien tich cua doi tuong## 
+                System.print("Tong dien tich la: "); 
+                System.print(Hcn.tinhDienTich()); 
+                Return 0; 
+            }
+            }
+            

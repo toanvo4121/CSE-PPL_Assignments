@@ -1,0 +1,9 @@
+
+            Class ChuanHoa{
+                chuannHoa() {
+                    st=st.trim();
+                    st = st.replaceAll("+", " ");
+            
+                }
+            }
+            

@@ -1,0 +1,15 @@
+
+            Class SomeClass{
+                Var a,b: Int;
+                check(a,b:Int){
+                    If(a>=b){
+                        Self.a = a;
+                        Self.b = b;
+                        Return 1;
+                    }
+                    Else{
+                        Return 0;
+                    }
+                }
+            }
+            

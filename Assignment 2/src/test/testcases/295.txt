@@ -1,0 +1,19 @@
+
+            Class Phantichsonguyen{
+                phanTichSoNguyen(n:Int) {
+                Val i:Int = 2;
+                Val listNumbers: ArrayList = New ArrayList();
+                    If ((n % i) == 0) {
+                        n = n / i;
+                        listNumbers.add(i);
+                    } Else {
+                        i = i + 1;
+                    }
+                ## neu listNumbers trong thi la listNumbers##
+                If (listNumbers.isEmpty()) {
+                    listNumbers.add(n);
+                }
+                Return listNumbers;
+            }
+            }
+            

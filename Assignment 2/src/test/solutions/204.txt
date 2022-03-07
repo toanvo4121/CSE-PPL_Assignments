@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(program),[AttributeDecl(Instance,VarDecl(Id(a),IntType)),AttributeDecl(Instance,VarDecl(Id(b),IntType)),MethodDecl(Id(Swap),Instance,[param(Id(a),IntType),param(Id(b),IntType)],Block([VarDecl(Id(c),IntType),AssignStmt(Id(a),Id(c)),AssignStmt(Id(c),Id(b)),AssignStmt(Id(b),Id(a)),Return([Id(a),Id(b)])]))])])

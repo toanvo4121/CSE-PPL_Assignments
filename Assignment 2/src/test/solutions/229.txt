@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(super),[MethodDecl(Id($get),Static,[],Block([]))]),ClassDecl(Id(child),Id(super),[MethodDecl(Id(set),Instance,[],Block([Return(CallExpr(Id(super),Id($get),[]))]))])])

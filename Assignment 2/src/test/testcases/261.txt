@@ -1,0 +1,13 @@
+
+                Class main{
+                $showList(list: List) {
+                If ((list != Null) && (!list.isEmpty())) {
+                            Val size: Int = list.size();
+                            Foreach (i In 0 .. size-1 By 1) {
+                                System.out.print(list.get(i) + ", ");
+                            }
+                            System.out.println(list.get(size - 1));
+                        }       
+                    }
+                }
+            

@@ -1,0 +1,12 @@
+
+            Class main{
+                Var A : Array[Int,2];
+                Var b : Int = 2;
+                Var c: Int = 3;
+
+                main(){
+                Self.A[0] = b;
+                Self.A[1] = c;
+                }
+            }
+            

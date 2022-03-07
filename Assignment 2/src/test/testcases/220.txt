@@ -1,0 +1,27 @@
+
+            Class Ticket{
+
+                Var Id: Int;
+                Var Ischeck: Boolean = False;
+                Constructor(Id:Int){
+                    Self.Id = Id;
+                }
+                getID(){
+                    Return Self.Id;
+                }
+                setCheck(){
+                    Self.Ischeck = True;
+                }
+                main(){
+                    Val Guess: Ticket = New Ticket(24357);
+                    Var TicketCount: Int = 0;
+                    If(Guess.getID() >= TicketList.tail()){
+                        Guess.setCheck();
+                        TicketCount = TicketCount +1 ;
+                    }
+                    Else{
+                        Document.display("Duplicate Ticket");
+                    }
+                }
+            }
+            

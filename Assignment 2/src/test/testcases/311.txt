@@ -1,0 +1,25 @@
+
+		Class Program {
+			main() {
+				Var expr: Exp = New Exp(1,"+",2);
+				Var lhv_expr: Int = expr.BExp.op1;
+			}
+		}
+		Class BinExp {
+			Var op1: Int;
+			Var op: String;
+			Var op2: Int;
+			Constructor(op1: Int; op: String; op2:Int) {
+				Self.op1 = op1;
+				Self.op = op;
+				Self.op2 = op2;
+			}
+		}
+		Class Expr {
+			Var BExp: BinExp;
+			Constructor(op1: Int; op: String; op2: Int) {
+				Self.BExp = New BinExp(op1, op, op2);
+			}
+		}
+		
+		

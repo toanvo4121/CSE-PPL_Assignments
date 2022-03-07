@@ -1,0 +1,9 @@
+
+            Class Num {
+                Var $d: Int = 0b10101;
+                f() {
+                    a.func(a);
+                    Return result;
+                }
+            }
+            

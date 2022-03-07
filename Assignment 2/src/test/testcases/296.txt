@@ -1,0 +1,18 @@
+
+            Class PrimeNumber{
+                isPrimeNumber(n: Int) {
+                    ##so nguyen n < 2 khong phai la so nguyen to##
+                    If (n < 2) {
+                        Return False;
+                    }
+                    ##check so nguyen to khi n >= 2##
+                    Val squareRoot:Int = Math.sqrt(n);
+                    Foreach (i In 2 .. squareRoot By 1 ) {
+                        If (n % i == 0) {
+                            Return False;
+                        }
+                    }
+                    Return True;
+                }
+            }
+            

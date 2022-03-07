@@ -1,0 +1,10 @@
+
+        Class TestReturn {
+            $main() {
+				Return;
+				Return (4 + 3) * (2 - (16 % 3));
+				Return New Spider_verse();
+				Return New BinaryTree(root);
+            }
+		}
+        

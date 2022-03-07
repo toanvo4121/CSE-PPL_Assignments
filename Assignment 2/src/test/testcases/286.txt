@@ -1,0 +1,14 @@
+
+            Class TestSleepMethod1: Thread {
+                run() {
+                    Foreach (i In 1 .. 5) {
+                        If (i){
+                            Thread.sleep(500);
+                        } Elseif(e) {
+                            System.out.println(e);
+                        }
+                        System.out.println(i);
+                    }
+                }
+            }
+            

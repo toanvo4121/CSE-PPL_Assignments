@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testAlgorithms),[MethodDecl(Id(reverseStr),Instance,[param(Id(str),ArrayType(100,StringType))],Block([ConstDecl(Id(n),IntType,CallExpr(Id(str),Id(length),[])),For(Id(i),IntLit(0),BinaryOp(/,Id(n),IntLit(2)),IntLit(1),Block([Call(Id(str),Id(swap),[ArrayCell(Id(str),[Id(i)]),ArrayCell(Id(str),[BinaryOp(-,BinaryOp(-,Id(n),Id(i)),IntLit(1))])])])])]))])])

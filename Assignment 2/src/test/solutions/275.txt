@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ChuanHoa),[MethodDecl(Id(chuannHoa),Instance,[],Block([AssignStmt(Id(st),CallExpr(Id(st),Id(trim),[])),AssignStmt(Id(st),CallExpr(Id(st),Id(replaceAll),[StringLit(+),StringLit( )]))]))])])

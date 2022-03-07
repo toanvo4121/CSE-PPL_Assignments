@@ -1,0 +1,9 @@
+
+        Class main:xuatmang{
+            main(){
+                Val vidu: Array_io = New Array_io();
+                vidu.nhapMang();
+                vidu.xuatMang();
+            }
+        }
+            

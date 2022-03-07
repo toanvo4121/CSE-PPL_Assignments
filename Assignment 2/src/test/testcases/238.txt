@@ -1,0 +1,18 @@
+
+            Class main{
+                main(){
+                    Var tuoi:Int;
+                    System.out.println("nhap tuoi :");
+                    System.in(tuoi);
+                    If(tuoi==16)
+                    {
+                        Return "Not enough";
+                    }
+                    Else
+                    {
+                        Return "enough";
+                    }
+                    Return 0;
+                }
+            }
+            

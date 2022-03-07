@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Dog),Id(Animal),[MethodDecl(Id($gaugau),Static,[],Block([Call(FieldAccess(Id(System),Id(out)),Id(print),[FieldAccess(Self(),Id(gau))])]))]),ClassDecl(Id(Cat),Id(Animal),[MethodDecl(Id($OpOp),Static,[],Block([Return(FieldAccess(Self(),Id(Voice)))]))]),ClassDecl(Id(Program),[MethodDecl(Id(main),Static,[],Block([VarDecl(Id(a),IntType)]))])])

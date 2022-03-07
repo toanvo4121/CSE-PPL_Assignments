@@ -1,0 +1,10 @@
+
+            Class exp {
+                ID(a: Int; b: Int) {
+                    Self.arr[4] = b.ID() + a.exp();
+                }
+            }
+            Class main {
+                main(){}
+            }
+            

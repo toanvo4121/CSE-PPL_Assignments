@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(CheckArray),[AttributeDecl(Instance,VarDecl(Id(a),ArrayType(10,IntType))),MethodDecl(Id(push),Instance,[param(Id(e),IntType)],Block([AssignStmt(ArrayCell(FieldAccess(Self(),Id(a)),[Id(length)]),Id(e))]))])])

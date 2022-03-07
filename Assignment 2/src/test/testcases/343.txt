@@ -1,0 +1,8 @@
+
+        Class testReturnError {
+            main(testparam: String) {
+				System.out.println("Error");
+				Return;
+            }
+		}
+        

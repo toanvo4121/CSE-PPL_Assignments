@@ -1,0 +1,15 @@
+
+            Class tinhgiaithua{
+                tinhGiaithua(n:Int) {
+                Val giai_thua:Int = 1;
+                If ((n == 0) || (n == 1)) {
+                    Return giai_thua;
+                } Else {
+                    Foreach (i In 2 .. n By 1) {
+                        giai_thua = giai_thua * i;
+                    }
+                    Return giai_thua;
+                }
+            }
+            }
+            

@@ -1,0 +1,30 @@
+
+        Class testAlgorithms {
+            insertionSortRecursive(arr: Array[Int, 100]; n: Int)
+            {
+				## Base case ##
+				If (n <= 1) {
+					Return;
+				}
+            
+				## Sort first n-1 elements ##
+				Self.insertionSortRecursive(arr, n-1);
+            
+				## Insert last element at its correct position in sorted array. ##
+				Var last: Int = arr[n-1];
+
+				##
+				Move elements of arr[0..i-1], that are
+				greater than key, to one position ahead
+				of their current position
+				##
+				Foreach (j In (n-2) .. 0 By -1) {
+					If (arr[j] > last) {
+						Break;
+					}
+					arr[j+1] = arr[j];
+				}
+				arr[j+1] = last;
+            }
+		}
+        

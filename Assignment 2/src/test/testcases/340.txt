@@ -1,0 +1,38 @@
+
+        Class Node
+        {
+            Var key: Int;
+            Var left, right: Node;
+
+            Node(item: Int)
+            {
+				key = item;
+				left = Null;
+				right = Null;
+            }
+		}
+
+		Class BinaryTree
+		{
+            Var root: Node;
+
+            Constructor(key: Int)
+            {
+				Self.root = New Node(key);
+            }
+
+            Constructor()
+            {
+				Self.root = null;
+            }
+
+            main(args: Array[String, 2])
+            {
+				Var tree: BinaryTree = New BinaryTree();
+				tree.root = New Node(1);
+				tree.root.left = New Node(2);
+				tree.root.right = New Node(3);
+				tree.root.left.left = New Node(4);
+            }
+        }
+        

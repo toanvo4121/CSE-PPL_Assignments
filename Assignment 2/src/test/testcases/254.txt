@@ -1,0 +1,12 @@
+
+            Class Marvel{
+                Var HasSuit : Boolean = False;
+                Var HasFly : Boolean = False;
+                setSuit(){
+                    Self.HasSuit = True;
+                }
+                setFly(){
+                    Self.HasFly = True;
+                }
+            }
+            

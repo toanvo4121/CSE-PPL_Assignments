@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(SV),[MethodDecl(Id(Constructor),Instance,[param(Id(name),StringType),param(Id(ID),IntType)],Block([])),MethodDecl(Id(main),Instance,[],Block([ConstDecl(Id(SV1),ClassType(Id(SV)),NewExpr(Id(SV),[StringLit(Nguyen Hai Linh),IntLit(1913944)]))]))])])

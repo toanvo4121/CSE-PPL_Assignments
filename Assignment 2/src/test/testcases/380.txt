@@ -1,0 +1,19 @@
+
+        Class EncryptedText {
+            encryption(rawText: String; key: Int) {
+                If (key < 0) {
+                    key = (key % 26) + 26;
+                }
+                Elseif (key >= 26) {
+                    key = key % 26;
+                }
+                Var idx: Int = 0;
+                Var temp: Int = rawText[idx] + key;
+                If ((rawText[i] <= "z") && (temp > "z") || (rawText[i] <= "Z") && (temp > "Z")) {
+                    temp = temp - 26;
+                }
+                rawText[i] = temp;
+                i = i + 1;
+            }
+        }
+        

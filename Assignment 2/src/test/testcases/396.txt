@@ -1,0 +1,37 @@
+
+        Class Permutation
+		{
+			main()
+			{
+				Val str: String = "ABC";
+				Var n: Int = str.length();
+				Var permutation: Permutation = New Permutation();
+				permutation.permute(str, 0, n-1);
+			}
+		
+			permute(str: String; l, r: Int)
+			{
+				If (l == r) {
+					System.out.println(str);
+				}
+				Else
+				{
+					Foreach (i In l .. r)
+					{
+						str = Algorithms.swap(str, l, i);
+						Self.permute(str, l+1, r);
+						str = Algorithms.swap(str, l, i);
+					}
+				}
+			}
+			swap(a: String; i, j: Int)
+			{
+				Var temp: String;
+				Var charArray: Array[String, 100] = a.toCharArray();
+				temp = charArray[i];
+				charArray[i] = charArray[j];
+				charArray[j] = temp;
+				Return toString.valueOf(charArray);
+			}
+		}
+        

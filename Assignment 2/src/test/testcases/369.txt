@@ -1,0 +1,21 @@
+
+        Class Search {
+            $recursiveSearch(n, m: Int; arr: Array[Int,4]; idx: Int)
+            {
+                If ((n == 0) || (idx >= n)) 
+                {
+                    Return -1;
+                }
+                If (arr[idx] == m)
+                {
+                    Foreach (i In idx .. n)
+                    {
+                        arr[i]= arr[i+1];
+                    }
+                    n = n-1;
+                    Return idx;
+                }
+                Return Search::$recursiveSearch(n, m, arr, idx + 1);
+            }
+        }
+        

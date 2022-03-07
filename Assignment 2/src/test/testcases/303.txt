@@ -1,0 +1,19 @@
+
+		Class Spider_verse {
+			Val Suits: String;
+			Var name: String;
+			Val num: Int;
+			
+			getSuits() {
+				Return Self.Suits;
+			}
+			
+			getName() {
+				Return Self.name;
+			}
+			
+			getNum() {
+				Return Self.num;
+			}
+		}
+		

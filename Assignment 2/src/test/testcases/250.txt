@@ -1,0 +1,8 @@
+
+            Class dongvat{
+                Var name: String;
+                $getname(){
+                    Return Self.name;
+                }
+            }
+            

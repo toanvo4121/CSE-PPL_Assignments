@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testReturnError),[MethodDecl(Id(main),Instance,[param(Id(testparam),StringType)],Block([Call(FieldAccess(Id(System),Id(out)),Id(println),[StringLit(Error)]),Return()]))])])

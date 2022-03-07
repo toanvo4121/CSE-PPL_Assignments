@@ -1,0 +1,15 @@
+
+            Class DKTDB{
+                demKTDB() {
+                Val ktDB:Int =0;
+                Foreach(i In 0 .. st.length() By 1)
+                    {
+                        If(! Character.isLetterOrDigit(st.charAt(i)))
+                        {
+                            ktDB= ktDB + 1;
+                        }
+                        Return ktDB;
+                    }
+                }
+            }
+            

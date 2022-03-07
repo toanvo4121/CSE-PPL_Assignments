@@ -1,0 +1,8 @@
+
+            Class ConcatString{
+                Var a,b : String;
+                concat(){
+                    Return Self.a +. Self.b;
+                }
+            }
+            

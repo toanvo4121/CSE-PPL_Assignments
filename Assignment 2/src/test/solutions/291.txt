@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Giaithuadequy),[MethodDecl(Id(tinhGiaithua),Instance,[param(Id(n),IntType)],Block([If(BinaryOp(>,Id(n),IntLit(0)),Block([Return(BinaryOp(*,Id(n),CallExpr(Self(),Id(tinhGiaithua),[BinaryOp(-,Id(n),IntLit(1))])))]),Block([Return(IntLit(1))]))]))])])

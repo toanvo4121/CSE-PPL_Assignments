@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(SuperSodier),Id(Avenger),[MethodDecl(Id(getSuperSodier),Instance,[],Block([Return([StringLit(Black Wildow),StringLit(captial America)])]))])])

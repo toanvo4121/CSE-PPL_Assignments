@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(main),[MethodDecl(Id(getFloat),Instance,[],Block([VarDecl(Id(b),FloatType,FloatLit(5e+72)),Return(Id(b))])),MethodDecl(Id(main),Instance,[],Block([VarDecl(Id(a),ClassType(Id(main)),NewExpr(Id(main),[])),Call(FieldAccess(Id(System),Id(out)),Id(print),[CallExpr(Id(a),Id(getFloat),[])])]))])])

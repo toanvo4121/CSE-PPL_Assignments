@@ -1,0 +1,9 @@
+
+        Class testVar {
+            test() {
+				Val testArr: Array[Int, 0x4_12F_A216];
+				Var testBool: Boolean;
+				Val testString: String = "String to test";
+            }
+		}
+        

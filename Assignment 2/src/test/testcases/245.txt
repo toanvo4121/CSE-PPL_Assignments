@@ -1,0 +1,4 @@
+Class Prog {
+                    Val a,$b:Int = 2,3;
+                            }
+        

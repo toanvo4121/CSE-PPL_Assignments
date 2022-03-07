@@ -1,0 +1,8 @@
+
+            Class CheckArray{
+                Var a: Array[Int, 10];
+                push(e:Int){
+                    Self.a[length] = e;
+                }
+            }
+            

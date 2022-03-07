@@ -1,0 +1,66 @@
+
+        Class RecursiveAlgorithms {
+			recSearch(arr: Array[Int, 5]; l: Int; r: Int; x: Int)
+            {
+				If (r < l) {
+					Return -1;
+				}
+				If (arr[l] == x) {
+					Return l;
+				}
+				If (arr[r] == x) {
+					Return r;
+				}
+				Return Self.recSearch(arr, l+1, r-1, x);
+            }
+            
+            isPalRec(str: Array[String, 100]; s: Int; e: Int)
+            {
+				If (s == e) {
+					Return True;
+				}
+				If (str[s] != str[e]) {
+					Return False;
+				}
+				If (s < e + 1) {
+					Return Self.isPalRec(str, s + 1, e - 1);
+				}
+				Return True;
+            }
+            
+            isPalindrome(str: Array[String, 100])
+            {
+				Val n: Int = Str.strlen(str);
+				If (n == 0) {
+					Return True;
+				}
+				Return Self.isPalRec(str, 0, n - 1);
+            }
+            
+            SumRecursion(n: Int) {
+				##
+					sum = 1 + ... + n
+				##
+				If (n == 0) {
+					Return 0;
+				}
+				Return n + Self.SumRecursion(n - 1);
+            }
+            
+            Fibonacci(n: Int)
+            {
+				If ((n == 1) || (n == 2)) {
+					Return 1;
+				}
+				Return Self.Fibonacci(n - 1) + Self.Fibonacci(n - 2);
+            }
+            
+            factorial(n: Int)
+            {
+				If (n == 0) {
+					Return 1;
+				}
+                Return n * Self.factorial(n - 1);
+            }
+		}
+        

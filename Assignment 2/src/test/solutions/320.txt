@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testComment),[MethodDecl(Id(main),Instance,[],Block([]))])])

@@ -1,0 +1,16 @@
+
+            Class People{
+                Var Name: String;
+                Var age: Int;
+            }
+            Class SV: People{
+                Var School: String;
+            }
+            Class main:SV{
+                main(){
+                    System.out.println(Self.Name);
+                    System.out.println(Self.age);
+                    System.out.println(Self.school);
+                }
+            }
+            

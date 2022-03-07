@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ConcatString),[AttributeDecl(Instance,VarDecl(Id(a),StringType)),AttributeDecl(Instance,VarDecl(Id(b),StringType)),MethodDecl(Id(concat),Instance,[],Block([Return(BinaryOp(+.,FieldAccess(Self(),Id(a)),FieldAccess(Self(),Id(b))))]))])])

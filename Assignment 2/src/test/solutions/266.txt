@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ToDouble),[MethodDecl(Id(main),Instance,[],Block([ConstDecl(Id(i),ClassType(Id(Double)),CallExpr(Id(ToDouble),Id(parseLong),[StringLit(200)]))]))])])

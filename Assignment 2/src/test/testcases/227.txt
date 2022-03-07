@@ -1,0 +1,12 @@
+
+            Class Linkedlist{
+                Var Value: Int;
+                Var Key: Int;
+                Var next: LinkedList;
+                Constructor(Value,Key: Int; next: LinkedList){
+                    Self.Value = Value;
+                    Self.Key = Key;
+                    Self.next = next;
+                }
+            }
+            

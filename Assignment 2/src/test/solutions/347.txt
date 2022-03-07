@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(TestReturn),[MethodDecl(Id($main),Static,[],Block([Return(),Return(BinaryOp(*,BinaryOp(+,IntLit(4),IntLit(3)),BinaryOp(-,IntLit(2),BinaryOp(%,IntLit(16),IntLit(3))))),Return(NewExpr(Id(Spider_verse),[])),Return(NewExpr(Id(BinaryTree),[Id(root)]))]))])])

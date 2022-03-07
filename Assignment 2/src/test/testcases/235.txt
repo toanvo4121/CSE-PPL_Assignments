@@ -1,0 +1,10 @@
+
+            Class Str{
+                main (){ 
+                    Var loiChao: Array[String,8] = Array("X","i","n"," ","c","h","a","o"); 
+                    System.out.print("Khi gap nhau, chung ta noi: ") ; 
+                    System.out.print(loichao);
+                    Return 0; 
+                }
+            }
+            

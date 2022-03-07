@@ -1,0 +1,7 @@
+
+            Class ToFloat{
+                main(){
+                    Val i:Float = ToFloat.parseFloat("200");
+                }
+            }
+            

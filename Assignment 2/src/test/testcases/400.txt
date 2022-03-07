@@ -1,0 +1,17 @@
+
+		Class randomAlgorithms {
+			snoob(x: Int)
+			{
+					Var rightOne, nextHigherOneBit, rightOnesPattern, next: Int = 0, 0, 0, 0;
+					If (x > 0)
+					{
+						rightOne = x && -x;
+						nextHigherOneBit = x + rightOne;
+						rightOnesPattern = Math.power(x, nextHigherOneBit);
+						rightOnesPattern = rightOnesPattern / rightOne;
+						next = nextHigherOneBit || rightOnesPattern;
+					}
+					Return next;
+			}
+		}
+		

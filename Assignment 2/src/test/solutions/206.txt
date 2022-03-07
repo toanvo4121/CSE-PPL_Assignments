@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Demo),[AttributeDecl(Instance,ConstDecl(Id(Check),IntType,None)),MethodDecl(Id(CheckFn),Instance,[param(Id(Check),IntType)],Block([If(BinaryOp(==,Id(Check),IntLit(0)),Block([Return(IntLit(0))]),If(BinaryOp(>,Id(Check),IntLit(0)),Block([Return(Id(Check))]),Block([Return(UnaryOp(-,IntLit(1)))])))]))])])

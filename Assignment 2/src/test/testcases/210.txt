@@ -1,0 +1,7 @@
+
+            Class PrintString{
+                main(){
+                    System.out.print("Print somethings");
+                }
+            }
+            

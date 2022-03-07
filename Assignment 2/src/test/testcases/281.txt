@@ -1,0 +1,13 @@
+
+            Class Doivitri{
+                doiViTri(strInput:String){ 
+                Val str:String = Chuanhoa.chuanHoa(strInput);
+                Val strToken :StringTokenizer = New StringTokenizer(str," "); 
+                Val ho:String = strToken.nextToken();
+                Val hoDem:String = strToken.nextToken(); 
+                Val ten :String= strToken.nextToken(); 
+                Val strOutput:String= ten+" "+ho+" "+hoDem; 
+                Return(strOutput);
+                }
+            }
+            

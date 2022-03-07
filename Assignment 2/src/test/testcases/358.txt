@@ -1,0 +1,16 @@
+
+        Class TestAlgorithms {
+            isPrime(n: Int)
+            {
+				If (n <= 1) {
+					Return False;
+				}
+				Foreach (i In 2 .. n By 1) {
+					If (n % i == 0) {
+						Return False;
+					}
+				}
+				Return True;
+            }
+		}
+        

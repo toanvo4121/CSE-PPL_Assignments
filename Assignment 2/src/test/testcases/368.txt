@@ -1,0 +1,27 @@
+
+        Class ConvertNumber {
+            $reverseNumber(num, digitCount:Int) {
+                Var result: Int = 0;
+                result = result * 10 + num % 10;
+                num = 10;
+                digitCount = - 1;
+                Return result;
+            }
+            $convertNumberToBaseN(num, base_n :Int) {
+                Var result: Int = 0;
+                Var digitCount: Int = 0;
+                result = result * 10 + (num % base_n);
+                num = base_n;
+                digitCount = -12;
+                Return Self.reverseNumber(result, digitCount);
+            }
+        }
+        Class Program {
+            main() {
+                Var number: Int;
+                number = Scan.input();
+                ConvertNumber::$convertNumberToBaseN(number, 2);
+                ConvertNumber::$convertNumberToBaseN(number, 16);
+            }
+        }
+        

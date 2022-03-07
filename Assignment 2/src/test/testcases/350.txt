@@ -1,0 +1,32 @@
+
+        Class Test
+		{
+            Val arr: Array[Int, 5] = Array(12, 34, 54, 2, 3);
+            recSearch(arr: Array[Int, 5]; l: Int; r: Int; x: Int)
+            {
+				If (r < l) {
+					Return -1;
+				}
+				If (arr[l] == x) {
+					Return l;
+				}
+				If (arr[r] == x) {
+					Return r;
+				}
+				Return Self.recSearch(arr, l+1, r-1, x);
+            }
+            
+            main(args: Array[String, 2])
+            {
+				Var x: Int = 3;
+				
+				Var index: Int = Self.recSearch(arr, 0, arr.length-1, x);
+				If (index != -1) {
+					System.out.println("Element " + x + " is present at index " + index);
+				}
+				Else {
+					System.out.println("Element " + x + " is not present");
+				}
+            }
+		}
+        

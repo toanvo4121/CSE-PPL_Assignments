@@ -1,0 +1,12 @@
+
+            Class countElement {
+                countElement(a,n,i : Int) {
+					Val count:Int= 0;
+					Foreach(j In 0 .. n){
+                        If(a[j]== i) 
+                        {count = count + 1;}
+					}
+					Return count;
+				}
+            }
+            

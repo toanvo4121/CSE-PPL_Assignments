@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testVar),[MethodDecl(Id(test),Instance,[],Block([ConstDecl(Id(testArr),ArrayType(1093640726,IntType),None),VarDecl(Id(testBool),BoolType),ConstDecl(Id(testString),StringType,StringLit(String to test))]))])])

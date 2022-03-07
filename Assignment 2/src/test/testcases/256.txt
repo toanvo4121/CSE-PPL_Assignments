@@ -1,0 +1,13 @@
+
+            Class main{
+                main(){
+                    Var  Avenger1 : Avenger = New Avenger();
+                    If(Avenger1.getName() == "Ironman")
+                    {
+                        Avenger1.setSuit();
+                        Avenger1.setFly();
+
+                    }
+                }
+            }
+            

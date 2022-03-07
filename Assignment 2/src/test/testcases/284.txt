@@ -1,0 +1,40 @@
+
+            Class Giaiphuongtrinh{
+                giaiPt() {
+                    If(a==0) {
+                        If(b!=0) {
+                            Val x:Float;
+                            x = -c/b;
+                            x = Math.round(x*100.0)/100.0;
+                            System.out.println(x);
+                        }
+                        Elseif(b==0) {
+                            System.out.println("Phuong trinh khong hop le!");
+                            Return;
+                        }
+                        
+                    }
+                    Else {
+                        Val delta: Float = b*b -4*a*c;
+                        If(delta<0) {
+                            System.out.println("Phuong trinh vo nghiem!");
+                        }
+                        Elseif(delta ==0) {
+                            Val x : Float;
+                            x=(-b)/(2*a);
+                            System.out.println("Phuong trinh co nghiem kep: ");
+                            System.out.println(Math.round(x*100.0)/100.0);
+                        }
+                        Else {
+                            Val x1  : Float;
+                            Val x2  : Float;
+                            x1=(-b +Math.sqrt(delta))/(2*a);
+                            x2=(-b -Math.sqrt(delta))/(2*a);
+                            System.out.println("Phuong trinh co nghiem phan biet: ");
+                            System.out.println( Math.ceil(x1*100.0)/100.0);
+                            System.out.println( Math.round(x2*100.0)/100.0);
+                        }
+                    }
+                } 
+            }
+            

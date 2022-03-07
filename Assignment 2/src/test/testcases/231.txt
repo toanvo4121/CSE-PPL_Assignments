@@ -1,0 +1,14 @@
+
+            Class PrintNum{
+                Var NumArray: Array[Int,25];
+
+            }
+            Class main{
+                main(){
+                    Var arr: PrintNum = New PrintNum();
+                    Foreach( i In 0 .. arr.NumArray().length()){
+                        System.out.print(arr.NumArray[i]);
+                    }
+                }
+            }
+            

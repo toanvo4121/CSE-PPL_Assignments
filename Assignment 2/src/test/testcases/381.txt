@@ -1,0 +1,19 @@
+
+		Class Program {
+			Val $c, d: Float = 1.2, 3.41;    
+			func() {
+				If (a > c) {
+					If (b < d) {
+						b = d;
+					}
+					Elseif (b == d) {
+						b = d - 1;
+					}
+				}
+				Elseif (a == c) {
+					a = c ;
+				}
+				Return (a || b);
+			}
+		}
+		

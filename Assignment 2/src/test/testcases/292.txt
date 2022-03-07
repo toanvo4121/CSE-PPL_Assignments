@@ -1,0 +1,24 @@
+
+            Class CountWord{
+                countWords(input:String ) {
+                If (input == null) {
+                    Return -1;
+                }
+                Val count:Int = 0;
+                Val size :Int = input.length();
+                Val notCounted: Boolean  = true;
+                Foreach (i In 0 .. size By 1) {
+                    If ((input.charAt(i) != "SPACE") && (input.charAt(i) != "TAB") 
+                            && (input.charAt(i) != "BREAK_LINE")) {
+                        If(notCounted) {
+                            count = count + 1;
+                            notCounted = False;
+                        }
+                    } Else {
+                        notCounted = True;
+                    }
+                }
+                Return count;
+            }
+            }
+            

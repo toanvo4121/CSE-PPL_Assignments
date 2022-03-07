@@ -1,0 +1,7 @@
+
+		Class Program {
+			Test() {
+				a = Self.b + Self.c() - Mains::$method(a,b,c) * ((r >= 6) && (17 - 10e3));
+			}
+		}
+		

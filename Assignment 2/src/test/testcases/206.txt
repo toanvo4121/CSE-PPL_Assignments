@@ -1,0 +1,16 @@
+
+            Class Demo{
+                Val Check: Int;
+                CheckFn(Check: Int){
+                    If(Check == 0){
+                        Return 0;
+                    }
+                    Elseif(Check > 0){
+                        Return Check;
+                    }
+                    Else{
+                        Return -1;
+                    }
+                }
+            }
+            

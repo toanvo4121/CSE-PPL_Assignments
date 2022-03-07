@@ -1,0 +1,9 @@
+
+        Class testArray {
+			Var arr: Array[Array[String, 3], 3] = Array (
+                Array("Volvo", "22", "18"),
+                Array("Saab", "5", "2"),
+                Array("Land Rover", "17", "15")
+            );
+		}
+        

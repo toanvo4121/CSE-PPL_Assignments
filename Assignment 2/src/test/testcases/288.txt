@@ -1,0 +1,17 @@
+
+            Class Socket{
+                system(){
+                System.out.println(serverSocket.getLocalPort());
+                Val server:Socket  = serverSocket.accept();
+ 
+                System.out.println(server.getRemoteSocketAddress());
+                Val in:DataInputStream = New DataInputStream(server.getInputStream());
+ 
+                System.out.println(in.readUTF());
+                Val out:DataOutputStream = New DataOutputStream( server.getOutputStream());
+                out.writeUTF(server.getLocalSocketAddress());
+                server.close();
+                }
+
+            }
+            

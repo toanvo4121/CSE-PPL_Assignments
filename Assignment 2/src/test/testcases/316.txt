@@ -1,0 +1,11 @@
+
+        Class testMathExpressions {
+			main() {
+				Val PI: Float = 3.1415924;
+				Var radius: Float = 4.12;
+				Var perimeter: Float = Self.PI * 2 * Self.radius;
+				Var area: Float = Self.radius * Self.radius * Self.PI;
+				Var test: Float = ((10 + 2) * 4 - 5) / 6; 
+			}
+		}
+        

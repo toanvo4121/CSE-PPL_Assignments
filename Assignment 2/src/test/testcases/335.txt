@@ -1,0 +1,60 @@
+
+        Class testAlgorithms {
+            merge(array: Array[Int, 100]; left: Int; mid: Int; right: Int)
+            {
+				Val subArrayOne: Int = mid - left + 1;
+				Val subArrayTwo: Int = right - mid;
+				
+				## Create temp arrays ##
+				Var leftArray, rightArray: Array[Int, 50];
+				
+				## Copy data to temp arrays leftArray[] and rightArray[] ##
+				Foreach (i In 0 .. subArrayOne By 1) {
+					leftArray[i] = array[left + i];
+				}
+				Foreach (j In 0 .. subArrayTwo By 1) {
+					rightArray[j] = array[mid + 1 + j];
+				}
+				
+				Var indexOfSubArrayOne, indexOfSubArrayTwo, indexOfMergedArray: Int = 0, 0, left;
+				
+				## Merge the temp arrays back into array[left..right] ##
+				Foreach (i In 0 .. ((indexOfSubArrayOne < subArrayOne) && (indexOfSubArrayTwo < subArrayTwo)) By 1) {
+					If (leftArray[indexOfSubArrayOne] <= rightArray[indexOfSubArrayTwo]) {
+						array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+						indexOfSubArrayOne = indexOfSubArrayOne + 1;
+					}
+					Else {
+						array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+						indexOfSubArrayTwo = indexOfSubArrayTwo + 1;
+					}
+					indexOfMergedArray = indexOfMergedArray + 1;
+				}
+				## Copy the remaining elements of left[], if there are any ##
+				Foreach (i In indexOfSubArrayOne .. (indexOfSubArrayOne < subArrayOne) By 1)
+				{
+					array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+					indexOfSubArrayOne = indexOfSubArrayOne + 1;
+					indexOfMergedArray = indexOfMergedArray + 1;
+				}
+				## Copy the remaining elements of right[], if there are any ##
+				Foreach (i In indexOfSubArrayTwo .. (indexOfSubArrayTwo < subArrayTwo) By 1) {
+					array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+					indexOfSubArrayTwo = indexOfSubArrayTwo + 1;
+					indexOfMergedArray = indexOfMergedArray + 1;
+				}
+            }
+            
+            ## begin is for left index and end is right index of the sub-array of arr to be sorted ##
+            mergeSort(array: Array[Int, 100]; begin: Int; end: Int)
+            {
+				If (begin >= end) {
+					Return; 
+				}
+				Var mid: Int = begin + (end - begin) / 2;
+				Self.mergeSort(array, begin, mid);
+				Self.mergeSort(array, mid + 1, end);
+				Self.merge(array, begin, mid, end);
+            }
+		}
+        

@@ -1,0 +1,12 @@
+
+            Class main{
+                main () 
+                    { 
+                    Var chuoi1: Array[String,10] = "Hello"; 
+                    Var chuoi2: Array[String,10] = "Christmas"; 
+                    Var chuoi3: Array[String,10]; 
+                    Var len:Int; 
+                    Return 0; 
+                    }
+            }
+            

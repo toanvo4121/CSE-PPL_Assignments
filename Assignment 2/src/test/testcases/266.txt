@@ -1,0 +1,7 @@
+
+            Class ToDouble{
+                main(){
+                    Val i:Double = ToDouble.parseLong("200");
+                }
+            }
+            

@@ -1,0 +1,12 @@
+
+            Class totaldigit{
+                    totalDigitsOfNumber(n:Int) {
+                    Val total:Int = 0;
+                    Foreach(n In 0 .. 1000 By 1) {
+                        total = total + n % DEC_10;
+                        n = n / DEC_10;
+                    }
+                    Return total;
+                }
+            }
+            

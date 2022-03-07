@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Test),Id(QA),[AttributeDecl(Instance,VarDecl(Id(check),ClassType(Id(Main)),NewExpr(Id(Main),[Id(Program)])))])])

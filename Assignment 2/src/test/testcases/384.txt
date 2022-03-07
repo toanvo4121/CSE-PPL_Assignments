@@ -1,0 +1,37 @@
+
+        Class SolveEquation {
+            Var delta: Float;
+            Var x: Array[Float, 2];
+			twoDegEquation() {
+				## a^2 + bx + c = 0 ##
+				If (a == 0) {
+					If (b != 0) {
+						Var x: Float;
+						Self.x[0] = Math.round((-c/b) * 100.0) / 100.0;
+						Return Self.x[0];
+					}
+					Elseif (b==0) {
+						System.out.println("Wrong equation format !!!");
+						Return;
+					}
+				}
+				Else {
+					Self.delta = b*b - 4*a*c;
+					If (Self.delta < 0) {
+						System.out.println("Can't solve equation");
+					}
+					Elseif (delta == 0) {
+						Self.x[0] = (-b) / (2*a);
+						System.out.println("The equation has one root: ");
+						System.out.println(Math.round(Self.x[0]));
+					}
+					Else {
+						Self.x[0] = (-b) + Math.sqrt(delta) / (2*a);
+						Self.x[1] = (-b) - Math.sqrt(delta) / (2*a);
+						System.out.println("The equation has two roots: ");
+						System.out.println(Math.round(Self.x[0]) + " and " + Math.round(Self.x[1]));
+					}
+				}
+            }
+        }
+        

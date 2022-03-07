@@ -1,0 +1,13 @@
+
+            Class Socket{
+                main() {
+                    Val port:Int  = Integer.parseInt(args[0]);
+                    If(i) {
+                        Val t: Thread = New ServerExample(port);
+                        t.start();
+                    }Else {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            

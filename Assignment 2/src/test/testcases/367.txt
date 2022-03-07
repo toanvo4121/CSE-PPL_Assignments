@@ -1,0 +1,19 @@
+
+            Class Program {
+                main() {
+                    newObject = New Expression((52 - 2.5 * v / 8) <= 9 && x || (x + y));
+                    exprArray[1] = New Expr((52 - 2.5 * v / 8) <= 9 && x || (x + y));
+                    Return Self.castStringToExpression(exprArr[23][10]);
+                }
+                checkNullExpr(expr :String) {
+                    expr = Self.castStringToExpression(expr);
+                    If (expr != Null) {
+                        Return True;
+                    }
+                    Return False;
+                }
+                castStringToExpression(expression: String) {
+                    Return New Expression(expression.getValue());
+                }
+            }
+            

@@ -1,0 +1,13 @@
+
+            Class A{
+                Var String_decl: String;
+                Var Int_decl: Int;
+                Constructor(a: String; b: Int){
+                    Self.String_decl = a;
+                    Self.Int_decl = b; 
+                }
+                Destructor(){
+                    
+                }
+            }
+            

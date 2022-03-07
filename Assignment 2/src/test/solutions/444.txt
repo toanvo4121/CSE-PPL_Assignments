@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Ex),[AttributeDecl(Instance,VarDecl(Id(a),ClassType(Id(YS)),NewExpr(Id(YS),[StringLit(Hasagi!)]))),AttributeDecl(Instance,VarDecl(Id(total_missQ),IntType,FieldAccess(Id(a),Id(total_missQ)))),AttributeDecl(Instance,VarDecl(Id(total_time_dead),IntType,BinaryOp(+,FieldAccess(Id(a),Id(total_missQ)),IntLit(10))))])])

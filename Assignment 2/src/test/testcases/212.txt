@@ -1,0 +1,13 @@
+
+            Class CompareString{
+                Var str1, str2: String;
+                compare(){
+                    If( Self.str1 ==. Self.str2){
+                        Return True;
+                    }
+                    Else{
+                        Return False;
+                    }
+                }
+            }
+            

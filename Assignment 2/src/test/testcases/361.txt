@@ -1,0 +1,7 @@
+
+		Class Test{
+			Val _: Float = 5.897;
+			Var __: Array[Array[String, 3], 7];
+			Var ___: Array[Array[Array[Int, 12], 7], 8];
+		}
+		

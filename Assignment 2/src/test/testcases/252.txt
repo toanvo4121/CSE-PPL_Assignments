@@ -1,0 +1,13 @@
+
+            Class Army{
+                Val $max_damage : Int = 1000;
+
+            }
+            Class main{
+                main(){
+                    Var VN : Army = New Army();
+                    VN::$max_damage = 99999999999999;
+                    Return 1;
+                }
+            }
+            

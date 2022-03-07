@@ -1,0 +1,7 @@
+
+        Class Input_output {
+                Val name:String;
+                Val age:Int;
+                Val height:Float;
+            }
+            

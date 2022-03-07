@@ -1,0 +1,20 @@
+
+        Class Character {
+            mostFrequentCharacter(str, result: String; frequency: Int) {
+                Var count: Array[Int, 500] = New List(integer, 500);
+                current = ptr.addr(str);
+                If (("A" <= current) && (current <= "Z")) {
+                    current = current - "A" +. "a";
+                }
+                Math.increase1(count[current]);
+                Math.increase1(str);
+                frequency = 0;
+                Foreach (ch In "a" .. "z") {
+                    If (count[ch] > frequency) {
+                        result = ch;
+                        frequency = count[ch];
+                    }
+                }
+            }
+        }
+        

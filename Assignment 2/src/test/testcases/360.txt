@@ -1,0 +1,15 @@
+
+        Class Program {
+            main(){
+				Var x: Int = Spidey.swing();
+				Return x;
+            }
+		}
+		Class Test {
+            testloop(a: Int; b: Float) {
+				Foreach (i In 0 .. 15) {
+					s = s + a[i];
+				}
+            }
+		}
+        

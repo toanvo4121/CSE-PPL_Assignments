@@ -1,0 +1,12 @@
+
+        Class testComment{
+            main() {
+				## 
+					This is a
+					multi-line
+					comment
+				##
+				## so it won't be compiled ## 
+            }
+		}
+        

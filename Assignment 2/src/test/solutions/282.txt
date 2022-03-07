@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Inhoa),[MethodDecl(Id(chuyenInHoa),Instance,[param(Id(str),StringType)],Block([ConstDecl(Id(s),StringType,None),ConstDecl(Id(strOutput),StringType,None),AssignStmt(Id(s),CallExpr(Id(str),Id(substring),[IntLit(0),IntLit(1)])),AssignStmt(Id(strOutput),CallExpr(Id(str),Id(replaceFirst),[Id(s),CallExpr(Id(s),Id(toUpperCase),[])]))]))])])

@@ -1,0 +1,30 @@
+
+		Class randomAlgorithms {
+			countSetBits(n: Int)
+			{
+					Var bitCount: Int = 0;
+					Foreach (i In 1 .. n) {
+						bitCount = bitCount + Self.countSetBitsUtil(i);
+					}
+					Return bitCount;
+			}
+			countSetBitsUtil(x: Int)
+			{
+					If (x <= 0) {
+						Return 0;
+					}
+					Elseif (x % 2 == 0) {
+						Return Self.countSetBitsUtil(x / 2);
+					}
+					Else {
+						Return 1 + Self.countSetBitsUtil(x / 2);
+					}
+			}
+			main()
+			{
+					Var n: Int = 4;
+					System.out.print("Total set bit count is: ");
+					System.out.print(Self.countSetBits(n));
+			}
+		}
+		

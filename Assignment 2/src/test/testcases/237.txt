@@ -1,0 +1,26 @@
+
+            Class main{
+                main (){ 
+                    Var chuoi1:String = "Hello"; 
+                    Var chuoi2:String = "Christmas"; 
+                    Var chuoi3:String;
+                    Var len:Int; 
+
+                    ## sao chep chuoi1 vao trong chuoi3 ##
+                    chuoi3 = chuoi1; 
+                    System.out.print("Bay gio chuoi3 la: ");
+                    System.out.println(chuoi3);
+
+                    ## noi hai chuoi: chuoi1 va chuoi2 ##
+                    chuoi3 = chuoi1 + chuoi2; 
+                    System.out.println("chuoi1 + chuoi2 co ket qua la: ");
+                    System.out.println(chuoi3); 
+
+                    ## tong do dai cua chuoi3 mot sau khi thuc hien noi chuoi ##
+                    len = chuoi3.size(); 
+                    System.out.println("Tinh do dai voi ham chuoi3.size(): "); 
+                    System.out.println(len);  
+                    Return 0; 
+                }
+            }
+            

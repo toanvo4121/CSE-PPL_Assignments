@@ -1,0 +1,78 @@
+
+        Class Node
+		{
+            Var key: Int;
+            Var left, right: Node;
+
+            Node(item: Int)
+            {
+				key = item;
+				left = Null;
+				right = Null;
+            }
+		}
+
+		Class BinaryTree
+		{
+            Var root: Node;
+
+            Constructor(key: Int)
+            {
+				Self.root = New Node(key);
+            }
+
+            Constructor()
+            {
+				Self.root = Null;
+            }
+
+            printPostorder(node: Node)
+            {
+				If (node == Null) {
+					Return;
+				}
+				Self.printPostorder(node.left);
+				Self.printPostorder(node.right);
+				System.out.print(node.key + " ");
+            }
+            printInorder(node: Node)
+            {
+				If (node == Null) {
+					Return;
+				}
+				Self.printInorder(node.left);
+				System.out.print(node.key + " ");
+				Self.printInorder(node.right);
+            }
+            printPreorder(node: Node)
+            {
+				If (node == Null) {
+					Return;
+				}
+				System.out.print(node.key + " ");
+				Self.printPreorder(node.left);
+				Self.printPreorder(node.right);
+            }
+
+            printPostorder() { Self.printPostorder(root); }
+            printInorder() { Self.printInorder(root); }
+            printPreorder() { Self.printPreorder(root); }
+            
+            main(args: Array[String, 2])
+            {
+				Var tree: BinaryTree = New BinaryTree();
+				tree.root = New Node(1);
+				tree.root.left = New Node(2);
+				tree.root.right = New Node(3);
+				tree.root.left.left = New Node(4);
+				tree.root.left.right = New Node(5);
+
+				System.out.println("Preorder traversal of binary tree is ");
+				tree.printPreorder();
+				System.out.println("Inorder traversal of binary tree is ");
+				tree.printInorder();
+				System.out.println("Postorder traversal of binary tree is ");
+				tree.printPostorder();
+            }
+		}
+        

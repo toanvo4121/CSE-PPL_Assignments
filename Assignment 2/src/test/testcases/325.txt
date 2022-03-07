@@ -1,0 +1,10 @@
+
+        Class testAlgorithms {
+            gcd(a: Int; b: Int) {
+				If (b == 0) {
+					Return a;
+				}
+				Return Self.gcd(b, a % b);
+            }
+		}
+        

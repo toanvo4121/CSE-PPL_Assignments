@@ -1,0 +1,12 @@
+
+        Class Test{
+            printArray(arr: Array[Int, 100])
+            {
+				Var n: Int = arr.length();
+				Foreach (i In 0 .. (n-1) By 1) {
+					System.out.print(arr[i] + " ");
+				}
+				System.out.println();
+            }
+		}
+        

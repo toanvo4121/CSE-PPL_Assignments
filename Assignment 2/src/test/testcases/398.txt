@@ -1,0 +1,26 @@
+
+		Class StringAlgorithms {
+			findLength(str: String)
+			{
+				Var n: Int = str.length();
+				Var maxlen: Int = 0;
+				Foreach (i In 0 .. n)
+				{
+					Foreach (j In i + 1 .. n By 2)
+					{  
+						Var length: Int = j - i + 1;
+						Var leftsum, rightsum: Int = 0, 0;
+						Foreach (k In 0 .. length/2)
+						{
+							leftsum = leftsum + (str.charAt(i + k) - "0");
+							rightsum = rightSum + (str.charAt(i + k + length/2) - "0");
+						}
+						If ((leftsum == rightsum) && (maxlen < length)) {
+							maxlen = length;
+						}
+					}
+				}
+				Return maxlen;
+			}
+		}
+		

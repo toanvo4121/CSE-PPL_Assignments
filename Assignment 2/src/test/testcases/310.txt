@@ -1,0 +1,10 @@
+
+		Class Program{
+			main(){
+				Var x: Int = 7;
+				Var e: Int = 12;
+				Var q: Boolean = (x + 7) >= e;
+				Var t: Boolean = ((q == True) != False) == ((e <= 3) == (x >= 2));
+			}
+		}
+		

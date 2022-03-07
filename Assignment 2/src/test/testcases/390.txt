@@ -1,0 +1,22 @@
+
+        Class testAlgorithms {
+			heapify (arr: Array[Int, 100]; n: Int; i: Int)
+            {
+				Var largest: Int = i;
+				Var l: Int = 2 * i + 1;
+				Var r: Int = 2 * i + 2;
+				If ((l < n) && (arr[l] > arr[largest])) {
+					largest = l;
+				}
+				If ((r < n) && (arr[r] > arr[largest])) {
+					largest = r;
+				}
+				If (largest != i) {
+					Var swap: Int = arr[i];
+					arr[i] = arr[largest];
+					arr[largest] = swap;
+					Self.heapify(arr, n, largest);
+				}
+            }
+		}
+        

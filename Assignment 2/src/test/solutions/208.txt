@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Voice),[MethodDecl(Id(CheckVoice),Instance,[param(Id(ADN),StringType)],Block([Return(CallExpr(Id(Animal),Id(ADN),[Id(ADN)]))]))])])

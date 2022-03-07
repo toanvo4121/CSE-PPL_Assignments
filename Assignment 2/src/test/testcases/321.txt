@@ -1,0 +1,10 @@
+
+        Class testArray{
+            main(){
+				Var testArr: Array[Int, 5]= Array(4 , 12 , 2001 , 1915570 , 3005);
+				Foreach (i In 1 .. 5){
+					SOut.Println(testArr[i]);
+				}
+			}
+		}
+        

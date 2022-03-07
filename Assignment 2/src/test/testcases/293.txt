@@ -1,0 +1,14 @@
+
+            Class ThuanNghich{
+                isThuanNghich(n:Int) {
+                Val numberStr: String  = string.valueOf(n);
+                Val size:Int = numberStr.length();
+                Foreach (i In 0 .. Size/2 By 1) {
+                    If (numberStr.charAt(i) != numberStr.charAt(size - i - 1)) {
+                        Return False;
+                    }
+                }
+                Return True;
+            }
+            }
+            

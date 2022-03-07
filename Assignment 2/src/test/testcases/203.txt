@@ -1,0 +1,5 @@
+
+            Class main{
+                Var array1,array2: Array[Int,2] = Array(1,2), Array(3,4);
+            }
+            

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(CompareString),[MethodDecl(Id(main),Instance,[],Block([Call(FieldAccess(Id(Document),Id(show)),Id(print),[BinaryOp(+.,FieldAccess(Id(A),Id(Str1)),FieldAccess(Id(B),Id(str1)))])]))])])

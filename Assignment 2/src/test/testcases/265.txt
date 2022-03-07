@@ -1,0 +1,7 @@
+
+            Class ToInt{
+                main(){
+                    Val i:Int = ToInt.parseInt("200");
+                }
+            }
+            

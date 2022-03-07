@@ -1,0 +1,9 @@
+
+            Class StringToDateExample1 {
+            $main(){
+                Val sDate:String = "17/07/2017";
+                Val date: Date = New SimpleDateFormat("dd/MM/yyyy").parse(sDate);
+                System.out.println(sDate + date);
+            }
+        }
+            

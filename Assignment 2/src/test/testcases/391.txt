@@ -1,0 +1,14 @@
+
+        Class  Spider_man {
+			countOccurrences(arr: Array[Int, 100]; n: Int; x: Int)
+            {
+				Var res: Int = 0;
+				Foreach (i In 0 .. n By 1) {
+					If (x == arr[i]) {
+						res = res + 1;
+					}
+				}
+				Return res;
+            }
+		}
+        

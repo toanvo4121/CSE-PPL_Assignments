@@ -1,0 +1,26 @@
+
+            Class main{
+                convertNumber(n,b:Int) {
+                    If ((n < 0 )||( b < 2 )|| (b > 16) ) {
+                        Return "";
+                    }
+                    
+                    Val sb:StringBuilder = New StringBuilder();
+                    Val m:Int;
+                    Val remainder: Int = n;
+                        If (b > 10) {
+                            m = remainder % b;
+                            If (m >= 10) {
+                                sb.append(CHAR_55 + m);
+                            } Else {
+                                sb.append(m);
+                            }
+                        } Else {
+                            sb.append(remainder % b);
+                        }
+                        remainder = remainder / b;
+
+                    Return sb.reverse();
+                }
+            }
+            

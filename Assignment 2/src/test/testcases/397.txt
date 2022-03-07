@@ -1,0 +1,38 @@
+
+        Class Job
+		{
+			Var id: String;
+			Var deadline, profit: Int;
+			Job() {}
+		
+			Job(id: String; deadline, profit: Int)
+			{
+				Self.id = id;
+				Self.deadline = deadline;
+				Self.profit = profit;
+			}
+			printJobScheduling(arr: Array[String, 100]; t: Int)
+			{
+				Var n: Int = arr.size();
+				Collections.sort(arr, b.profit - a.profit);
+				Var result: Array[Boolean, 100];
+				Var job: Array[String, 100];
+				Foreach (i In 0 .. n)
+				{
+					Foreach (j In Math.min(t - 1, arr.get(i).deadline - 1) .. 0 By -1) {
+						If (result[j] == false)
+						{
+							result[j] = true;
+							job[j] = arr.get(i).id;
+							Break;
+						}
+					}
+				}
+				Foreach (jb In job[0] .. job[size])
+				{
+					System.out.print(jb + " ");
+				}
+				System.out.println();
+			}
+		}
+        

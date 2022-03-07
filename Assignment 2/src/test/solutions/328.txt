@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testAlgorithms),[MethodDecl(Id(Fibonacci),Instance,[param(Id(n),IntType)],Block([If(BinaryOp(||,BinaryOp(==,Id(n),IntLit(1)),BinaryOp(==,Id(n),IntLit(2))),Block([Return(IntLit(1))])),Return(BinaryOp(+,CallExpr(Self(),Id(Fibonacci),[BinaryOp(-,Id(n),IntLit(1))]),CallExpr(Self(),Id(Fibonacci),[BinaryOp(-,Id(n),IntLit(2))])))]))])])

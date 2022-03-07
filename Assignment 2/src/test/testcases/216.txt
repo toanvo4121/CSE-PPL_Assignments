@@ -1,0 +1,10 @@
+
+            Class SV{
+                Constructor(name:String;ID:Int){
+
+                }
+                main(){
+                    Val SV1: SV = New SV("Nguyen Hai Linh",1913944);
+                } 
+            }
+            

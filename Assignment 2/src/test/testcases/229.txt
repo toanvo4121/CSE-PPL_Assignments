@@ -1,0 +1,12 @@
+
+            Class super {
+                $get(){
+
+                }
+            }
+            Class child: super {
+                set() {
+                    Return super::$get();
+                }
+            }
+            

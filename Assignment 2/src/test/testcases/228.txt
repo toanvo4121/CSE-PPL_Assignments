@@ -1,0 +1,17 @@
+
+            Class Dog: Animal {
+                $gaugau() {
+                    System.out.print(Self.gau);
+                }
+            }
+            Class Cat: Animal {
+                $OpOp() {
+                    Return Self.Voice;
+                }
+            }
+            Class Program {
+                main() {
+                    Var a: Int;
+                }
+            }
+            

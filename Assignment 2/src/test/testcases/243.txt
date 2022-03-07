@@ -1,0 +1,14 @@
+
+        Class Main {
+            Main(args : Int){
+                Var animals : Animals = New Animals();
+                Var mid : String;
+                mid = animals.get(animals.size()/2);
+                animals.add(Dog);
+                animals.addFirst(Cat);
+                animals.addLast(Fish);
+                System.out.println(animals);
+                System.out.println(mid);
+            }
+        }
+            

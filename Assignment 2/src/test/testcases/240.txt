@@ -1,0 +1,13 @@
+
+            Class Plane{
+                Var code: String;
+                Var date: Int;
+            }
+            Class main{
+                main(){
+                    Var plane: Plane = New Plane();
+                    System.out.println(plane.code);
+                    System.out.println(plane.date);
+                }
+            }
+            

@@ -1,0 +1,5 @@
+
+        Class  Spider_man {
+			Var Peter_2: Andrew = (c::$a).b;
+		}
+        

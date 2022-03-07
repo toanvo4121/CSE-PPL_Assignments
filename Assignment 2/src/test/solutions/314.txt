@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Base),[AttributeDecl(Instance,VarDecl(Id(testFloat),FloatType,FloatLit(0.0)))]),ClassDecl(Id(Derived),[AttributeDecl(Instance,VarDecl(Id(testObj),ClassType(Id(Base)),NullLiteral()))])])

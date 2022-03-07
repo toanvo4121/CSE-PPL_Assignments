@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Program),[MethodDecl(Id(main),Static,[],Block([VarDecl(Id(x),IntType,CallExpr(Id(Spidey),Id(swing),[])),Return(Id(x))]))]),ClassDecl(Id(Test),[MethodDecl(Id(testloop),Instance,[param(Id(a),IntType),param(Id(b),FloatType)],Block([For(Id(i),IntLit(0),IntLit(15),IntLit(1),Block([AssignStmt(Id(s),BinaryOp(+,Id(s),ArrayCell(Id(a),[Id(i)])))])])]))])])

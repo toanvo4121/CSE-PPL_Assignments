@@ -1,0 +1,87 @@
+
+        Class testAlgorithms {
+            Val $RUN: Int = 32;
+
+            insertionSort(arr: Array[Int, 100]; left: Int; right: Int)
+            {
+				Foreach (i In (left + 1) .. right By 1)
+				{
+					Var temp: Int = arr[i];
+					Var j: Int = i - 1;
+					Foreach (j In (i - 1) .. left By -1) {
+						If (arr[j] > temp) {
+							Break;
+						}
+						arr[j+1] = arr[j];
+						j = j + 1;
+					}
+					arr[j+1] = temp;
+				}
+            }
+
+            merge(array: Array[Int, 100]; left: Int; mid: Int; right: Int)
+            {
+				Val subArrayOne: Int = mid - left + 1;
+				Val subArrayTwo: Int = right - mid;
+            
+				## Create temp arrays ##
+				Var leftArray, rightArray: Array[Int, 50];
+            
+				## Copy data to temp arrays leftArray[] and rightArray[] ##
+				Foreach (i In 0 .. subArrayOne By 1) {
+					leftArray[i] = array[left + i];
+				}
+				Foreach (j In 0 .. subArrayTwo By 1) {
+					rightArray[j] = array[mid + 1 + j];
+				}
+            
+				Var indexOfSubArrayOne, indexOfSubArrayTwo, indexOfMergedArray: Int = 0, 0, left;
+            
+				## Merge the temp arrays back into array[left..right] ##
+				Foreach (i In 0 .. ((indexOfSubArrayOne < subArrayOne) && (indexOfSubArrayTwo < subArrayTwo)) By 1) {
+					If (leftArray[indexOfSubArrayOne] <= rightArray[indexOfSubArrayTwo]) {
+						array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+						indexOfSubArrayOne = indexOfSubArrayOne + 1;
+					}
+					Else {
+						array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+						indexOfSubArrayTwo = indexOfSubArrayTwo + 1;
+					}
+					indexOfMergedArray = indexOfMergedArray + 1;
+				}
+				## Copy the remaining elements of left[], if there are any ##
+				Foreach (i In indexOfSubArrayOne .. (indexOfSubArrayOne < subArrayOne) By 1)
+				{
+					array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
+					indexOfSubArrayOne = indexOfSubArrayOne + 1;
+					indexOfMergedArray = indexOfMergedArray + 1;
+				}
+				## Copy the remaining elements of right[], if there are any ##
+				Foreach (i In indexOfSubArrayTwo .. (indexOfSubArrayTwo < subArrayTwo) By 1) {
+					array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
+					indexOfSubArrayTwo = indexOfSubArrayTwo + 1;
+					indexOfMergedArray = indexOfMergedArray + 1;
+				}
+            }
+
+            ## Iterative Timsort function to sort the array[0...n-1] (similar to merge sort) ##
+            timSort(arr: Array[Int, 100]; n: Int)
+            {
+				Foreach (i In 0 .. n By testAlgorithms::$RUN) {
+					Self.insertionSort(arr, i, Algorithms.min((i + testAlgorithms::$RUN - 1), (n - 1)));
+				}
+				Foreach (size In RUN .. n)
+				{
+					Foreach (left In 0 .. n By (2*size))
+					{
+						Var mid: Int = left + size - 1;
+						Var right: Int = Algorithms.min((left + 2*size - 1), (n-1));
+						If (mid < right) {
+                        Self.merge(arr, left, mid, right);
+						}
+					}
+                  	size = size * 2;
+				}
+            }
+        }
+        

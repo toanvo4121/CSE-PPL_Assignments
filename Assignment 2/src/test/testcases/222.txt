@@ -1,0 +1,12 @@
+
+            Class main{
+                getFloat(){
+                    Var b: Float = 0.05e74;
+                    Return b;
+                }
+                main(){
+                    Var a : main = New main();
+                    System.out.print(a.getFloat());
+                }
+            }
+            

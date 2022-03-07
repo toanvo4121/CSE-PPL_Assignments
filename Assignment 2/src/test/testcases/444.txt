@@ -1,0 +1,6 @@
+
+         Class Ex{
+            Var a: YS= New YS("Hasagi!");
+            Var total_missQ, total_time_dead: Int= a.total_missQ, a.total_missQ+10;
+         }
+         

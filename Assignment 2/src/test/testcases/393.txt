@@ -1,0 +1,26 @@
+
+            Class main {
+                randomFunc(n, b: Int) {
+                    If ((n == 0) || (a > 7) || (x <= 15)) {
+                        Return (n + b);
+                    }
+                    
+                    Var sb: StringBuilder = New StringBuilder();
+                    Val y: Float = 3.14;
+                    Var gemini: String = "Gemini";
+					If (b > 10) {
+						m = remainder % b;
+						If (m >= 10) {
+							sb.append(CHAR_55 + m);
+						} Else {
+							sb.append(m);
+						}
+					} Else {
+						sb.append(remainder % b);
+					}
+					remainder = remainder / b;
+
+                    Return sb.reverse();
+                }
+            }
+            

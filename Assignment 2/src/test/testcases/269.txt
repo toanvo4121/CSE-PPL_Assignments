@@ -1,0 +1,11 @@
+
+        Class Nhapmang{
+                nhapMang(){
+                Val sc: Scanner = New Scanner(System.in);
+                System.out.println("Nhap 10 phan tu cua mang: ");
+                Foreach(i In 0 .. 10) {
+                    b[i]= sc.nextInt();
+                }
+            }
+        }
+            

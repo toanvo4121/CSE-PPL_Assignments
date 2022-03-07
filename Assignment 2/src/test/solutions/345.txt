@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testErrorArgument),[MethodDecl(Id(main),Instance,[param(Id(args),ArrayType(2,IntType))],Block([Call(FieldAccess(Id(System),Id(out)),Id(println),[BinaryOp(||,ArrayCell(Id(args),[IntLit(1)]),ArrayCell(Id(args),[IntLit(2)]))])]))])])

@@ -1,0 +1,12 @@
+
+            Class Number {
+                $Something() {
+                    Return 2 + 1.2 - c + !b >= 8 || 4 || (a + b);
+                }
+            }
+            Class Program {
+                main() {
+                    a = (Count + ab) && a + ab + cd;
+                }
+            }
+            

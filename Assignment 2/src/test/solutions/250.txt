@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(dongvat),[AttributeDecl(Instance,VarDecl(Id(name),StringType)),MethodDecl(Id($getname),Static,[],Block([Return(FieldAccess(Self(),Id(name)))]))])])

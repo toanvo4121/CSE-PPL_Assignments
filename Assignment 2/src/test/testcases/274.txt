@@ -1,0 +1,13 @@
+
+        Class xuat{
+            xuat(){
+                System.out.println(" - -- - Thong tin vua nhap: ----");
+                System.out.println("Ho va ten: ");
+                System.out.println(name);
+                System.out.println("Tuoi: ");
+                System.out.println(age);
+                System.out.println("Chieu cao: ");
+                System.out.println(height);
+            } 
+        }
+            

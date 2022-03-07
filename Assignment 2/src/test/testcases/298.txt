@@ -1,0 +1,7 @@
+
+            Class BSCNN{
+                BSCNN(a,b:Int) {
+                Return (a * b) / Self.USCLN(a, b);
+                }
+            }
+            

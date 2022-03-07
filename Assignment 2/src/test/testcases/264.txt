@@ -1,0 +1,9 @@
+
+            Class main{
+                main(){
+                    Val Arr:Array[Int,7] = Array(1,2,3,4,5);
+                    Arr.reverse();
+                    System.out.print(Arr);
+                }
+            }
+            

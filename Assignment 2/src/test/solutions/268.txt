@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(StringToDateExample1),[MethodDecl(Id($main),Static,[],Block([ConstDecl(Id(sDate),StringType,StringLit(17/07/2017)),ConstDecl(Id(date),ClassType(Id(Date)),CallExpr(NewExpr(Id(SimpleDateFormat),[StringLit(dd/MM/yyyy)]),Id(parse),[Id(sDate)])),Call(FieldAccess(Id(System),Id(out)),Id(println),[BinaryOp(+,Id(sDate),Id(date))])]))])])

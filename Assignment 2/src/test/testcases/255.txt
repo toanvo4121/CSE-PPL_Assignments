@@ -1,0 +1,8 @@
+
+            Class Avenger:Marvel{
+                Var name:  String;
+                getName(){
+                    Return Self.name;
+                    }
+            }
+            

@@ -1,0 +1,26 @@
+
+        Class testAlgorithms {
+            isPalRec(str: Array[String, 100]; s: Int; e: Int)
+            {
+				If (s == e) {
+					Return True;
+				}
+				If (str[s] != str[e]) {
+					Return False;
+				}
+				If (s < e + 1) {
+					Return Self.isPalRec(str, s + 1, e - 1);
+				}
+				Return True;
+            }
+            
+            isPalindrome(str: Array[String, 100])
+            {
+				Val n: Int = Str.strlen(str);
+				If (n == 0) {
+					Return True;
+				}
+				Return Self.isPalRec(str, 0, n - 1);
+            }
+		}
+        

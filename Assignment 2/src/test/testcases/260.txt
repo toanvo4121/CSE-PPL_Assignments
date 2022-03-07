@@ -1,0 +1,15 @@
+
+                Class MyClassMember {
+                    Var name: String;
+                    Var from: String;
+                    $printName() {
+                        Self.print(Self.name);
+                    }
+                    $From() {
+                        Self.print(Self.from);
+                    }
+                }
+                Class Program {
+                    main(){}
+                }
+            

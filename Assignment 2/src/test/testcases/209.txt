@@ -1,0 +1,7 @@
+
+            Class Caculate{
+                ADD(a,b:Int){
+                    Return a +b;
+                }
+            }
+            

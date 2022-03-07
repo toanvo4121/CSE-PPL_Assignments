@@ -1,0 +1,9 @@
+Class Expr {
+            Val a: Int = A.a;
+            Var b: Float = c.d[1];
+            Val e: String = f.g[1][2];
+            Var h: Int = Number::$num;
+            Var i: Boolean = Number::$dec[0];
+            Val j: String = Number.qq[0];
+            Val k: Float = Number.qq;
+        }

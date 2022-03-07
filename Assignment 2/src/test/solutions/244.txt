@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(main),[MethodDecl(Id(main),Instance,[],Block([VarDecl(Id(arr),ArrayType(5,ArrayType(7,ArrayType(3,ArrayType(1,ArrayType(9,ArrayType(12,IntType)))))))]))])])

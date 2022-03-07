@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(main),[MethodDecl(Id(main),Instance,[],Block([VarDecl(Id(tuoi),IntType),Call(FieldAccess(Id(System),Id(out)),Id(println),[StringLit(nhap tuoi :)]),Call(Id(System),Id(in),[Id(tuoi)]),If(BinaryOp(==,Id(tuoi),IntLit(16)),Block([Return(StringLit(Not enough))]),Block([Return(StringLit(enough))])),Return(IntLit(0))]))])])

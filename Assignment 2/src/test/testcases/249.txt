@@ -1,0 +1,7 @@
+
+                Class main{
+                    main(){
+                        System.out.print("main");
+                    }
+                }
+            

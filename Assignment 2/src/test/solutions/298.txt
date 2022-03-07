@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(BSCNN),[MethodDecl(Id(BSCNN),Instance,[param(Id(a),IntType),param(Id(b),IntType)],Block([Return(BinaryOp(/,BinaryOp(*,Id(a),Id(b)),CallExpr(Self(),Id(USCLN),[Id(a),Id(b)])))]))])])

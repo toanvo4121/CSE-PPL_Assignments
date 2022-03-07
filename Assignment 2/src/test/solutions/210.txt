@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(PrintString),[MethodDecl(Id(main),Instance,[],Block([Call(FieldAccess(Id(System),Id(out)),Id(print),[StringLit(Print somethings)])]))])])

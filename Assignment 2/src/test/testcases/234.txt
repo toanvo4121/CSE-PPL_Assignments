@@ -1,0 +1,19 @@
+
+            Class main{
+                main(){
+                    Var N:Int;
+                    Var a: Array[Int,100];
+                    System.in(N);
+                    Var k: Int = 1;
+                    Foreach (i In 1 .. N By 1)
+                    {
+                    Foreach (j In 1 .. N By 1)
+                    {
+                        a[i][j]=k;
+                        k = k + 1;
+                        System.out.print(a[i][j]);
+                        }
+                    }
+                }
+            }
+            

@@ -1,0 +1,21 @@
+
+         Class minion{
+            Var $gender: String= "Female";
+            Var attk: Int= 1;
+         }
+         Class Soldier{
+            Var $gender: String= "Female";
+            Var slave: minion= New minion();
+         }
+         Class King{
+            Var slaves: Soldier= New Soldier();
+         }
+         Class Program{
+            main(){
+               Var K1: King= New King();
+               Var K1_soldier_gender, K1_soldier_slave_gender: String;
+               K1_soldier_gender= Soldier::$gender;
+               K1_soldier_slave_gender= minion::$gender;
+            }
+         }
+         

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Multi),Id(Thread),[MethodDecl(Id(run),Instance,[],Block([Call(FieldAccess(Id(System),Id(out)),Id(println),[StringLit(thread is running...)])])),MethodDecl(Id($main),Static,[param(Id(args),StringType)],Block([ConstDecl(Id(t1),ClassType(Id(Multi)),NewExpr(Id(Multi),[])),Call(Id(t1),Id(start),[])]))])])

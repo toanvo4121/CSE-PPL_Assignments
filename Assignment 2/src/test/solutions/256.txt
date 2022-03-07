@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(main),[MethodDecl(Id(main),Instance,[],Block([VarDecl(Id(Avenger1),ClassType(Id(Avenger)),NewExpr(Id(Avenger),[])),If(BinaryOp(==,CallExpr(Id(Avenger1),Id(getName),[]),StringLit(Ironman)),Block([Call(Id(Avenger1),Id(setSuit),[]),Call(Id(Avenger1),Id(setFly),[])]))]))])])

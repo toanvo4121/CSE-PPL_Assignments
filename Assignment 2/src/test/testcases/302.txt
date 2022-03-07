@@ -1,0 +1,7 @@
+
+		Class Spider_verse {
+			Val Suits: String;
+			Var name: String;
+			Val num: Int;
+		}
+		

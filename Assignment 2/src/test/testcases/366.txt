@@ -1,0 +1,6 @@
+
+		Class Test {
+			Val sub: Int = Self.b.mul[12];
+			Val add: String = s.subStr(ta, tv, tm)[11][25][15];
+		}
+		

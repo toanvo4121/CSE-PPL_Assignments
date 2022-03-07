@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(main),[MethodDecl(Id(main),Instance,[],Block([ConstDecl(Id(Arr),ArrayType(7,IntType),[IntLit(1),IntLit(2),IntLit(3),IntLit(4),IntLit(5)]),Call(Id(Arr),Id(reverse),[]),Call(FieldAccess(Id(System),Id(out)),Id(print),[Id(Arr)])]))])])

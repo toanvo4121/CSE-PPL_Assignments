@@ -1,0 +1,20 @@
+
+        Class ElectricGadgets {
+            Var batteryUsing: Boolean;
+			Var gravity: Float;
+			
+			Constructor() {
+				
+			}
+			Constructor(batteryUsing:Boolean; gravity: Float) {
+				Self.batteryUsing = batteryUsing;
+				Self.gravity = gravity / 9.8;
+			}
+		}
+		Class ElectricCar : ElectricGadgets {
+			__init__() {
+				ElectricCar::$noUse();
+				Return batteryUsing;
+			}
+		}
+        

@@ -1,0 +1,17 @@
+
+            Class main{
+                main() {
+                System.out.print("Nhap n = ");
+                Val n:Int = scanner.nextInt();
+                System.out.printf( n);
+                If (n >= 2) {
+                    System.out.print(2);
+                }
+                Foreach (i In 3 .. n By 2) {
+                    If (Self.isPrimeNumber(i)) {
+                        System.out.print(" " + i);
+                    }
+                }
+            }
+            }
+            

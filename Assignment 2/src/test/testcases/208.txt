@@ -1,0 +1,7 @@
+
+                Class Voice{
+                    CheckVoice(ADN: String){
+                        Return Animal.ADN(ADN); 
+                    }
+                }
+            

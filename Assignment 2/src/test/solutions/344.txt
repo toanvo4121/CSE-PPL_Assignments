@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(testArray),[MethodDecl(Id(main),Instance,[param(Id(testparam),StringType)],Block([VarDecl(Id(arr),ArrayType(3,IntType)),AssignStmt(ArrayCell(Id(arr),[IntLit(1)]),IntLit(1)),AssignStmt(ArrayCell(Id(arr),[IntLit(2)]),IntLit(2)),AssignStmt(ArrayCell(Id(arr),[IntLit(3)]),IntLit(3)),AssignStmt(ArrayCell(Id(arr),[IntLit(0)]),IntLit(0)),Return()]))])])

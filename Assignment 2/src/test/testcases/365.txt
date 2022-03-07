@@ -1,0 +1,5 @@
+
+		Class Test: QA {
+			Var check: Main = New Main(Program);
+		}
+		

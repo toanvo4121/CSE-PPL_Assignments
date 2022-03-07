@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(program),[MethodDecl(Id(foo),Instance,[],Block([Break,Continue,VarDecl(Id(a),IntType,BinaryOp(+,BinaryOp(+,CallExpr(Id(Sa),Id($Out),[]),BinaryOp(%,BinaryOp(*,FieldAccess(Id(x),Id(a)),FieldAccess(Id(out_1),Id($xa))),FieldAccess(Id(h),Id(x)))),IntLit(90)))]))])])

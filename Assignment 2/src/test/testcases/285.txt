@@ -1,0 +1,12 @@
+
+            Class TestCallRun1 : Thread {
+            run() {
+                System.out.println("running...");
+            }
+        
+            $main() {
+                Val t1:TestCallRun1 = New TestCallRun1();
+                t1.run(); ## ok, nhung khong start mot call stack rieng biet##
+            }
+        }
+            

@@ -1,0 +1,13 @@
+
+                Class program {
+                        Var a : Int;
+                        Var b : Int;
+                        Swap(a,b: Int){
+                            Var c : Int;
+                            a = c;
+                            c = b;
+                            b = a;
+                            Return Array(a,b);
+                        }
+                    }
+            

@@ -1,0 +1,12 @@
+
+            Class main{
+            main() {
+                System.out.print("Nhap so nguyen duong n = ");
+                Val n:Int = scanner.nextInt();
+                System.out.println(n);
+                Foreach (i In 0 .. n By 1) {
+                    System.out.print(Self.fibonacci(i));
+                    }
+                }
+            }
+            

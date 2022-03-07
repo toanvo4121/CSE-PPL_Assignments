@@ -1,0 +1,14 @@
+
+            Class Animal{
+                Var cat: Cat = New Cat();
+                Var dog: Dog = New Dog();
+                main(){
+                    If(cat.fish >= dong.meet){
+                    Return "cat win";
+                }
+                Else{
+                    Return "dog win";
+                }
+               } 
+            }
+            

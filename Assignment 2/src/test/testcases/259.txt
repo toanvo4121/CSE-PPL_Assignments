@@ -1,0 +1,14 @@
+
+                Class main{
+                    main(){
+                        Var Sodier: Avenger = New Avenger();
+                        Foreach(i In 1 .. Sodier.getSupderSodier().length )
+                        {
+                            If(Sodier.name ==. Sodier.getSupderSodier()[i-1]){
+                                Return True;
+                            }
+                        }
+                        Return False;
+                    }
+                }
+            

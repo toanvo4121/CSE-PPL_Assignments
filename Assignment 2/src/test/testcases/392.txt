@@ -1,0 +1,13 @@
+
+		Class Number {
+			$testRandom() {
+				Return (3 + 5.8 - a + !x <= 3.14) || ((y - z) * (x + y));
+			}
+		}
+		Class Program {
+			main() {
+				Var a: Int = 1;
+				Return Self.idx(a);
+			}
+		}
+		

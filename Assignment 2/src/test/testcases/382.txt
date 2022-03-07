@@ -1,0 +1,32 @@
+
+        Class ArrayAlgorithms {
+            getMin(arr: Array[Int, 10]; n: Int)
+            {
+				Var min: Int = arr[0];
+				Foreach (i In 1 .. n By 1) {
+					If (arr[i] < min) {
+						min = arr[i];
+					}
+				}
+				Return min;
+            }
+			getMax(arr: Array[Int, 10]; n: Int)
+            {
+				Var mx: Int = arr[0];
+				Foreach (i In 1 .. n By 1) {
+					If (arr[i] > mx) {
+						mx = arr[i];
+					}
+				}
+				Return mx;
+            }
+            printArray(arr: Array[Int, 100])
+            {
+				Val n: Int = arr.length();
+				Foreach (i In 0 .. n By 1) {
+					System.out.print(arr[i] + " ");
+				}
+				System.out.println();
+            }
+		}
+        

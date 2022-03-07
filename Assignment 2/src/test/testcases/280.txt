@@ -1,0 +1,14 @@
+
+            Class lietkeuoc{
+                lietKeUoc(n:Int){
+                    Val count:Int=0;
+                    System.out.print("Cac uoc cua "+n+" la:"); 
+                    Foreach(i In 1 .. n){
+                        If(n%i==0) {
+                            System.out.print(" "+i); count = count+1;
+                        }
+                    }
+                        System.out.println("Co "+count+" uoc");
+                    }
+            }
+            

@@ -1,0 +1,12 @@
+
+        Class xuatmang:Nhapmang{
+                xuatMang(){
+                System.out.println("Mang vua nhap: ");
+                Foreach(i In 0 .. 10)
+                       {
+                            System.out.print(a[i]);
+                       }
+        
+            }
+        }
+            

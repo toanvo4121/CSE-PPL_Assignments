@@ -1,0 +1,9 @@
+
+            Class main{
+                main(){
+                    Foreach(i In 1 .. 10 By 1){
+                        System.out.print(i);
+                    }
+                }
+            }
+            

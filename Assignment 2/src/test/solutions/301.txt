@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Spider_man),[AttributeDecl(Instance,VarDecl(Id(Peter_1),ClassType(Id(Tobey)),FieldAccess(FieldAccess(Id(a),Id($b)),Id(c))))])])

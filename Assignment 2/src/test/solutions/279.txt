@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(countElement),[MethodDecl(Id(countElement),Instance,[param(Id(a),IntType),param(Id(n),IntType),param(Id(i),IntType)],Block([ConstDecl(Id(count),IntType,IntLit(0)),For(Id(j),IntLit(0),Id(n),IntLit(1),Block([If(BinaryOp(==,ArrayCell(Id(a),[Id(j)]),Id(i)),Block([AssignStmt(Id(count),BinaryOp(+,Id(count),IntLit(1)))]))])]),Return(Id(count))]))])])

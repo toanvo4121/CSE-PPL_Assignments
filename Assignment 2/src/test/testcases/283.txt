@@ -1,0 +1,21 @@
+
+        Class Array_io {
+                $main() {
+            
+                    Val a: Array[Int,10]; 
+                    Val sc: Scanner = New Scanner(System.in);  
+                    System.out.println("Nhap 10 phan tu cua mang: ");
+                    Foreach(i In 0 .. 10) {
+                        a[i]= sc.nextInt();     
+                    }
+            
+                    System.out.println("Mang vua nhap: ");
+                    Foreach(i In 0 .. 10)             
+                        {
+                            System.out.print(a[i]);
+                        }
+                }
+            
+            
+            }
+            
